@@ -9,6 +9,7 @@ import javax.persistence.ManyToMany;
 import org.hibernate.annotations.Type;
 import java.util.UUID;
 import java.util.Set;
+import java.math.BigDecimal;
 import java.util.HashSet;
 
 @Entity
@@ -22,7 +23,7 @@ public class Ingredient {
     public String name;
 
     @Column (name = "price", nullable = false)
-    public Double price;
+    public BigDecimal price;
 
     public @ManyToMany (mappedBy = "ingredients") Set<Pizza> pizzas = new HashSet<>();
 
