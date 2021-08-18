@@ -1,4 +1,4 @@
-package com.example.demo.application;
+package com.example.demo.application.pizzaapplication;
 
 import java.util.List;
 import java.util.UUID;

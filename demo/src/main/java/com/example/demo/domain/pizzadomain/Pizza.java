@@ -36,6 +36,8 @@ public class Pizza {
 
     @Embedded
     public Image image;
+
+    private BigDecimal price;
     
 
     public void addIngredient(Ingredient ingredient) {
@@ -50,6 +52,14 @@ public class Pizza {
         this.comments.add(comment);
     }
 
+    public void setPrice(BigDecimal value) {
+        this.price = value;
+    }
+
+    @Column(nullable = false, name = "price")
+    public BigDecimal getPrice() {
+        return price;
+    }
 
     public BigDecimal calculatePrice() {
         BigDecimal total = new BigDecimal(0.0);

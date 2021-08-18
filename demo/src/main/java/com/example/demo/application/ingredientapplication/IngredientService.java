@@ -2,8 +2,8 @@ package com.example.demo.application.ingredientapplication;
 
 import java.util.UUID;
 
-import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
-import com.example.demo.DTO.ingredientDTO.IngredientDTO;
+import com.example.demo.dto.ingredientDTO.CreateUpdateIngredientDTO;
+import com.example.demo.dto.ingredientDTO.IngredientDTO;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 
 public class IngredientService {

@@ -11,6 +11,7 @@ import java.util.UUID;
 import java.util.List;
 
 public interface IngredientRepositoryJPA extends JpaRepository<Ingredient, UUID>{
+    
     String sql = """
                     SELECT i.id as id, i.name as name, i.price as price 
                     FROM Ingredient i 

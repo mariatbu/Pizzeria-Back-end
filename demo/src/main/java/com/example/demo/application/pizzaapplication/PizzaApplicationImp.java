@@ -1,19 +1,18 @@
-package com.example.demo.application;
+package com.example.demo.application.pizzaapplication;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
-import com.example.demo.domain.commentdomain.Comment;
+// import com.example.demo.domain.commentdomain.Comment;
 // import com.example.demo.domain.commentdomain.CommentService;
 import com.example.demo.domain.ingredientdomain.Ingredient;
+import com.example.demo.domain.ingredientdomain.IngredientRepositoryGeneral;
 // import com.example.demo.domain.ingredientdomain.IngredientRepository;
 import com.example.demo.domain.pizzadomain.Pizza;
 import com.example.demo.domain.pizzadomain.PizzaIngredientProjection;
 import com.example.demo.domain.pizzadomain.PizzaProjection;
 import com.example.demo.domain.pizzadomain.PizzaRepositoryGeneral;
-import com.example.demo.domain.pizzadomain.PizzaRepositoryReadable;
-import com.example.demo.domain.pizzadomain.PizzaRepositoryWritable;
 import com.example.demo.domain.pizzadomain.PizzaService;
 // import com.example.demo.dto.commentdtos.CommentDTO;
 // import com.example.demo.dto.commentdtos.CreateCommentDTO;
@@ -30,10 +29,10 @@ import org.springframework.stereotype.Service;
 public class PizzaApplicationImp implements PizzaApplication {
            
     private final PizzaRepositoryGeneral pizzaRepository;
-    // private final IngredientRepository ingredientRepository;
+    private final IngredientRepositoryGeneral ingredientRepository;
 
     @Autowired
-    public PizzaApplicationImp(final PizzaRepositoryGeneral pizzaRepository, final IngredientRepository ingredientRepository) {
+    public PizzaApplicationImp(final PizzaRepositoryGeneral pizzaRepository, final IngredientRepositoryGeneral ingredientRepository) {
         this.pizzaRepository = pizzaRepository;
         this.ingredientRepository = ingredientRepository;
     }
@@ -70,14 +69,14 @@ public class PizzaApplicationImp implements PizzaApplication {
         this.pizzaRepository.delete(pizza);
     }
 
-    @Override
-    public CommentDTO addComment(UUID pizzaId, CreateCommentDTO commentdto) {
-        Pizza pizza = this.pizzaRepository.findById(pizzaId).orElseThrow();
-        Comment comment = CommentService.create(commentdto);
-        pizza.addComment(comment);
-        this.pizzaRepository.update(pizza);
-        return CommentService.createDTO(comment);
-    }
+    // @Override
+    // public CommentDTO addComment(UUID pizzaId, CreateCommentDTO commentdto) {
+    //     Pizza pizza = this.pizzaRepository.findById(pizzaId).orElseThrow();
+    //     Comment comment = CommentService.create(commentdto);
+    //     pizza.addComment(comment);
+    //     this.pizzaRepository.update(pizza);
+    //     return CommentService.createDTO(comment);
+    // }
 
     @Override
     public void removeIngredient(UUID id, UUID ingredientId) {
