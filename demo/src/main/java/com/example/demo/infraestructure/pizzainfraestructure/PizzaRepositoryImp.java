@@ -7,8 +7,8 @@ import java.util.UUID;
 import com.example.demo.domain.pizzadomain.Pizza;
 import com.example.demo.domain.pizzadomain.PizzaIngredientProjection;
 import com.example.demo.domain.pizzadomain.PizzaProjection;
-import com.example.demo.domain.pizzadomain.PizzaRepositoryReadable;
-import com.example.demo.domain.pizzadomain.PizzaRepositoryWritable;
+import com.example.demo.domain.pizzadomain.PizzaRepositoryGeneral;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -16,7 +16,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class PizzaRepositoryImp implements PizzaRepositoryReadable, PizzaRepositoryWritable{
+public class PizzaRepositoryImp implements PizzaRepositoryGeneral {
     
    private final PizzaJPARepository pizzaJPARepository;
    
