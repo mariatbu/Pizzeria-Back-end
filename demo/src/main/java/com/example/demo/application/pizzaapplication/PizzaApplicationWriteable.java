@@ -1,6 +1,6 @@
 package com.example.demo.application.pizzaapplication;
 
-import java.util.List;
+
 import java.util.UUID;
 
 
@@ -11,7 +11,7 @@ import com.example.demo.domain.pizzadomain.PizzaProjection;
 import com.example.demo.dto.pizzadtos.CreateOrUpdatePizzaDTO;
 import com.example.demo.dto.pizzadtos.PizzaDTO;
 
-public interface PizzaApplication {
+public interface PizzaApplicationWriteable {
     
     public PizzaDTO add(CreateOrUpdatePizzaDTO dto);
 
@@ -27,7 +27,7 @@ public interface PizzaApplication {
 
     public PizzaDTO addIngredient(UUID id, UUID ingredientId);
 
-    public List<PizzaProjection> getAll(String name, int page, int size);
+    
 
     public PizzaIngredientProjection getPizzaInfo(UUID id);
 

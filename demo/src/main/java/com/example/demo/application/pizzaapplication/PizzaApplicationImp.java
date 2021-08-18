@@ -21,12 +21,13 @@ import com.example.demo.dto.pizzadtos.PizzaDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 
 
 @Service
-public class PizzaApplicationImp implements PizzaApplication {
+public class PizzaApplicationImp implements PizzaApplicationGeneral {
            
     private final PizzaRepositoryGeneral pizzaRepository;
     private final IngredientRepositoryGeneral ingredientRepository;
@@ -37,6 +38,7 @@ public class PizzaApplicationImp implements PizzaApplication {
         this.ingredientRepository = ingredientRepository;
     }
 
+    @Transactional
     @Override
     public PizzaDTO add(CreateOrUpdatePizzaDTO pizzadto) {
         Pizza pizza = PizzaService.create(pizzadto);
