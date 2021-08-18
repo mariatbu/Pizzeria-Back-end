@@ -4,17 +4,17 @@ import com.example.demo.domain.pizzadomain.Pizza;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
 import javax.persistence.ManyToMany;
 import org.hibernate.annotations.Type;
 import java.util.UUID;
 import java.util.Set;
 import java.util.HashSet;
+import java.math.BigDecimal;
 
 @Entity
 public class Ingredient {
 
-    @Id @GeneratedValue
+    @Id
     @Type (type= "uuid-char")
     public UUID id;
 
@@ -22,7 +22,7 @@ public class Ingredient {
     public String name;
 
     @Column (name = "price", nullable = false)
-    public Double price;
+    public BigDecimal price;
 
     public @ManyToMany (mappedBy = "ingredients") Set<Pizza> pizzas = new HashSet<>();
 
