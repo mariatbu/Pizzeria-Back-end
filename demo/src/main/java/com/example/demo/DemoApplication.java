@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 @SpringBootApplication
 public class DemoApplication {
 
-	public static final Logger logger = LogManager.getLogger(DemoApplication.class.getName());
+	//public static final Logger logger = LogManager.getLogger(DemoApplication.class.getName());
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}

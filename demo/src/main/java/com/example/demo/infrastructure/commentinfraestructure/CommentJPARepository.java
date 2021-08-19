@@ -16,7 +16,7 @@ public interface CommentJPARepository extends JpaRepository <Comment, UUID>{
     @Query ("""
     Select c.id as id, c.text as text, 
     c.rating as rating, c.date as date 
-    From Comment c Where (:name is NULL OR name LIKE %:name%)""")
+    From Comment c Where (:date is NULL OR date LIKE %:date%)""")
     List <CommentProjection> findByCriteria(
         @Param ("date") Date date,
         Pageable pageable

@@ -11,13 +11,15 @@ import com.example.demo.domain.userdomain.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Repository;
 
-public class UserJPARepositoryImpl implements UserRepository {
+@Repository
+public class UserRepositoryImpl implements UserRepository {
 
     private final UserJPARepository userJPARepository;
 
     @Autowired
-    public UserJPARepositoryImpl(final UserJPARepository userJPARepository){
+    public UserRepositoryImpl(final UserJPARepository userJPARepository){
         this.userJPARepository = userJPARepository;
     }
     @Override

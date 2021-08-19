@@ -14,11 +14,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 
-public class CommentJPARepositoryImpl implements CommentRepositoryReader, CommentRepositoryWriter{
+public class CommentRepositoryImpl implements CommentRepositoryReader, CommentRepositoryWriter{
     private final CommentJPARepository commentJPARepository;
 
     @Autowired
-    public CommentJPARepositoryImpl(final CommentJPARepository commentJPARepository){
+    public CommentRepositoryImpl(final CommentJPARepository commentJPARepository){
         this.commentJPARepository = commentJPARepository;
     }
     @Override

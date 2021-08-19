@@ -10,10 +10,11 @@ import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
 import com.example.demo.dto.userDTO.UserDTO;
 import com.example.demo.domain.userdomain.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+@Service
 public class UserApplicationImpl implements UserApplication {
 
     private static final Logger logger = LogManager.getLogger(DemoApplication.class.getName());
@@ -23,11 +24,12 @@ public class UserApplicationImpl implements UserApplication {
     public UserApplicationImpl(final UserRepository userRepository){
         this.userRepository = userRepository;
     }
+
     @Override
     public UserDTO add(CreateOrUpdateUserDTO dto) {
         User user = UserService.create(dto);
         this.userRepository.add(user);
-        DemoApplication.logger.info("Usuario creado");
+        //logger.info("Usuario creado");
         return UserService.createDTO(user);
     }
 

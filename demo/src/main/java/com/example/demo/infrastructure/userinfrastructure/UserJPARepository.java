@@ -14,7 +14,7 @@ public interface UserJPARepository extends JpaRepository <User, UUID> {
     @Query ("""
     Select u.id as id, u.name as name, 
     u.lastName as lastName, u.email as email 
-    From User u Where (:date is NULL OR date LIKE %:date%)""")
+    From User u Where (:name is NULL OR name LIKE %:name%)""")
     List <UserProjection> findByCriteria(
         @Param ("name") String name,
         Pageable pageable
