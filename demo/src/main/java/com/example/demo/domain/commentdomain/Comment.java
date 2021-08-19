@@ -1,5 +1,7 @@
 package com.example.demo.domain.commentdomain;
 
+import java.math.BigDecimal;
+import java.util.Date;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -16,9 +18,9 @@ public class Comment {
     @Column (nullable = false)
     public String text;
     @Column (nullable = false)
-    public float rating;
+    public BigDecimal rating;
     @Column (nullable = false)
-    public String date;
+    public Date date;
     @Column (nullable = false)
     @Type (type = "uuid-char")
     public UUID user;
