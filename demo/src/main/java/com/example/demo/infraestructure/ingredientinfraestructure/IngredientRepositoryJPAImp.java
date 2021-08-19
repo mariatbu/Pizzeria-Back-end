@@ -6,19 +6,16 @@ import java.util.UUID;
 
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.ingredientdomain.IngredientProjection;
-import com.example.demo.domain.ingredientdomain.IngredientRepositoryReadable;
-import com.example.demo.domain.ingredientdomain.IngredientRepositoryWritable;
+import com.example.demo.domain.ingredientdomain.IngredientRepository;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class IngredientRepositoryJPAImp implements IngredientRepositoryWritable, IngredientRepositoryReadable {
+public class IngredientRepositoryJPAImp implements IngredientRepository {
 
     private final IngredientRepositoryJPA ingredientRepositoryJPA;
 

@@ -10,8 +10,10 @@ import com.example.demo.domain.ingredientdomain.IngredientProjection;
 import com.example.demo.domain.ingredientdomain.IngredientRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.modelmapper.ModelMapper;
 
+@Service
 public class IngredientApplicationImp implements IngredientApplication{
 
     private final IngredientRepository ingredientRepository;
@@ -20,34 +22,38 @@ public class IngredientApplicationImp implements IngredientApplication{
     @Autowired
     public IngredientApplicationImp(final IngredientRepository ingredientRepository){
         this.ingredientRepository = ingredientRepository;
-        this.modelMapper = new ModelMapper();
+        this.modelMapper = new ModelMapper(); //TODO: no instanciar aquí hablar con Juan Carlos
     }
 
     @Override
     public IngredientDTO add(CreateUpdateIngredientDTO dto) {
-        IngredientDTO  ingredientDTO = this.modelMapper.map(dto, IngredientDTO.class);
-        ingredientDTO.setId(UUID.randomUUID());
-        return ingredientDTO;
+        // Ingredient  ingredient= this.modelMapper.map(dto, Ingredient.class);
+        // ingredient.setId(UUID.randomUUID());
+        // ingredient.validate();
+        // this.ingredientRepository.add(ingredient);
+        // return this.modelMapper.map(ingredient,IngredientDTO.class);  
+        return null;    
     }
 
     @Override
     public IngredientDTO get(UUID id) {
-        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
-        return this.modelMapper.map(ingredient, IngredientDTO.class);
+        /*Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        return this.modelMapper.map(ingredient, IngredientDTO.class);*/
+        return null;
     }
 
     @Override
     public void update(UUID id, CreateUpdateIngredientDTO dto) {
-        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        /*Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
         ingredient.setName(dto.getName());
         ingredient.setPrice(dto.getPrice());
-        this.ingredientRepository.update(ingredient);
+        this.ingredientRepository.update(ingredient);*/
     }
 
     @Override
     public void delete(UUID id) {
-        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
-        this.ingredientRepository.delete(ingredient);
+        /*Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        this.ingredientRepository.delete(ingredient);*/
         
     }
 
