@@ -7,51 +7,53 @@ import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
 import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.ingredientdomain.IngredientProjection;
-import com.example.demo.domain.ingredientdomain.IngredientRepositoryReadable;
-import com.example.demo.domain.ingredientdomain.IngredientRepositoryWritable;
+import com.example.demo.domain.ingredientdomain.IngredientRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.modelmapper.ModelMapper;
 
-public class IngredientApplicationImp implements IngredientApplicationReadable, IngredientApplicationWritable{
+public class IngredientApplicationImp implements IngredientApplication{
 
-    private final IngredientRepositoryReadable ingredientRepositoryReadable;
-    private final IngredientRepositoryWritable ingredientRepositoryWritable;
+    private final IngredientRepository ingredientRepository;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public IngredientApplicationImp(final IngredientRepositoryReadable ingredientRepositoryReadable, final IngredientRepositoryWritable ingredientRepositoryWritable){
-        this.ingredientRepositoryWritable = ingredientRepositoryWritable;
-        this.ingredientRepositoryReadable = ingredientRepositoryReadable;
+    public IngredientApplicationImp(final IngredientRepository ingredientRepository){
+        this.ingredientRepository = ingredientRepository;
+        this.modelMapper = new ModelMapper();
     }
 
     @Override
     public IngredientDTO add(CreateUpdateIngredientDTO dto) {
-        Ingredient ingredient = IngredientService.create(dto);
-        this.ingredientRepositoryWritable.add(ingredient);
-        return IngredientService.createDTO(ingredient);
+        IngredientDTO  ingredientDTO = this.modelMapper.map(dto, IngredientDTO.class);
+        ingredientDTO.setId(UUID.randomUUID());
+        return ingredientDTO;
     }
 
     @Override
     public IngredientDTO get(UUID id) {
-        Ingredient ingredient = this.ingredientRepositoryWritable.findById(id).orElseThrow();
-        return IngredientService.createDTO(ingredient);
+        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        return this.modelMapper.map(ingredient, IngredientDTO.class);
     }
 
     @Override
-    public void update(UUID id, CreateUpdateIngredientDTO dtos) {
-        // TODO Auto-generated method stub
-        
+    public void update(UUID id, CreateUpdateIngredientDTO dto) {
+        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        ingredient.setName(dto.getName());
+        ingredient.setPrice(dto.getPrice());
+        this.ingredientRepository.update(ingredient);
     }
 
     @Override
     public void delete(UUID id) {
-        // TODO Auto-generated method stub
+        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        this.ingredientRepository.delete(ingredient);
         
     }
 
     @Override
     public List<IngredientProjection> getAll(String name, int page, int size) {
-        // TODO Auto-generated method stub
-        return null;
+        return this.ingredientRepository.getAll(name, page, size);
     }
     
 }

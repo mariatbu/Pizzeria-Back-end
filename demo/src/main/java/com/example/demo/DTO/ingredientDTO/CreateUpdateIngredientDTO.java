@@ -2,7 +2,11 @@ package com.example.demo.DTO.ingredientDTO;
 
 import java.math.BigDecimal;
 
-public class CreateUpdateIngredientDTO {
-    public String name;
-    public BigDecimal price;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+public @Getter @Setter @NoArgsConstructor class CreateUpdateIngredientDTO {
+    private String name;
+    private BigDecimal price;
 }

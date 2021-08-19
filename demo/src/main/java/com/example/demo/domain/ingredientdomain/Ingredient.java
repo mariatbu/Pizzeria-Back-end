@@ -1,29 +1,41 @@
 package com.example.demo.domain.ingredientdomain;
 
-import com.example.demo.domain.pizzadomain.Pizza;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import org.hibernate.annotations.Type;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.UUID;
-import java.util.Set;
-import java.util.HashSet;
 import java.math.BigDecimal;
 
 @Entity
-public class Ingredient {
+public @NoArgsConstructor @Getter @Setter class Ingredient {
 
     @Id
     @Type (type= "uuid-char")
-    public UUID id;
+    private UUID id;
 
     @Column (name = "name", nullable = false, unique = true)
-    public String name;
+    private String name;
 
     @Column (name = "price", nullable = false)
-    public BigDecimal price;
-
-    public @ManyToMany (mappedBy = "ingredients") Set<Pizza> pizzas = new HashSet<>();
-
+    private BigDecimal price;
+    
+    @Override
+    public boolean equals(Object obj)    {
+        if (!(obj instanceof Ingredient)) {
+            return false;
+        }
+        Ingredient tmp = (Ingredient)obj;
+        return tmp.id.equals(this.id);
+    }
+   
+    @Override
+    public int hashCode() {
+        return this.id.toString().hashCode();
+    }
 }
