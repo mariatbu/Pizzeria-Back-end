@@ -27,19 +27,17 @@ public class IngredientApplicationImp implements IngredientApplication{
 
     @Override
     public IngredientDTO add(CreateUpdateIngredientDTO dto) {
-        // Ingredient  ingredient= this.modelMapper.map(dto, Ingredient.class);
-        // ingredient.setId(UUID.randomUUID());
-        // ingredient.validate();
-        // this.ingredientRepository.add(ingredient);
-        // return this.modelMapper.map(ingredient,IngredientDTO.class);  
-        return null;    
+        Ingredient  ingredient= this.modelMapper.map(dto, Ingredient.class);
+        ingredient.setId(UUID.randomUUID());
+        //ingredient.validate();
+        this.ingredientRepository.add(ingredient);
+        return this.modelMapper.map(ingredient,IngredientDTO.class);  
     }
 
     @Override
     public IngredientDTO get(UUID id) {
-        /*Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
-        return this.modelMapper.map(ingredient, IngredientDTO.class);*/
-        return null;
+        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        return this.modelMapper.map(ingredient, IngredientDTO.class);
     }
 
     @Override
