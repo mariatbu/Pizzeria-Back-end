@@ -17,15 +17,20 @@ public @NoArgsConstructor @Getter @Setter class User {
     @Id
     @Type (type = "uuid-char")
     private UUID id;
+
     @Column (nullable = false)
     private String name;
+
     @Column (nullable = false)
     private String lastName;
+
     @Column (nullable = false, unique = true)
     private String email;
+
     @Column (nullable = false)
     private String password;
-    @Column (nullable = false)
+
+    
     private Rol rol;
 
 }

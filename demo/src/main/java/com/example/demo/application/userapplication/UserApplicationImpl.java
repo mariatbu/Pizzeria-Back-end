@@ -3,7 +3,7 @@ package com.example.demo.application.userapplication;
 import java.util.List;
 import java.util.UUID;
 
-import com.example.demo.DemoApplication;
+
 import com.example.demo.domain.userdomain.User;
 import com.example.demo.domain.userdomain.UserProjection;
 import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
@@ -11,13 +11,13 @@ import com.example.demo.dto.userDTO.UserDTO;
 import com.example.demo.domain.userdomain.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class UserApplicationImpl implements UserApplication {
 
-    private static final Logger logger = LogManager.getLogger(DemoApplication.class.getName());
     private final UserRepository userRepository;
     
     @Autowired
@@ -29,7 +29,7 @@ public class UserApplicationImpl implements UserApplication {
     public UserDTO add(CreateOrUpdateUserDTO dto) {
         User user = UserService.create(dto);
         this.userRepository.add(user);
-        //logger.info("Usuario creado");
+        log.info("Usuario: " +user.getName()); 
         return UserService.createDTO(user);
     }
 
@@ -42,10 +42,10 @@ public class UserApplicationImpl implements UserApplication {
     @Override
     public void update(UUID id, CreateOrUpdateUserDTO dto) {
         User user = this.userRepository.findByID(id).orElseThrow();
-        /*user.setName(dto.;
-        user.lastName = dto.lastName;
-        user.email = dto.email;
-        user.password = dto.password;*/
+        user.setName(dto.getName());
+        user.setLastName(dto.getLastName());
+        user.setEmail(dto.getEmail());
+        user.setPassword(dto.getPassword());
         this.userRepository.update(user);
         
     }

@@ -10,4 +10,7 @@ public interface UserProjection {
     String getLastName();
 
     String getEmail();
+
+    String getPassword();
+    
 }

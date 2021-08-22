@@ -10,18 +10,22 @@ public class UserService {
 
     public static User create(CreateOrUpdateUserDTO dto) {
         User user = new User();
-        /*user.name = dto.name;
-        user.lastName = dto.lastName;
-        user.email = dto.email;
-        user.id = UUID.randomUUID();*/
+        user.setName(dto.getName());
+        user.setLastName(dto.getLastName());
+        user.setEmail(dto.getEmail());
+        user.setPassword(dto.getPassword());
+        user.setRol(dto.getRol());
+        user.setId(UUID.randomUUID());
         return user;
     }
     public static UserDTO createDTO(User user){
         UserDTO dto = new UserDTO();
-        /*dto.id = user.id;
-        dto.name = user.name;
-        dto.lastName = user.lastName;
-        dto.email = user.email;*/
+        dto.setName(user.getName());
+        dto.setLastName(user.getLastName());
+        dto.setEmail(user.getEmail());
+        dto.setPassword(user.getPassword());
+        dto.setRol(user.getRol());
+        dto.setId(UUID.randomUUID());
         return dto;
     }
     

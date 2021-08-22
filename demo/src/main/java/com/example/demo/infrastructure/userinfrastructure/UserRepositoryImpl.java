@@ -13,6 +13,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Repository;
 
+
+
+
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
@@ -24,7 +27,8 @@ public class UserRepositoryImpl implements UserRepository {
     }
     @Override
     public void add(User user) {
-        this.userJPARepository.save(user);       
+        this.userJPARepository.save(user);   
+           
     }
 
     @Override
