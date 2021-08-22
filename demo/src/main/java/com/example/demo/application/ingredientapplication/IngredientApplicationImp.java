@@ -37,7 +37,8 @@ public class IngredientApplicationImp implements IngredientApplication{
     @Override
     public IngredientDTO get(UUID id) {
         Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
-        return this.modelMapper.map(ingredient, IngredientDTO.class);
+        IngredientDTO ingredientDTO = this.modelMapper.map(ingredient, IngredientDTO.class);
+        return ingredientDTO;
     }
 
     @Override
@@ -50,8 +51,8 @@ public class IngredientApplicationImp implements IngredientApplication{
 
     @Override
     public void delete(UUID id) {
-        /*Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
-        this.ingredientRepository.delete(ingredient);*/
+        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        this.ingredientRepository.delete(ingredient);
         
     }
 

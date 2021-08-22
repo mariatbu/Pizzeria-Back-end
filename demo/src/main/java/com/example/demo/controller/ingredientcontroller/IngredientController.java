@@ -3,6 +3,7 @@ package com.example.demo.controller.ingredientcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,5 +38,10 @@ public class IngredientController {
     public ResponseEntity<?> get(@PathVariable UUID id){
         IngredientDTO ingredientDTO = this.ingredientApplication.get(id);
         return ResponseEntity.ok(ingredientDTO);
+    }
+
+    @DeleteMapping(path = "/{id}")
+    void delete(@PathVariable UUID id) {
+        this.ingredientApplication.delete(id);
     }
 }
