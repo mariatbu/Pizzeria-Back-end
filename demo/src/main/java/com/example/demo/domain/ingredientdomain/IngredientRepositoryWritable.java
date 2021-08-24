@@ -4,9 +4,7 @@ import java.util.UUID;
 
 import com.example.demo.core.FindById;
 
-import java.util.Optional;
-
-public interface IngredientRepositoryWritable extends FindById<Ingredient> {
+public interface IngredientRepositoryWritable extends FindById<Ingredient, UUID> {
 
     public void add(Ingredient ingredient);
 
@@ -14,7 +12,7 @@ public interface IngredientRepositoryWritable extends FindById<Ingredient> {
 
     public void delete(Ingredient ingredient);
 
-    public Optional<Ingredient> findById(UUID id);
+    public boolean exists(String name);
     
 }
 

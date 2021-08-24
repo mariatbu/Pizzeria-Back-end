@@ -22,8 +22,7 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
 
     @Autowired
     public IngredientApplicationImp(final IngredientRepository ingredientRepository, final ModelMapper modelMapper){
-        super((id)->ingredientRepository.findById((UUID) id));
-       // super(null);
+        super((id)->ingredientRepository.findById(id));
         this.ingredientRepository = ingredientRepository;
         this.modelMapper = new ModelMapper(); //TODO: no instanciar aquí hablar con Juan Carlos
     }
@@ -57,11 +56,9 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
 
     @Override
     public void delete(UUID id) {
-        // Ingredient ingredient = this.findById<?>(id, ()->{
-        //     return this.ingredientRepository.findById(id).orElseThrow(()->{throw new NotFoundException();});
-        // });
-        //Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow(()->{throw new NotFoundException();});
-        Ingredient ingredient = this.findById(id);
+        // Ingredient ingredient = new Ingredient();
+        // ingredient.setId(id);
+        Ingredient ingredient = this.findById(id); //PODRÍA ESTAR TIRANDO 2 QUERY
         this.ingredientRepository.delete(ingredient);
     }
 

@@ -3,13 +3,13 @@ package com.example.demo.core.applicationbase;
 import com.example.demo.core.FindById;
 import com.example.demo.core.Exceptions.NotFoundException;
 
-public class ApplicationBase<T, ID> {
-    private FindById<T> findById;
-    public <ID> T findById(ID id){
-        T t = this.findById.getById(id).orElseThrow(()->{throw new NotFoundException();});
+public abstract class ApplicationBase<T, ID> {
+    private FindById<T, ID> findById;
+    protected T findById(ID id){
+        T t = this.findById.findById(id).orElseThrow(()->{throw new NotFoundException();});
         return t;
     }
-    public ApplicationBase(FindById<T> findById){
+    protected ApplicationBase(FindById<T, ID> findById){
         this.findById = findById;
     }
 }

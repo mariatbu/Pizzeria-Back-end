@@ -2,8 +2,8 @@ package com.example.demo.core;
 
 import java.util.Optional;
 
-public interface FindById<T> {
+public interface FindById<T, ID> {
 
-    public <ID> Optional<T> getById(ID id);
+    public Optional<T> findById(ID id);
 
 }

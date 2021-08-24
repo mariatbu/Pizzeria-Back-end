@@ -46,4 +46,9 @@ public class IngredientRepositoryJPAImp implements IngredientRepository {
             PageRequest.of(page, size, Sort.by("name").descending())
             );
     }
+
+    @Override
+    public boolean exists(String name) {
+        return this.ingredientRepositoryJPA.exists(name);
+    }
 }

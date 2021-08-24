@@ -46,8 +46,4 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
         return this.id.toString().hashCode();
     }
 
-    // protected <T, ID> Optional<T> findById(ID id, FindById<T, ID> findById){
-    //     return findById.getById(id);
-    // }
-
 }
