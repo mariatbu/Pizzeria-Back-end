@@ -9,6 +9,9 @@ import com.example.demo.domain.userdomain.UserProjection;
 import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
 import com.example.demo.dto.userDTO.UserDTO;
 import com.example.demo.domain.userdomain.UserRepository;
+
+import org.mindrot.jbcrypt.BCrypt;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,24 +22,33 @@ import lombok.extern.slf4j.Slf4j;
 public class UserApplicationImpl implements UserApplication {
 
     private final UserRepository userRepository;
+    private final ModelMapper modelMapper;
     
     @Autowired
     public UserApplicationImpl(final UserRepository userRepository){
         this.userRepository = userRepository;
+        this.modelMapper = new ModelMapper();
     }
 
     @Override
     public UserDTO add(CreateOrUpdateUserDTO dto) {
-        User user = UserService.create(dto);
+        User user = this.modelMapper.map(dto, User.class);
+        user.setId(UUID.randomUUID());
+        user.validate();
         this.userRepository.add(user);
-        log.info("Usuario: " +user.getName()); 
-        return UserService.createDTO(user);
+        log.info("Creado usuario: " +user.getName()); 
+        UserDTO userDTO = this.modelMapper.map(user,UserDTO.class);
+        return userDTO;
     }
 
     @Override
     public UserDTO get(UUID id) {
         User user = this.userRepository.findByID(id).orElseThrow();
-        return UserService.createDTO(user);
+        System.out.println(user.getPassword());
+        /* if(BCrypt.checkpw("1234",user.getPassword())){
+            System.out.println("contraseña correcta");
+        } */
+        return this.modelMapper.map(user, UserDTO.class);
     }
 
     @Override
@@ -45,8 +57,9 @@ public class UserApplicationImpl implements UserApplication {
         user.setName(dto.getName());
         user.setLastName(dto.getLastName());
         user.setEmail(dto.getEmail());
-        user.setPassword(dto.getPassword());
+        user.setPassword(BCrypt.hashpw(dto.getPassword(), BCrypt.gensalt()));
         this.userRepository.update(user);
+        log.info("Actualizado usuario: " +user.getName()); 
         
     }
 
@@ -54,6 +67,7 @@ public class UserApplicationImpl implements UserApplication {
     public void delete(UUID id) {
         User user = this.userRepository.findByID(id).orElseThrow();
         this.userRepository.delete(user);
+        log.info("Borrado usuario: " +user.getName()); 
         
     }
 

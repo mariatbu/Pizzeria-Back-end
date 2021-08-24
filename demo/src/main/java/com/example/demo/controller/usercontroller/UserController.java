@@ -6,6 +6,7 @@ import com.example.demo.application.userapplication.UserApplication;
 import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
 import com.example.demo.dto.userDTO.UserDTO;
 
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -33,13 +35,17 @@ public class UserController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
     public ResponseEntity<?> get(@PathVariable UUID id){
         UserDTO userDTO = this.userApplication.get(id);
+        
         return ResponseEntity.ok(userDTO);
     }
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> create(@RequestBody final CreateOrUpdateUserDTO dto) {
+        //BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(10);
+        //dto.setPassword(bCryptPasswordEncoder.encode(dto.getPassword()));
+        dto.setPassword(BCrypt.hashpw(dto.getPassword(), BCrypt.gensalt()));
         UserDTO userDTO = this.userApplication.add(dto);
-        return ResponseEntity.status(201).body(userDTO);
+        return ResponseEntity.status(201).body("Usuario creado");
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
@@ -52,4 +58,12 @@ public class UserController {
         this.userApplication.delete(id);
     }
     
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> getAll(
+        @RequestParam(required = false) String name,
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+    ){
+        return ResponseEntity.status(200).body(this.userApplication.getAll(name, page, size));
+    }
 }

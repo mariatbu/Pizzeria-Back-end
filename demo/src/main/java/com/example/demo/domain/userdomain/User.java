@@ -1,6 +1,6 @@
 package com.example.demo.domain.userdomain;
 
-import java.util.UUID;
+
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,29 +8,35 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
-import org.hibernate.annotations.Type;
+import com.example.demo.core.EntityBase;
+
 
 @Entity
-public @NoArgsConstructor @Getter @Setter class User {
-    @Id
-    @Type (type = "uuid-char")
-    private UUID id;
+public @NoArgsConstructor @Getter @Setter class User extends EntityBase{
 
-    @Column (nullable = false)
+    @Column
+    @NotBlank 
     private String name;
 
-    @Column (nullable = false)
+    @Column
+    @NotBlank  
     private String lastName;
 
-    @Column (nullable = false, unique = true)
+    @Column 
+    @NotBlank
+    @Email
     private String email;
 
-    @Column (nullable = false)
+    @Column 
+    @NotBlank 
     private String password;
 
-    
-    private Rol rol;
+    @Column
+    @NotNull
+    private Rol rol = Rol.ROL_USER;
 
 }

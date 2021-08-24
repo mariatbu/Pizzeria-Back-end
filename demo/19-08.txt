@@ -1,3 +1,0 @@
-cambiar parametros a private
-poner anotacion @getter@setter en clase base, dto
-meter ModelMapper en capa aplicacion
