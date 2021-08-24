@@ -27,24 +27,9 @@ public class IngredientRepositoryJPAImp implements IngredientRepository {
     public void add(Ingredient ingredient){
         this.ingredientRepositoryJPA.save(ingredient);
     }
-    
-    public void update(Ingredient ingredient){
-        this.ingredientRepositoryJPA.save(ingredient);
-    }
-
-    public void delete(Ingredient ingredient){
-        this.ingredientRepositoryJPA.delete(ingredient);
-    }
 
     public Optional<Ingredient> findById(UUID id){
         return this.ingredientRepositoryJPA.findById(id);
-    }
-
-    public List<IngredientProjection> getAll(String name, int page, int size){
-        return this.ingredientRepositoryJPA.findByCriteria(
-            name, 
-            PageRequest.of(page, size, Sort.by("name").descending())
-            );
     }
 
     @Override

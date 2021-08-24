@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 @Entity
 public @NoArgsConstructor @Getter @Setter class Ingredient extends EntityBase {
    
-    @NotBlank(message = "No cojas los melocotones gordos")
+    @NotBlank
     @Column (name = "name", nullable = false, unique = true)
     private String name;
 

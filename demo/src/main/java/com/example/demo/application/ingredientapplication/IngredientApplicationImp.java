@@ -21,22 +21,20 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
     private final ModelMapper modelMapper;
 
     @Autowired
-    public IngredientApplicationImp(final IngredientRepository ingredientRepository, final ModelMapper modelMapper){
-        super((id)->ingredientRepository.findById(id));
+    public IngredientApplicationImp(final IngredientRepository ingredientRepository, final ModelMapper modelMapper) {
+        super((id) -> ingredientRepository.findById(id));
         this.ingredientRepository = ingredientRepository;
-        this.modelMapper = new ModelMapper(); //TODO: no instanciar aquí hablar con Juan Carlos
+        this.modelMapper = modelMapper;
     }
 
     @Override
     public IngredientDTO add(CreateUpdateIngredientDTO dto) {
-        Ingredient  ingredient= this.modelMapper.map(dto, Ingredient.class);
+        Ingredient ingredient = this.modelMapper.map(dto, Ingredient.class);
         ingredient.setId(UUID.randomUUID());
-        //TODO: validar que la pizza no existe con un findByName (validar que no está el nombre duplicado)
-        //No puedo usar orElseThrow porque va al revés y no quiero devolver null
-        ingredient.validate();
+        ingredient.validate("name", ingredient.getName(), (name) -> this.ingredientRepository.exists(name));
         this.ingredientRepository.add(ingredient);
-        //log ok
-        return this.modelMapper.map(ingredient,IngredientDTO.class);  
+        // log ok
+        return this.modelMapper.map(ingredient, IngredientDTO.class);
     }
 
     @Override
@@ -46,25 +44,8 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
         return ingredientDTO;
     }
 
-    @Override
-    public void update(UUID id, CreateUpdateIngredientDTO dto) {
-        Ingredient ingredient =  this.findById(id);
-        ingredient.setName(dto.getName());
-        ingredient.setPrice(dto.getPrice());
-        this.ingredientRepository.update(ingredient);
-    }
 
-    @Override
-    public void delete(UUID id) {
-        // Ingredient ingredient = new Ingredient();
-        // ingredient.setId(id);
-        Ingredient ingredient = this.findById(id); //PODRÍA ESTAR TIRANDO 2 QUERY
-        this.ingredientRepository.delete(ingredient);
-    }
 
-    @Override
-    public List<IngredientProjection> getAll(String name, int page, int size) {
-        return this.ingredientRepository.getAll(name, page, size);
-    }
-    
+
+
 }

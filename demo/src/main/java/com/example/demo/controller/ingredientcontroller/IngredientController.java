@@ -1,21 +1,22 @@
 package com.example.demo.controller.ingredientcontroller;
 
+import java.util.UUID;
+
+import javax.validation.Valid;
+
+import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
+import com.example.demo.DTO.ingredientDTO.IngredientDTO;
+import com.example.demo.application.ingredientapplication.IngredientApplication;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.demo.application.ingredientapplication.IngredientApplication;
-import com.example.demo.DTO.ingredientDTO.*;
-
-import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/ingredients")
@@ -42,16 +43,4 @@ public class IngredientController {
         return ResponseEntity.ok(ingredientDTO);
     }
 
-    // @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
-    // public ResponseEntity<?> update(@PathVariable UUID id, @RequestBody CreateOrUpdateIngredientDTO dto) {
-    //     dto.validate();
-    //     this.ingredientApplication.update(id, dto);
-    //     return ResponseEntity.ok(dto);
-    // }
-
-
-    @DeleteMapping(path = "/{id}")
-    void delete(@PathVariable UUID id) {
-        this.ingredientApplication.delete(id);
-    }
 }
