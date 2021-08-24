@@ -6,7 +6,6 @@ import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -19,7 +18,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-public  @NoArgsConstructor @Getter @Setter class Comment extends EntityBase{
+public @NoArgsConstructor @Getter @Setter class Comment extends EntityBase{
     
 
     @Column 
@@ -27,11 +26,11 @@ public  @NoArgsConstructor @Getter @Setter class Comment extends EntityBase{
     public String text;
 
     @Column 
-    @NotBlank
+    @NotNull
     public BigDecimal rating;
 
-    @Column 
-    @NotBlank
+    @Column
+    @NotNull
     public Date date;
 
     @Column 

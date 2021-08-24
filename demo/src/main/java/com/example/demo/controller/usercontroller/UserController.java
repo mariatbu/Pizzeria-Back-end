@@ -56,6 +56,7 @@ public class UserController {
     @DeleteMapping(path = "/{id}")
     void delete(@PathVariable UUID id) {
         this.userApplication.delete(id);
+        //ResponseEntity.ok("Borrado");
     }
     
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)

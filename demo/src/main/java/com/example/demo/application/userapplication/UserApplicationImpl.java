@@ -38,6 +38,7 @@ public class UserApplicationImpl implements UserApplication {
         this.userRepository.add(user);
         log.info("Creado usuario: " +user.getName()); 
         UserDTO userDTO = this.modelMapper.map(user,UserDTO.class);
+        //devolver JWT
         return userDTO;
     }
 
@@ -75,5 +76,6 @@ public class UserApplicationImpl implements UserApplication {
     public List<UserProjection> getAll(String name, int page, int size) {
         return this.userRepository.getAll(name, page, size);
     }
+    
     
 }

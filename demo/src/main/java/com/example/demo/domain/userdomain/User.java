@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -38,5 +39,8 @@ public @NoArgsConstructor @Getter @Setter class User extends EntityBase{
     @Column
     @NotNull
     private Rol rol = Rol.ROL_USER;
+
+    /* @Transient
+    private String token; */
 
 }
