@@ -45,7 +45,7 @@ public class UserController {
         //dto.setPassword(bCryptPasswordEncoder.encode(dto.getPassword()));
         dto.setPassword(BCrypt.hashpw(dto.getPassword(), BCrypt.gensalt()));
         UserDTO userDTO = this.userApplication.add(dto);
-        return ResponseEntity.status(201).body("Usuario creado");
+        return ResponseEntity.status(201).body(userDTO);
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")

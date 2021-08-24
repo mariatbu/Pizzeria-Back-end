@@ -2,9 +2,8 @@ package com.example.demo.dto.commentDTO;
 
 import java.math.BigDecimal;
 
-public class CreateOrUpdateCommentDTO {
+public class CreateCommentDTO {
     public String text;
-    public int score;
     public BigDecimal rating;
 }
 
