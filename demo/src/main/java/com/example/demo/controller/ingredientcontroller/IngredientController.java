@@ -3,6 +3,7 @@ package com.example.demo.controller.ingredientcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,7 @@ public class IngredientController {
     
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> add(@RequestBody final CreateUpdateIngredientDTO dto){
+        
         IngredientDTO ingredientDTO = this.ingredientApplication.add(dto);
         return ResponseEntity.status(201).body(ingredientDTO);
     }
@@ -39,6 +41,14 @@ public class IngredientController {
         IngredientDTO ingredientDTO = this.ingredientApplication.get(id);
         return ResponseEntity.ok(ingredientDTO);
     }
+
+    // @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
+    // public ResponseEntity<?> update(@PathVariable UUID id, @RequestBody CreateOrUpdateIngredientDTO dto) {
+    //     dto.validate();
+    //     this.ingredientApplication.update(id, dto);
+    //     return ResponseEntity.ok(dto);
+    // }
+
 
     @DeleteMapping(path = "/{id}")
     void delete(@PathVariable UUID id) {

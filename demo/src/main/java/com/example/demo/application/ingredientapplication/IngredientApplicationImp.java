@@ -5,22 +5,25 @@ import java.util.UUID;
 
 import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
 import com.example.demo.DTO.ingredientDTO.IngredientDTO;
+import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.ingredientdomain.IngredientProjection;
 import com.example.demo.domain.ingredientdomain.IngredientRepository;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.modelmapper.ModelMapper;
 
 @Service
-public class IngredientApplicationImp implements IngredientApplication{
+public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> implements IngredientApplication {
 
     private final IngredientRepository ingredientRepository;
     private final ModelMapper modelMapper;
 
     @Autowired
-    public IngredientApplicationImp(final IngredientRepository ingredientRepository){
+    public IngredientApplicationImp(final IngredientRepository ingredientRepository, final ModelMapper modelMapper){
+        super((id)->ingredientRepository.findById((UUID) id));
+       // super(null);
         this.ingredientRepository = ingredientRepository;
         this.modelMapper = new ModelMapper(); //TODO: no instanciar aquí hablar con Juan Carlos
     }
@@ -29,31 +32,37 @@ public class IngredientApplicationImp implements IngredientApplication{
     public IngredientDTO add(CreateUpdateIngredientDTO dto) {
         Ingredient  ingredient= this.modelMapper.map(dto, Ingredient.class);
         ingredient.setId(UUID.randomUUID());
-        //ingredient.validate();
+        //TODO: validar que la pizza no existe con un findByName (validar que no está el nombre duplicado)
+        //No puedo usar orElseThrow porque va al revés y no quiero devolver null
+        ingredient.validate();
         this.ingredientRepository.add(ingredient);
+        //log ok
         return this.modelMapper.map(ingredient,IngredientDTO.class);  
     }
 
     @Override
     public IngredientDTO get(UUID id) {
-        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        Ingredient ingredient = this.findById(id);
         IngredientDTO ingredientDTO = this.modelMapper.map(ingredient, IngredientDTO.class);
         return ingredientDTO;
     }
 
     @Override
     public void update(UUID id, CreateUpdateIngredientDTO dto) {
-        /*Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        Ingredient ingredient =  this.findById(id);
         ingredient.setName(dto.getName());
         ingredient.setPrice(dto.getPrice());
-        this.ingredientRepository.update(ingredient);*/
+        this.ingredientRepository.update(ingredient);
     }
 
     @Override
     public void delete(UUID id) {
-        Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow();
+        // Ingredient ingredient = this.findById<?>(id, ()->{
+        //     return this.ingredientRepository.findById(id).orElseThrow(()->{throw new NotFoundException();});
+        // });
+        //Ingredient ingredient = this.ingredientRepository.findById(id).orElseThrow(()->{throw new NotFoundException();});
+        Ingredient ingredient = this.findById(id);
         this.ingredientRepository.delete(ingredient);
-        
     }
 
     @Override
