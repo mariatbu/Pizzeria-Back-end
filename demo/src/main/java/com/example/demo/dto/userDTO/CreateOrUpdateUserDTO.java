@@ -11,5 +11,5 @@ public @Getter @Setter @NoArgsConstructor class CreateOrUpdateUserDTO {
     private String lastName;
     private String email;
     private String password;
-    private Rol rol;
+    private Rol rol = Rol.ROL_USER;
 }

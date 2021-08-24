@@ -7,24 +7,39 @@ import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import com.example.demo.core.EntityBase;
 
 import org.hibernate.annotations.Type;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
-public class Comment {
-    @Id
-    @Type (type = "uuid-char")
-    public UUID id;
-    @Column (nullable = false)
+public  @NoArgsConstructor @Getter @Setter class Comment extends EntityBase{
+    
+
+    @Column 
+    @NotBlank
     public String text;
-    @Column (nullable = false)
+
+    @Column 
+    @NotBlank
     public BigDecimal rating;
-    @Column (nullable = false)
+
+    @Column 
+    @NotBlank
     public Date date;
-    @Column (nullable = false)
+
+    @Column 
     @Type (type = "uuid-char")
     public UUID user;
-    @Column (nullable = false)
+
+    @Column
+    @NotNull
     @Type (type = "uuid-char")
     public UUID pizza;
 }

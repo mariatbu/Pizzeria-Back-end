@@ -32,7 +32,7 @@ public @NoArgsConstructor @Getter @Setter class User extends EntityBase{
     private String email;
 
     @Column 
-    @NotBlank 
+    @NotNull
     private String password;
 
     @Column
