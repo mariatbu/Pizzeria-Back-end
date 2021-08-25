@@ -4,4 +4,5 @@ import java.util.List;
 
 public interface UserRepositoryReader {
     public List<UserProjection> getAll(String name, int page, int size);
+    public User findByName(String name);
 }

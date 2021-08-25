@@ -52,4 +52,10 @@ public class UserRepositoryImpl implements UserRepository {
            PageRequest.of(page, size, Sort.by("name").descending())
        );
     }
+
+    @Override
+    public User findByName(String name){
+        return this.userJPARepository.findByName(name);
+
+    }
 }

@@ -34,11 +34,11 @@ public class UserApplicationImpl implements UserApplication {
     public UserDTO add(CreateOrUpdateUserDTO dto) {
         User user = this.modelMapper.map(dto, User.class);
         user.setId(UUID.randomUUID());
+        user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
         user.validate();
         this.userRepository.add(user);
-        log.info("Creado usuario: " +user.getName()); 
+        log.info("User created: " +user.getName()); 
         UserDTO userDTO = this.modelMapper.map(user,UserDTO.class);
-        //devolver JWT
         return userDTO;
     }
 
@@ -60,7 +60,7 @@ public class UserApplicationImpl implements UserApplication {
         user.setEmail(dto.getEmail());
         user.setPassword(BCrypt.hashpw(dto.getPassword(), BCrypt.gensalt()));
         this.userRepository.update(user);
-        log.info("Actualizado usuario: " +user.getName()); 
+        log.info("User Updated: " +user.getName()); 
         
     }
 
@@ -68,13 +68,18 @@ public class UserApplicationImpl implements UserApplication {
     public void delete(UUID id) {
         User user = this.userRepository.findByID(id).orElseThrow();
         this.userRepository.delete(user);
-        log.info("Borrado usuario: " +user.getName()); 
+        log.info("User Deleted: " +user.getName()); 
         
     }
 
     @Override
     public List<UserProjection> getAll(String name, int page, int size) {
         return this.userRepository.getAll(name, page, size);
+    }
+
+    @Override
+    public User findByName(String name){
+        return this.userRepository.findByName(name);
     }
     
     

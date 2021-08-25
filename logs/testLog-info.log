@@ -1,5 +1,0 @@
-2021.08.24 11:54:13 CEST -HV000001: Hibernate Validator 6.2.0.Final
-2021.08.24 11:54:13 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 21840 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end)
-2021.08.24 11:54:13 CEST -No active profile set, falling back to default profiles: default
-2021.08.24 11:54:13 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021.08.24 11:54:13 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'

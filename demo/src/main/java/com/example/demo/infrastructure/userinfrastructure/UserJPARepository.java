@@ -19,5 +19,10 @@ public interface UserJPARepository extends JpaRepository <User, UUID> {
         @Param ("name") String name,
         Pageable pageable
     );
+
+    @Query ("""
+    Select u.id as id, u.name as name, u.rol as rol 
+    From User u Where (name LIKE :name)""")
+    User findByName(String name);
     
 }
