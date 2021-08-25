@@ -31,7 +31,7 @@ public class IngredientController {
 
     
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> add(@RequestBody final CreateUpdateIngredientDTO dto){
+    public ResponseEntity<?> add(@RequestBody @Valid final CreateUpdateIngredientDTO dto){
         
         IngredientDTO ingredientDTO = this.ingredientApplication.add(dto);
         return ResponseEntity.status(201).body(ingredientDTO);

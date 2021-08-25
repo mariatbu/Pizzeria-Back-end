@@ -1,19 +1,20 @@
 package com.example.demo.application.ingredientapplication;
 
-import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
 import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.ingredientdomain.Ingredient;
-import com.example.demo.domain.ingredientdomain.IngredientProjection;
 import com.example.demo.domain.ingredientdomain.IngredientRepository;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> implements IngredientApplication {
 
@@ -33,7 +34,7 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
         ingredient.setId(UUID.randomUUID());
         ingredient.validate("name", ingredient.getName(), (name) -> this.ingredientRepository.exists(name));
         this.ingredientRepository.add(ingredient);
-        // log ok
+        log.info("Ingredient created: " +ingredient.getName()); 
         return this.modelMapper.map(ingredient, IngredientDTO.class);
     }
 
@@ -43,9 +44,5 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
         IngredientDTO ingredientDTO = this.modelMapper.map(ingredient, IngredientDTO.class);
         return ingredientDTO;
     }
-
-
-
-
 
 }

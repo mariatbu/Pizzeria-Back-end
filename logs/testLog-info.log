@@ -1,0 +1,95 @@
+2021.08.25 10:53:55 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 25656 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.25 10:53:55 CEST -No active profile set, falling back to default profiles: default
+2021.08.25 10:53:55 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.25 10:53:55 CEST -Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021.08.25 10:53:55 CEST -Tomcat initialized with port(s): 9090 (http)
+2021.08.25 10:53:55 CEST -Initializing ProtocolHandler ["http-nio-9090"]
+2021.08.25 10:53:55 CEST -Starting service [Tomcat]
+2021.08.25 10:53:55 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.25 10:53:55 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.25 10:53:55 CEST -Root WebApplicationContext: initialization completed in 621 ms
+2021.08.25 10:53:56 CEST -HikariPool-34 - Starting...
+2021.08.25 10:53:56 CEST -HikariPool-34 - Start completed.
+2021.08.25 10:53:56 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.25 10:53:56 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.25 10:53:56 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.25 10:53:56 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.25 10:53:58 CEST -LiveReload server is running on port 35729
+2021.08.25 10:53:58 CEST -Starting ProtocolHandler ["http-nio-9090"]
+2021.08.25 10:53:58 CEST -Tomcat started on port(s): 9090 (http) with context path ''
+2021.08.25 10:53:59 CEST -Started DemoApplication in 4.563 seconds (JVM running for 53834.059)
+2021.08.25 10:53:59 CEST -Condition evaluation unchanged
+2021.08.25 10:58:31 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.25 10:58:31 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 25772 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.25 10:58:31 CEST -No active profile set, falling back to default profiles: default
+2021.08.25 10:58:32 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.25 10:58:32 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.25 10:58:33 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.25 10:58:33 CEST -Finished Spring Data repository scanning in 170 ms. Found 1 JPA repository interfaces.
+2021.08.25 10:58:35 CEST -Tomcat initialized with port(s): 9090 (http)
+2021.08.25 10:58:36 CEST -Initializing ProtocolHandler ["http-nio-9090"]
+2021.08.25 10:58:36 CEST -Starting service [Tomcat]
+2021.08.25 10:58:36 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.25 10:58:36 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.25 10:58:36 CEST -Root WebApplicationContext: initialization completed in 4217 ms
+2021.08.25 10:58:36 CEST -HikariPool-1 - Starting...
+2021.08.25 10:58:37 CEST -HikariPool-1 - Start completed.
+2021.08.25 10:58:37 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.25 10:58:38 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.25 10:58:38 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.25 10:58:38 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.25 10:58:39 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.25 10:58:39 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.25 10:58:43 CEST -LiveReload server is running on port 35729
+2021.08.25 10:58:43 CEST -Starting ProtocolHandler ["http-nio-9090"]
+2021.08.25 10:58:43 CEST -Tomcat started on port(s): 9090 (http) with context path ''
+2021.08.25 10:58:43 CEST -Started DemoApplication in 12.721 seconds (JVM running for 14.752)
+2021.08.25 11:01:40 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.25 11:01:40 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 9344 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.25 11:01:40 CEST -No active profile set, falling back to default profiles: default
+2021.08.25 11:01:40 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.25 11:01:40 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.25 11:01:42 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.25 11:01:43 CEST -Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interfaces.
+2021.08.25 11:01:45 CEST -Tomcat initialized with port(s): 9090 (http)
+2021.08.25 11:01:45 CEST -Initializing ProtocolHandler ["http-nio-9090"]
+2021.08.25 11:01:45 CEST -Starting service [Tomcat]
+2021.08.25 11:01:45 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.25 11:01:46 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.25 11:01:46 CEST -Root WebApplicationContext: initialization completed in 5691 ms
+2021.08.25 11:01:46 CEST -HikariPool-1 - Starting...
+2021.08.25 11:01:47 CEST -HikariPool-1 - Start completed.
+2021.08.25 11:01:47 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.25 11:01:49 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.25 11:01:49 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.25 11:01:50 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.25 11:01:52 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.25 11:01:52 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.25 11:01:58 CEST -LiveReload server is running on port 35729
+2021.08.25 11:01:58 CEST -Starting ProtocolHandler ["http-nio-9090"]
+2021.08.25 11:01:59 CEST -Tomcat started on port(s): 9090 (http) with context path ''
+2021.08.25 11:01:59 CEST -Started DemoApplication in 19.878 seconds (JVM running for 22.774)
+2021.08.25 11:02:45 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.25 11:02:45 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.25 11:02:45 CEST -HikariPool-1 - Shutdown completed.
+2021.08.25 11:02:45 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 9344 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.25 11:02:45 CEST -No active profile set, falling back to default profiles: default
+2021.08.25 11:02:47 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.25 11:02:47 CEST -Finished Spring Data repository scanning in 441 ms. Found 1 JPA repository interfaces.
+2021.08.25 11:02:49 CEST -Tomcat initialized with port(s): 9090 (http)
+2021.08.25 11:02:49 CEST -Initializing ProtocolHandler ["http-nio-9090"]
+2021.08.25 11:02:49 CEST -Starting service [Tomcat]
+2021.08.25 11:02:49 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.25 11:02:49 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.25 11:02:49 CEST -Root WebApplicationContext: initialization completed in 3172 ms
+2021.08.25 11:02:49 CEST -HikariPool-2 - Starting...
+2021.08.25 11:02:49 CEST -HikariPool-2 - Start completed.
+2021.08.25 11:02:49 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.25 11:02:49 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.25 11:02:50 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.25 11:02:50 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.25 11:02:52 CEST -LiveReload server is running on port 35729
+2021.08.25 11:02:52 CEST -Starting ProtocolHandler ["http-nio-9090"]
+2021.08.25 11:02:52 CEST -Tomcat started on port(s): 9090 (http) with context path ''
+2021.08.25 11:02:52 CEST -Started DemoApplication in 7.068 seconds (JVM running for 76.392)
+2021.08.25 11:02:52 CEST -Condition evaluation unchanged

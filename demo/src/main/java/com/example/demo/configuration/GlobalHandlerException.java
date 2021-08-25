@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.example.demo.core.Exceptions.BadRequestException;
+import com.example.demo.core.Exceptions.InternalServerErrorException;
+import com.example.demo.core.Exceptions.NotFoundException;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,21 +24,30 @@ public class GlobalHandlerException extends AbstractHandlerExceptionResolver {
       Exception ex) {
         try {
             if (ex instanceof BadRequestException) {
-                return handleIllegalArgument(
-                  (BadRequestException) ex, response);
+                return handleBadRequest((BadRequestException) ex, response);
+            } else if (ex instanceof NotFoundException) {
+                return handleNotFound((NotFoundException) ex, response);
+            } else if (ex instanceof InternalServerErrorException) {
+                return handleInternalServerError((InternalServerErrorException) ex, response);
             }
-        } 
-        catch(IOException ioException){
+        } catch (IOException ioException) {
             System.out.println("IOException");
-        }
-        catch (Exception handlerException) {
+        } catch (Exception handlerException) {
             System.out.println("Hello");
         }
         return null;
     }
-    private ModelAndView handleIllegalArgument(BadRequestException ex, HttpServletResponse response) throws IOException{
+    private ModelAndView handleBadRequest(BadRequestException ex, HttpServletResponse response) throws IOException{
         response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         return new ModelAndView();
-        response.getWriter()
+    }
+    private ModelAndView handleNotFound(NotFoundException ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpServletResponse.SC_NOT_FOUND);
+        return new ModelAndView();
+    }
+    private ModelAndView handleInternalServerError(InternalServerErrorException ex, HttpServletResponse response)
+            throws IOException {
+        response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        return new ModelAndView();
     }
 }
