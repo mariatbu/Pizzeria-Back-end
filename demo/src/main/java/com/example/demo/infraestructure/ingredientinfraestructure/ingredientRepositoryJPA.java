@@ -9,10 +9,11 @@ import org.springframework.data.repository.query.Param;
 
 public interface IngredientRepositoryJPA extends JpaRepsitoryMine<Ingredient, UUID>{
 
+
     final String sqlExists = """
-                                    select case when count(i)> 0 then true else false 
-                                    end from Ingredient i
-                                    where i.name = :name""";
+                                select case when count(i)> 0 then true else false 
+                                end from Ingredient i
+                                where i.name = :name""";
 
 
     @Query(sqlExists)
