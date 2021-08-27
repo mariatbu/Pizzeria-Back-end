@@ -1,6 +1,6 @@
 package com.example.demo.core.exceptionhandlers;
 
-import com.example.demo.core.Exceptions.NotFoundException;
+import com.example.demo.core.exceptions.NotFoundException;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

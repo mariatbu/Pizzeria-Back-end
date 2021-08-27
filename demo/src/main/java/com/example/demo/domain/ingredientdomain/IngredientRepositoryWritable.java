@@ -2,8 +2,9 @@ package com.example.demo.domain.ingredientdomain;
 
 import java.util.UUID;
 
-import com.example.demo.core.ExistsByField;
-import com.example.demo.core.FindById;
+import com.example.demo.core.functionalinterfaces.FindById;
+import com.example.demo.core.functionalinterfaces.ExistsByField;
+
 
 public interface IngredientRepositoryWritable extends FindById<Ingredient, UUID>, ExistsByField {
 

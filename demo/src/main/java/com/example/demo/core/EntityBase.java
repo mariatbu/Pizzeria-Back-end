@@ -10,7 +10,8 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
-import com.example.demo.core.Exceptions.BadRequestException;
+import com.example.demo.core.exceptions.BadRequestException;
+import com.example.demo.core.functionalinterfaces.ExistsByField;
 
 import org.hibernate.annotations.Type;
 
@@ -28,7 +29,7 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
     public void validate(){
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator= factory.getValidator();
-        Set<ConstraintViolation<EntityBase>> violations = validator.validate(this); //Map de la excepción
+        Set<ConstraintViolation<EntityBase>> violations = validator.validate(this);
         if (!violations.isEmpty()) {
             BadRequestException badRequestException = new BadRequestException();
             for(ConstraintViolation<EntityBase> violation: violations){

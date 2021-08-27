@@ -1,7 +1,7 @@
 package com.example.demo.core.applicationbase;
 
-import com.example.demo.core.FindById;
-import com.example.demo.core.Exceptions.NotFoundException;
+import com.example.demo.core.functionalinterfaces.FindById;
+import com.example.demo.core.exceptions.NotFoundException;
 
 public abstract class ApplicationBase<T, ID> {
     private FindById<T, ID> findById;

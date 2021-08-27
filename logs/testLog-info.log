@@ -4063,3 +4063,14 @@
 2021.08.27 13:44:46 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021.08.27 13:44:46 CEST -Initializing Servlet 'dispatcherServlet'
 2021.08.27 13:44:46 CEST -Completed initialization in 3 ms
+2021.08.27 13:47:41 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.27 13:47:41 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.27 13:47:41 CEST -HikariPool-1 - Shutdown completed.
+2021.08.27 13:47:41 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 8508 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.27 13:47:41 CEST -No active profile set, falling back to default profiles: default
+2021.08.27 13:47:42 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.27 13:47:42 CEST -Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021.08.27 13:47:49 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 8508 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.27 13:47:49 CEST -No active profile set, falling back to default profiles: default
+2021.08.27 13:47:49 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.27 13:47:49 CEST -Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.

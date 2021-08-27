@@ -1,6 +1,6 @@
 package com.example.demo.core.exceptionhandlers;
 
-import com.example.demo.core.Exceptions.BadRequestException;
+import com.example.demo.core.exceptions.BadRequestException;
 
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

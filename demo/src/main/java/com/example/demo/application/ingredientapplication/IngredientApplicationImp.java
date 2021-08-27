@@ -3,21 +3,18 @@ package com.example.demo.application.ingredientapplication;
 import java.util.List;
 import java.util.UUID;
 
-import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
-import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.ingredientdomain.IngredientProjection;
 import com.example.demo.domain.ingredientdomain.IngredientRepository;
+import com.example.demo.dto.ingredientDTO.CreateUpdateIngredientDTO;
+import com.example.demo.dto.ingredientDTO.IngredientDTO;
 
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @Service
 public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> implements IngredientApplication {
 
