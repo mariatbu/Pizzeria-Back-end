@@ -51,5 +51,10 @@ public class IngredientController {
         return ResponseEntity.ok(ingredientDTO);
     }
 
+    @DeleteMapping(path="/{id}")
+    public void delete(@PathVariable UUID id){
+        this.ingredientApplication.delete(id);
+    }
+
    
 }

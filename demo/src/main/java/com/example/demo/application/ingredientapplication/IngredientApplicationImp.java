@@ -59,9 +59,16 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
             ingredient.validate("name", ingredient.getName(), (name) -> this.ingredientRepository.exists(name));
         }
         this.ingredientRepository.update(ingredient);
-        this.log.info(this.serializeObject(ingredient, "updated"));
+        this.log.info(this.serializeObject(ingredient, "updated."));
 
         return this.modelMapper.map(ingredient, IngredientDTO.class);
+    }
+
+    @Override
+    public void delete(UUID id){
+        Ingredient ingredient = this.findById(id);
+        this.ingredientRepository.delete(ingredient);
+        this.log.info(this.serializeObject(ingredient, "deleted."));
     }
 
     private String serializeObject(Ingredient ingredient, String message){

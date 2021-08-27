@@ -11,5 +11,5 @@ public interface IngredientApplication {
     public IngredientDTO add(CreateUpdateIngredientDTO dto);
     public IngredientDTO get(UUID id);
     public IngredientDTO update(UUID id, CreateUpdateIngredientDTO dto);
-
+    public void delete(UUID id);
 }
