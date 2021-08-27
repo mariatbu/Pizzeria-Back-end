@@ -48,13 +48,28 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
         return ingredientDTO;
     }
 
+    @Override
+    public IngredientDTO update(UUID id, CreateUpdateIngredientDTO dto){
+        Ingredient ingredient = this.findById(id);
+        ingredient = this.modelMapper.map(dto, Ingredient.class);
+        ingredient.setId(id);
+        if(this.ingredientRepository.exists(ingredient.getName())){
+            ingredient.validate();
+        }else{
+            ingredient.validate("name", ingredient.getName(), (name) -> this.ingredientRepository.exists(name));
+        }
+        this.ingredientRepository.update(ingredient);
+        this.log.info(this.serializeObject(ingredient, "updated"));
 
-    private String serializeObject(Ingredient ingredient, String messege){
+        return this.modelMapper.map(ingredient, IngredientDTO.class);
+    }
+
+    private String serializeObject(Ingredient ingredient, String message){
         
         return String.format("Ingredient {id: %s, name: %s, price: %s} %s succesfully.",
                             ingredient.getId(), ingredient.getName(),
                             ingredient.getPrice().toString(),
-                            messege);
+                            message);
     }
 
 }

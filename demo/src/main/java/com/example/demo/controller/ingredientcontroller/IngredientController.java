@@ -45,5 +45,11 @@ public class IngredientController {
         return ResponseEntity.ok(ingredientDTO);
     }
 
+    @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
+    public ResponseEntity<?> update(@PathVariable UUID id, @Valid @RequestBody CreateUpdateIngredientDTO dto) {
+        IngredientDTO ingredientDTO = this.ingredientApplication.update(id, dto);
+        return ResponseEntity.ok(ingredientDTO);
+    }
+
    
 }

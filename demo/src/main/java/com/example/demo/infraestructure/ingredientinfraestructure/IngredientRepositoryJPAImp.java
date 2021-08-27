@@ -32,5 +32,14 @@ public class IngredientRepositoryJPAImp implements IngredientRepository {
         return this.ingredientRepositoryJPA.exists(name);
     }
 
+    @Override
+    public void update(Ingredient ingredient){
+        this.ingredientRepositoryJPA.save(ingredient);
+    }
+
+    @Override
+    public void delete(Ingredient ingredient){
+        this.ingredientRepositoryJPA.delete(ingredient);
+    }
 
 }
