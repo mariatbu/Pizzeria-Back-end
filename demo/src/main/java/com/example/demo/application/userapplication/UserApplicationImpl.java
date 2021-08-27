@@ -3,7 +3,7 @@ package com.example.demo.application.userapplication;
 import java.util.List;
 import java.util.UUID;
 
-import com.example.demo.core.ApplicationBase;
+import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.userdomain.User;
 import com.example.demo.domain.userdomain.UserProjection;
 import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;

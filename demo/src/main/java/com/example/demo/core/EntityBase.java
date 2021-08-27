@@ -12,7 +12,7 @@ import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
 import com.example.demo.core.exceptions.BadRequestException;
-import com.example.demo.core.functionalInterfaces.ExistsByField;
+import com.example.demo.core.functionalinterfaces.ExistsByField;
 
 import org.hibernate.annotations.Type;
 import org.springframework.validation.annotation.Validated;

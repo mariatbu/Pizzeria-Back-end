@@ -1,4 +1,4 @@
-package com.example.demo.core.functionalInterfaces;
+package com.example.demo.core.functionalinterfaces;
 
 public interface ExistsByField {
     boolean exists(String field);

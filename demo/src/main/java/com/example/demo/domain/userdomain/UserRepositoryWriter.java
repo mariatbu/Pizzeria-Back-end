@@ -3,8 +3,8 @@ package com.example.demo.domain.userdomain;
 
 import java.util.UUID;
 
-import com.example.demo.core.functionalInterfaces.ExistsByField;
-import com.example.demo.core.functionalInterfaces.FindById;
+import com.example.demo.core.functionalinterfaces.ExistsByField;
+import com.example.demo.core.functionalinterfaces.FindById;
 
 public interface UserRepositoryWriter extends FindById<User,UUID>, ExistsByField{
     public void add(User user);
