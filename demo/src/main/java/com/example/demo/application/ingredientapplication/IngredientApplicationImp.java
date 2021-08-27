@@ -1,11 +1,13 @@
 package com.example.demo.application.ingredientapplication;
 
+import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
 import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.ingredientdomain.Ingredient;
+import com.example.demo.domain.ingredientdomain.IngredientProjection;
 import com.example.demo.domain.ingredientdomain.IngredientRepository;
 
 import org.modelmapper.ModelMapper;
@@ -71,6 +73,11 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
         this.log.info(this.serializeObject(ingredient, "deleted."));
     }
 
+    @Override
+    public List<IngredientProjection> getAll(String name, int page, int size){
+        return this.ingredientRepository.getAll(name, page, size);
+    }
+    
     private String serializeObject(Ingredient ingredient, String message){
         
         return String.format("Ingredient {id: %s, name: %s, price: %s} %s succesfully.",
