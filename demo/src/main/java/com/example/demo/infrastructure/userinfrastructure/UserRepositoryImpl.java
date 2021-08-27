@@ -41,21 +41,20 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public Optional<User> findByID(UUID id) {
+    public Optional<User> findById(UUID id) {
         return this.userJPARepository.findById(id);
     }
 
     @Override
-    public List<UserProjection> getAll(String name, int page, int size) {       
+    public List<UserProjection> getAll(String email, int page, int size) {       
         return this.userJPARepository.findByCriteria(
-           name,
-           PageRequest.of(page, size, Sort.by("name").descending())
+           email,
+           PageRequest.of(page, size, Sort.by("email").descending())
        );
     }
 
     @Override
-    public User findByName(String name){
-        return this.userJPARepository.findByName(name);
-
+    public boolean exists(String email) {
+        return this.userJPARepository.exists(email);
     }
 }

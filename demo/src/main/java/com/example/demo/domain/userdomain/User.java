@@ -9,9 +9,7 @@ import lombok.Setter;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import com.example.demo.core.EntityBase;
@@ -23,27 +21,24 @@ import com.example.demo.core.EntityBase;
 public @NoArgsConstructor @Getter @Setter class User extends EntityBase{
 
     @Column(nullable = false)
-    @NotBlank 
+    @NotNull 
     private String name;
 
     @Column(nullable = false)
-    @NotBlank  
+    @NotNull 
     private String lastName;
 
     @Column (unique = true, nullable = false)
-    @NotBlank
-    @Email
+    @NotNull @Email
     private String email;
 
     @Column (nullable = false)
-    @NotNull
+    @NotNull 
     private String password;
 
     @Column
     @NotNull
     private Rol rol = Rol.ROL_USER;
-
-    @Transient
-    private String token;
+    
 
 }

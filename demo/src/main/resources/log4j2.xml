@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="OFF">
     <Properties>
-        <Property name="logFilePath">logs</Property>
+        <Property name="logFilePath">./demo/src/logs</Property>
         <Property name="logFileName">testLog</Property>
     </Properties>
     <Appenders>
@@ -47,7 +47,7 @@
     </Appenders>
     <Loggers>
         <Root level="DEBUG" includeLocation="true">
-            <Appender-ref level="DEBUG" ref="ConsolePrint"/>
+            <Appender-ref level="INFO" ref="ConsolePrint"/>
             <Appender-ref ref="RollingFileDebug"/>
             <Appender-ref ref="RollingFileInfo"/>
             <Appender-ref ref="RollingFileError"/>

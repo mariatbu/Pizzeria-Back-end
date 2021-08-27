@@ -4,11 +4,13 @@ import javax.validation.constraints.NotBlank;
 
 import com.example.demo.domain.userdomain.Rol;
 
+import org.springframework.validation.annotation.Validated;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.Setter;
 
+@Validated
 public @Getter @Setter @NoArgsConstructor class CreateOrUpdateUserDTO {
     @NotBlank
     private String name;
@@ -16,7 +18,7 @@ public @Getter @Setter @NoArgsConstructor class CreateOrUpdateUserDTO {
     private String lastName;
     @NotBlank
     private String email;
-    @NonNull
+    @NotBlank
     private String password;
     private Rol rol = Rol.ROL_USER;
 }

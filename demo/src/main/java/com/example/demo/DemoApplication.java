@@ -10,16 +10,13 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @SpringBootApplication
 public class DemoApplication {
 
 	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		log.info("arg0");
 	}
 
 	@EnableWebSecurity
@@ -32,7 +29,7 @@ public class DemoApplication {
 				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests()
 				.antMatchers(HttpMethod.POST, "/user/add").permitAll()
-				.antMatchers(HttpMethod.GET, "/user/get").hasRole("ROL_ADMIN")
+				.antMatchers(HttpMethod.POST, "/user/get").hasRole("ROL_USER")
 				.anyRequest().authenticated();
 		}
 	}

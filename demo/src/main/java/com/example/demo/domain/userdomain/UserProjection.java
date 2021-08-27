@@ -3,7 +3,7 @@ package com.example.demo.domain.userdomain;
 import java.util.UUID;
 
 public interface UserProjection {
-    UUID getID();
+    UUID getId();
 
     String getName();
 

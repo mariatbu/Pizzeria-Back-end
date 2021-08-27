@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.domain.userdomain.UserProjection;
-import com.example.demo.domain.userdomain.User;
 import com.example.demo.dto.userDTO.UserDTO;
 import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
 
@@ -13,11 +12,9 @@ public interface UserApplication {
 
     public UserDTO get(UUID id);
 
-    public void update(UUID id, CreateOrUpdateUserDTO dto);
+    public UserDTO update(UUID id, CreateOrUpdateUserDTO dto);
 
     public void delete(UUID id);
 
-    public List<UserProjection> getAll(String name, int page, int size);
-
-    public User findByName(String name);
+    public List<UserProjection> getAll(String email, int page, int size);
 }
