@@ -74,13 +74,5 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
     public List<IngredientProjection> getAll(String name, int page, int size){
         return this.ingredientRepository.getAll(name, page, size);
     }
-    
-    private String serializeObject(Ingredient ingredient, String message){
-        
-        return String.format("Ingredient {id: %s, name: %s, price: %s} %s succesfully.",
-                            ingredient.getId(), ingredient.getName(),
-                            ingredient.getPrice().toString(),
-                            message);
-    }
 
 }

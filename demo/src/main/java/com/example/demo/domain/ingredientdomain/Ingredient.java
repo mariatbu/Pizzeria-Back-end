@@ -29,4 +29,9 @@ public @NoArgsConstructor @Getter @Setter class Ingredient extends EntityBase {
     @Column (name = "price", nullable = false)
     private BigDecimal price;
 
+    @Override
+    public String toString() {
+
+        return String.format("Ingredient {id: %s, name: %s, price: %s}", this.getId(), this.getName(), this.getPrice());
+    }
 }

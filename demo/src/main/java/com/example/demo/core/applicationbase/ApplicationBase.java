@@ -12,4 +12,8 @@ public abstract class ApplicationBase<T, ID> {
     protected ApplicationBase(FindById<T, ID> findById){
         this.findById = findById;
     }
+    protected String serializeObject(T entity, String message) {
+
+        return String.format("%s %s succesfully.", entity.toString(), message);
+    }
 }
