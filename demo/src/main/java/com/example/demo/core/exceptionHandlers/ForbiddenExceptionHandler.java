@@ -1,30 +1,26 @@
 package com.example.demo.core.exceptionhandlers;
 
-import com.example.demo.core.exceptions.BadRequestException;
-
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.client.HttpClientErrorException.Forbidden;
 import org.springframework.web.context.request.WebRequest;
 
 @ControllerAdvice
-public class BadRequestExceptionHandler {
-   
+public class ForbiddenExceptionHandler<ForbiddenException> {
+
     private final Logger logger;
     
     @Autowired
-    public BadRequestExceptionHandler(final Logger logger){
+    public ForbiddenExceptionHandler(final Logger logger){
         this.logger = logger;
     }
-
-    @ExceptionHandler(value = {BadRequestException.class})
-    protected ResponseEntity<Object> handleConflict(BadRequestException ex, WebRequest request) {
-
-        
+   
+    @ExceptionHandler(value = {Forbidden.class})
+    protected ResponseEntity<Object> handleConflict(Forbidden ex, WebRequest request) {
         logger.warn(String.format("%s , StackTrace: %s", ex.getMessage(), ex.getStackTrace().toString()));
-
-        return ResponseEntity.status(ex.getCode()).body(ex.getExceptions());
+        return ResponseEntity.status(ex.getStatusCode()).body("Error 403, Session expired");
     }
 }

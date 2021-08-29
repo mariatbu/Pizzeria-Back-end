@@ -9,6 +9,7 @@ import org.springframework.web.context.request.WebRequest;
 
 @ControllerAdvice
 public class NotFoundExceptionHandler {
+   
     @ExceptionHandler(value = {NotFoundException.class})
     protected ResponseEntity<Object> handleConflict(NotFoundException ex, WebRequest request) {
 

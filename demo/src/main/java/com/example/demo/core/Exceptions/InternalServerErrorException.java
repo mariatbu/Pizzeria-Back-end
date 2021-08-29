@@ -1,6 +1,7 @@
 package com.example.demo.core.exceptions;
 
 public class InternalServerErrorException extends HttpException{
+
     private final InternalServerErrorEnum internalServerErrorEnum;
 
     public InternalServerErrorException(InternalServerErrorEnum internalServerErrorEnum){

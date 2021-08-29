@@ -40,6 +40,7 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
     }
 
     public void validate(String key, String value, ExistsByField existsByField){
+        
         this.validate();
         if(existsByField.exists(value)){
             BadRequestException badRequestException = new BadRequestException();

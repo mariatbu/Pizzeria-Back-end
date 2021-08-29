@@ -1,6 +1,6 @@
 package com.example.demo.core.exceptions;
 
-public class HttpException extends RuntimeException{
+public class HttpException extends RuntimeException {
     
     private Integer code;
 
