@@ -45,14 +45,14 @@ public class UserController {
         this.userApplication = userApplication;
     }
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/add")
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> create(@Valid @RequestBody final CreateOrUpdateUserDTO dto) {
         this.userApplication.add(dto);
         return ResponseEntity.status(201).body(getJWTToken(dto.getName()));
     }
 
     @PreAuthorize("hasRole('ROL_ADMIN')")
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, path = "/get/{id}")
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
     public ResponseEntity<?> get(@Valid @PathVariable UUID id){
         UserDTO userDTO = this.userApplication.get(id);
         return ResponseEntity.ok(userDTO);
@@ -63,7 +63,11 @@ public class UserController {
         UserDTO userDTO = this.userApplication.update(id, dto);
         return ResponseEntity.ok(userDTO);
     }
-
+    /*@PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
+    public ResponseEntity<?> update(@Valid @PathVariable UUID id, @RequestBody UpdateUserDTO dto) {
+        this.userApplication.update(id, dto);
+        return ResponseEntity.ok(dto);
+    }*/
 
     @DeleteMapping(path = "/{id}")
     void delete(@PathVariable UUID id) {

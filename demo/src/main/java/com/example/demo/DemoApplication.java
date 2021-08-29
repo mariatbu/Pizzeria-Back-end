@@ -28,8 +28,7 @@ public class DemoApplication {
 			http.csrf().disable()
 				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests()
-				.antMatchers(HttpMethod.POST, "/user/add").permitAll()
-				.antMatchers(HttpMethod.POST, "/user/get").hasRole("ROL_USER")
+				.antMatchers(HttpMethod.POST, "/user").permitAll()
 				.anyRequest().authenticated();
 		}
 	}

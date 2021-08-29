@@ -57,4 +57,6 @@ public class UserRepositoryImpl implements UserRepository {
     public boolean exists(String email) {
         return this.userJPARepository.exists(email);
     }
+
+    
 }

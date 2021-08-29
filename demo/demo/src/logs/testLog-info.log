@@ -1,744 +1,400 @@
-2021.08.27 12:01:28 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 12516 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:01:28 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:01:28 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021.08.27 12:01:28 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021.08.27 12:01:30 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:01:31 CEST -Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:01:32 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:01:32 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:01:32 CEST -Starting service [Tomcat]
-2021.08.27 12:01:32 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:01:32 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:01:32 CEST -Root WebApplicationContext: initialization completed in 4011 ms
-2021.08.27 12:01:33 CEST -HikariPool-1 - Starting...
-2021.08.27 12:01:33 CEST -HikariPool-1 - Start completed.
-2021.08.27 12:01:33 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:01:34 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
-2021.08.27 12:01:34 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021.08.27 12:01:34 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:01:35 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:01:35 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:01:37 CEST -
+2021.08.29 10:23:31 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.29 10:23:31 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 10:23:31 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 10:23:32 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.29 10:23:32 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.29 10:23:36 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 10:23:36 CEST -Finished Spring Data repository scanning in 197 ms. Found 1 JPA repository interfaces.
+2021.08.29 10:23:38 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 10:23:38 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 10:23:38 CEST -Starting service [Tomcat]
+2021.08.29 10:23:38 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 10:23:38 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 10:23:38 CEST -Root WebApplicationContext: initialization completed in 6376 ms
+2021.08.29 10:23:38 CEST -HikariPool-1 - Starting...
+2021.08.29 10:23:39 CEST -HikariPool-1 - Start completed.
+2021.08.29 10:23:39 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 10:23:40 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.29 10:23:40 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.29 10:23:41 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 10:23:42 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 10:23:42 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 10:23:44 CEST -
 
-Using generated security password: b2a0a4a2-141a-4c54-a824-50cb56e80970
+Using generated security password: 95a2f84d-1628-416a-9b2d-9ca5f7794570
 
-2021.08.27 12:01:37 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c7bfc35, org.springframework.security.web.context.SecurityContextPersistenceFilter@305cd51d, org.springframework.security.web.header.HeaderWriterFilter@7cb1c2af, org.springframework.security.web.authentication.logout.LogoutFilter@2c909def, com.example.demo.security.JWTAuthorizationFilter@97a42a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31bc5c0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70adc8ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28e33f8e, org.springframework.security.web.session.SessionManagementFilter@59d4b264, org.springframework.security.web.access.ExceptionTranslationFilter@473ca26c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49b58768]
-2021.08.27 12:01:39 CEST -LiveReload server is running on port 35729
-2021.08.27 12:01:39 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:01:39 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:01:39 CEST -Started DemoApplication in 11.09 seconds (JVM running for 12.419)
-2021.08.27 12:01:49 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:01:49 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:01:49 CEST -Completed initialization in 4 ms
-2021.08.27 12:04:14 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:04:15 CEST -HikariPool-1 - Shutdown initiated...
-2021.08.27 12:04:15 CEST -HikariPool-1 - Shutdown completed.
-2021.08.27 12:04:49 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 12516 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:04:49 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:04:50 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:04:51 CEST -Finished Spring Data repository scanning in 190 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:04:51 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:04:51 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:04:51 CEST -Starting service [Tomcat]
-2021.08.27 12:04:51 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:04:51 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:04:51 CEST -Root WebApplicationContext: initialization completed in 1919 ms
-2021.08.27 12:04:51 CEST -HikariPool-2 - Starting...
-2021.08.27 12:04:51 CEST -HikariPool-2 - Start completed.
-2021.08.27 12:04:51 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:04:52 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:04:52 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:04:52 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:04:53 CEST -
+2021.08.29 10:23:44 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d5fc98c, org.springframework.security.web.context.SecurityContextPersistenceFilter@762eef85, org.springframework.security.web.header.HeaderWriterFilter@23778817, org.springframework.security.web.authentication.logout.LogoutFilter@2d67acf0, com.example.demo.security.JWTAuthorizationFilter@27ed0394, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78219f50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c607e9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28fad04, org.springframework.security.web.session.SessionManagementFilter@783b58d0, org.springframework.security.web.access.ExceptionTranslationFilter@49290ebd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a61bac6]
+2021.08.29 10:23:46 CEST -LiveReload server is running on port 35729
+2021.08.29 10:23:46 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 10:23:46 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 10:23:46 CEST -Started DemoApplication in 17.713 seconds (JVM running for 20.874)
+2021.08.29 10:24:11 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.29 10:24:11 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.29 10:24:11 CEST -Completed initialization in 3 ms
+2021.08.29 10:24:50 CEST -User {id: fe8ca0de-464e-4369-afda-245eaaa80ddd, name: Carlos1, lastName: Castillo, email: 0mail5@mail} User Created:  succesfully.
+2021.08.29 10:25:59 CEST -User {id: 19b3b9e9-c077-4a50-910c-bf3bca444af2, name: Carlos, lastName: Castillo, email: 4mail0@mail} User Searched:  succesfully.
+2021.08.29 10:26:22 CEST -User {id: 19b3b9e9-c077-4a50-910c-bf3bca444af2, name: Carlos, lastName: Castillo, email: 4mail0@mail} User Searched:  succesfully.
+2021.08.29 10:31:34 CEST -User {id: 19b3b9e9-c077-4a50-910c-bf3bca444af2, name: Carlos, lastName: Castillo, email: 4mail0@mail} User Searched:  succesfully.
+2021.08.29 10:34:58 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 10:34:58 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.29 10:34:58 CEST -HikariPool-1 - Shutdown completed.
+2021.08.29 10:34:59 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 10:34:59 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 10:34:59 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 10:34:59 CEST -Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021.08.29 10:34:59 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 10:34:59 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 10:34:59 CEST -Starting service [Tomcat]
+2021.08.29 10:34:59 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 10:34:59 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 10:34:59 CEST -Root WebApplicationContext: initialization completed in 834 ms
+2021.08.29 10:35:00 CEST -HikariPool-2 - Starting...
+2021.08.29 10:35:00 CEST -HikariPool-2 - Start completed.
+2021.08.29 10:35:00 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 10:35:00 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 10:35:00 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 10:35:00 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 10:35:00 CEST -
 
-Using generated security password: 396781cc-4e1e-46d0-a357-f8675ca5158a
+Using generated security password: ccf31ea5-bf5d-42ea-9ea1-4ebff8282ddb
 
-2021.08.27 12:04:53 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d481756, org.springframework.security.web.context.SecurityContextPersistenceFilter@3672de2f, org.springframework.security.web.header.HeaderWriterFilter@3659d02c, org.springframework.security.web.authentication.logout.LogoutFilter@4c11cae5, com.example.demo.security.JWTAuthorizationFilter@e350fd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5160d818, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2940baa8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e212612, org.springframework.security.web.session.SessionManagementFilter@7e676a00, org.springframework.security.web.access.ExceptionTranslationFilter@2fd9158c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69bafa4d]
-2021.08.27 12:04:53 CEST -LiveReload server is running on port 35729
-2021.08.27 12:04:53 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:04:53 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:04:53 CEST -Started DemoApplication in 4.435 seconds (JVM running for 206.793)
-2021.08.27 12:04:53 CEST -Condition evaluation unchanged
-2021.08.27 12:05:29 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:05:29 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:05:29 CEST -Completed initialization in 2 ms
-2021.08.27 12:05:46 CEST -HV000001: Hibernate Validator 6.2.0.Final
-2021.08.27 12:05:46 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:05:46 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:05:46 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021.08.27 12:05:46 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021.08.27 12:05:48 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:05:48 CEST -Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:05:50 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:05:50 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:05:50 CEST -Starting service [Tomcat]
-2021.08.27 12:05:50 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:05:50 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:05:50 CEST -Root WebApplicationContext: initialization completed in 4056 ms
-2021.08.27 12:05:50 CEST -HikariPool-1 - Starting...
-2021.08.27 12:05:51 CEST -HikariPool-1 - Start completed.
-2021.08.27 12:05:51 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:05:52 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
-2021.08.27 12:05:52 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021.08.27 12:05:53 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:05:54 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:05:54 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:05:56 CEST -
+2021.08.29 10:35:00 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28221182, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b277cf3, org.springframework.security.web.header.HeaderWriterFilter@48d7441d, org.springframework.security.web.authentication.logout.LogoutFilter@28f12061, com.example.demo.security.JWTAuthorizationFilter@74f7c86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c9011e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e155dc1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178c15a4, org.springframework.security.web.session.SessionManagementFilter@4f3d3ff4, org.springframework.security.web.access.ExceptionTranslationFilter@7e273af7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34cfe18e]
+2021.08.29 10:35:01 CEST -LiveReload server is running on port 35729
+2021.08.29 10:35:01 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 10:35:01 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 10:35:01 CEST -Started DemoApplication in 2.299 seconds (JVM running for 695.417)
+2021.08.29 10:35:01 CEST -Condition evaluation unchanged
+2021.08.29 10:35:16 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.29 10:35:16 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.29 10:35:16 CEST -Completed initialization in 3 ms
+2021.08.29 10:36:12 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 10:36:12 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.29 10:36:12 CEST -HikariPool-2 - Shutdown completed.
+2021.08.29 10:36:12 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 10:36:12 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 10:36:12 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 10:36:12 CEST -Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2021.08.29 10:36:13 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 10:36:13 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 10:36:13 CEST -Starting service [Tomcat]
+2021.08.29 10:36:13 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 10:36:13 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 10:36:13 CEST -Root WebApplicationContext: initialization completed in 1313 ms
+2021.08.29 10:36:13 CEST -HikariPool-3 - Starting...
+2021.08.29 10:36:13 CEST -HikariPool-3 - Start completed.
+2021.08.29 10:36:13 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 10:36:14 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 10:36:14 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 10:36:14 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 10:36:14 CEST -
 
-Using generated security password: d325c4d7-4e4c-45bd-b912-164cbb29d80a
+Using generated security password: beb8a436-ede0-490b-8882-21afcc2e9184
 
-2021.08.27 12:05:56 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11b42e31, org.springframework.security.web.context.SecurityContextPersistenceFilter@523a2c9c, org.springframework.security.web.header.HeaderWriterFilter@45d68cd2, org.springframework.security.web.authentication.logout.LogoutFilter@8047b46, com.example.demo.security.JWTAuthorizationFilter@158eabbe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e433d36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@211732d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@431a277d, org.springframework.security.web.session.SessionManagementFilter@79328d62, org.springframework.security.web.access.ExceptionTranslationFilter@1248719f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e790ea1]
-2021.08.27 12:05:59 CEST -LiveReload server is running on port 35729
-2021.08.27 12:05:59 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:05:59 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:05:59 CEST -Started DemoApplication in 13.445 seconds (JVM running for 15.138)
-2021.08.27 12:06:07 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:06:07 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:06:07 CEST -Completed initialization in 7 ms
-2021.08.27 12:06:08 CEST -User created: Carlos
-2021.08.27 12:07:02 CEST -User created: Carlos
-2021.08.27 12:14:31 CEST -User created: Carlos
-2021.08.27 12:18:36 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:18:36 CEST -HikariPool-1 - Shutdown initiated...
-2021.08.27 12:18:36 CEST -HikariPool-1 - Shutdown completed.
-2021.08.27 12:18:36 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:18:36 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:18:37 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:18:37 CEST -Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:18:37 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:18:37 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:18:37 CEST -Starting service [Tomcat]
-2021.08.27 12:18:37 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:18:37 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:18:37 CEST -Root WebApplicationContext: initialization completed in 1017 ms
-2021.08.27 12:18:37 CEST -HikariPool-2 - Starting...
-2021.08.27 12:18:37 CEST -HikariPool-2 - Start completed.
-2021.08.27 12:18:37 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:18:37 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:18:37 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:18:37 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:18:38 CEST -
+2021.08.29 10:36:14 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5131b186, org.springframework.security.web.context.SecurityContextPersistenceFilter@d390fe1, org.springframework.security.web.header.HeaderWriterFilter@34652a5c, org.springframework.security.web.authentication.logout.LogoutFilter@43a5dfca, com.example.demo.security.JWTAuthorizationFilter@4ffeb6d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e587833, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23f2826e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ac506ef, org.springframework.security.web.session.SessionManagementFilter@6e797111, org.springframework.security.web.access.ExceptionTranslationFilter@1634bcc1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@654319e5]
+2021.08.29 10:36:15 CEST -LiveReload server is running on port 35729
+2021.08.29 10:36:15 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 10:36:15 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 10:36:15 CEST -Started DemoApplication in 3.2 seconds (JVM running for 769.542)
+2021.08.29 10:36:15 CEST -Condition evaluation unchanged
+2021.08.29 10:36:15 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.29 10:36:15 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.29 10:36:15 CEST -Completed initialization in 1 ms
+2021.08.29 10:36:16 CEST -User {id: 19b3b9e9-c077-4a50-910c-bf3bca444af2, name: Carlos25, lastName: Castillo13, email: 4mail0@mail} User Updated:  succesfully.
+2021.08.29 11:01:35 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:01:35 CEST -HikariPool-3 - Shutdown initiated...
+2021.08.29 11:01:35 CEST -HikariPool-3 - Shutdown completed.
+2021.08.29 11:01:35 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:01:35 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:01:36 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:01:36 CEST -Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:01:36 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:01:36 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:01:36 CEST -Starting service [Tomcat]
+2021.08.29 11:01:36 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:01:36 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:01:36 CEST -Root WebApplicationContext: initialization completed in 801 ms
+2021.08.29 11:01:36 CEST -HikariPool-4 - Starting...
+2021.08.29 11:01:36 CEST -HikariPool-4 - Start completed.
+2021.08.29 11:01:36 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:01:36 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:01:36 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:01:36 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:01:37 CEST -
 
-Using generated security password: 6a0fb25a-01b8-46ef-aee6-61ba8fb56587
+Using generated security password: bd30cdc5-327d-4ddb-9c35-6d5f4b7f1f1e
 
-2021.08.27 12:18:38 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ae3e1dc, org.springframework.security.web.context.SecurityContextPersistenceFilter@412bbf90, org.springframework.security.web.header.HeaderWriterFilter@792232e2, org.springframework.security.web.authentication.logout.LogoutFilter@1987c964, com.example.demo.security.JWTAuthorizationFilter@1c973044, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b31f48c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33ec682a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c239bcf, org.springframework.security.web.session.SessionManagementFilter@5bddb97c, org.springframework.security.web.access.ExceptionTranslationFilter@669f83ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6257c336]
-2021.08.27 12:18:38 CEST -LiveReload server is running on port 35729
-2021.08.27 12:18:38 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:18:38 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:18:38 CEST -Started DemoApplication in 2.56 seconds (JVM running for 774.554)
-2021.08.27 12:18:38 CEST -Condition evaluation unchanged
-2021.08.27 12:19:18 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:19:18 CEST -HikariPool-2 - Shutdown initiated...
-2021.08.27 12:19:18 CEST -HikariPool-2 - Shutdown completed.
-2021.08.27 12:19:19 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:19:19 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:19:19 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:19:19 CEST -Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:19:20 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:19:20 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:19:20 CEST -Starting service [Tomcat]
-2021.08.27 12:19:20 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:19:20 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:19:20 CEST -Root WebApplicationContext: initialization completed in 1056 ms
-2021.08.27 12:19:20 CEST -HikariPool-3 - Starting...
-2021.08.27 12:19:20 CEST -HikariPool-3 - Start completed.
-2021.08.27 12:19:20 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:19:20 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:19:21 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:19:21 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:19:21 CEST -
+2021.08.29 11:01:37 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@709be9b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dfa64d5, org.springframework.security.web.header.HeaderWriterFilter@231b845d, org.springframework.security.web.authentication.logout.LogoutFilter@77c1df6a, com.example.demo.security.JWTAuthorizationFilter@5fc678c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bed232e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@742b6762, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14ce431a, org.springframework.security.web.session.SessionManagementFilter@bd0ccba, org.springframework.security.web.access.ExceptionTranslationFilter@28efc5c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a1309b8]
+2021.08.29 11:01:37 CEST -LiveReload server is running on port 35729
+2021.08.29 11:01:37 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:01:37 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:01:37 CEST -Started DemoApplication in 2.022 seconds (JVM running for 2291.854)
+2021.08.29 11:01:37 CEST -Condition evaluation unchanged
+2021.08.29 11:01:57 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:01:57 CEST -HikariPool-4 - Shutdown initiated...
+2021.08.29 11:01:57 CEST -HikariPool-4 - Shutdown completed.
+2021.08.29 11:01:57 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:01:57 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:01:57 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:01:58 CEST -Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:01:58 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:01:58 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:01:58 CEST -Starting service [Tomcat]
+2021.08.29 11:01:58 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:01:58 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:01:58 CEST -Root WebApplicationContext: initialization completed in 750 ms
+2021.08.29 11:01:58 CEST -HikariPool-5 - Starting...
+2021.08.29 11:01:58 CEST -HikariPool-5 - Start completed.
+2021.08.29 11:01:58 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:01:58 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:01:58 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:01:58 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:01:59 CEST -
 
-Using generated security password: 42ad4a50-2267-45ef-99e2-388344dccde2
+Using generated security password: 73d67c5b-a7a8-479f-acfd-441622202b92
 
-2021.08.27 12:19:21 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e3c210f, org.springframework.security.web.context.SecurityContextPersistenceFilter@684fb965, org.springframework.security.web.header.HeaderWriterFilter@78cd4cfe, org.springframework.security.web.authentication.logout.LogoutFilter@6ded57f0, com.example.demo.security.JWTAuthorizationFilter@297925e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34cd8986, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26f5995d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@429f1925, org.springframework.security.web.session.SessionManagementFilter@5ab6f8f, org.springframework.security.web.access.ExceptionTranslationFilter@4982bb99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28b4644]
-2021.08.27 12:19:22 CEST -LiveReload server is running on port 35729
-2021.08.27 12:19:22 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:19:22 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:19:22 CEST -Started DemoApplication in 3.208 seconds (JVM running for 817.956)
-2021.08.27 12:19:22 CEST -Condition evaluation unchanged
-2021.08.27 12:36:37 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:36:37 CEST -HikariPool-3 - Shutdown initiated...
-2021.08.27 12:36:37 CEST -HikariPool-3 - Shutdown completed.
-2021.08.27 12:36:37 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:36:37 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:36:38 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:36:38 CEST -Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:36:38 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:36:38 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:36:38 CEST -Starting service [Tomcat]
-2021.08.27 12:36:38 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:36:38 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:36:38 CEST -Root WebApplicationContext: initialization completed in 1106 ms
-2021.08.27 12:36:38 CEST -HikariPool-4 - Starting...
-2021.08.27 12:36:38 CEST -HikariPool-4 - Start completed.
-2021.08.27 12:36:38 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:36:38 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:36:38 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:36:38 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:36:39 CEST -
+2021.08.29 11:01:59 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ad6f675, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a3019dc, org.springframework.security.web.header.HeaderWriterFilter@4b4d7036, org.springframework.security.web.authentication.logout.LogoutFilter@4b1e7212, com.example.demo.security.JWTAuthorizationFilter@66de48db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ffb7ad2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f1769db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61d5f0b4, org.springframework.security.web.session.SessionManagementFilter@72858ccf, org.springframework.security.web.access.ExceptionTranslationFilter@72d8e4cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33eb4598]
+2021.08.29 11:01:59 CEST -LiveReload server is running on port 35729
+2021.08.29 11:01:59 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:01:59 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:01:59 CEST -Started DemoApplication in 1.916 seconds (JVM running for 2313.445)
+2021.08.29 11:01:59 CEST -Condition evaluation unchanged
+2021.08.29 11:05:01 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:05:01 CEST -HikariPool-5 - Shutdown initiated...
+2021.08.29 11:05:01 CEST -HikariPool-5 - Shutdown completed.
+2021.08.29 11:05:01 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:05:01 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:05:01 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:05:01 CEST -Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:05:02 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:05:02 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:05:02 CEST -Starting service [Tomcat]
+2021.08.29 11:05:02 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:05:02 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:05:02 CEST -Root WebApplicationContext: initialization completed in 828 ms
+2021.08.29 11:05:02 CEST -HikariPool-6 - Starting...
+2021.08.29 11:05:02 CEST -HikariPool-6 - Start completed.
+2021.08.29 11:05:02 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:05:02 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:05:02 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:05:02 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:05:02 CEST -
 
-Using generated security password: 27a977a3-d84e-406d-be9e-dd887ee4e184
+Using generated security password: 0a38a3e5-e770-4e4c-9202-70f8690453cd
 
-2021.08.27 12:36:39 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50965ad6, org.springframework.security.web.context.SecurityContextPersistenceFilter@224e84b9, org.springframework.security.web.header.HeaderWriterFilter@3f9759a7, org.springframework.security.web.authentication.logout.LogoutFilter@61acbf1f, com.example.demo.security.JWTAuthorizationFilter@1f58a23e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bb8d31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@364a620, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c5065f2, org.springframework.security.web.session.SessionManagementFilter@504c91ad, org.springframework.security.web.access.ExceptionTranslationFilter@9f5b49d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bb0989c]
-2021.08.27 12:36:39 CEST -LiveReload server is running on port 35729
-2021.08.27 12:36:39 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:36:39 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:36:39 CEST -Started DemoApplication in 2.48 seconds (JVM running for 1855.472)
-2021.08.27 12:36:39 CEST -Condition evaluation unchanged
-2021.08.27 12:36:48 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:36:48 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:36:48 CEST -Completed initialization in 3 ms
-2021.08.27 12:36:48 CEST -User created: Carlos
-2021.08.27 12:41:44 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:41:44 CEST -HikariPool-4 - Shutdown initiated...
-2021.08.27 12:41:44 CEST -HikariPool-4 - Shutdown completed.
-2021.08.27 12:41:44 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:41:44 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:41:44 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:41:44 CEST -Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:41:45 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:41:45 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:41:45 CEST -Starting service [Tomcat]
-2021.08.27 12:41:45 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:41:45 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:41:45 CEST -Root WebApplicationContext: initialization completed in 929 ms
-2021.08.27 12:41:45 CEST -HikariPool-5 - Starting...
-2021.08.27 12:41:45 CEST -HikariPool-5 - Start completed.
-2021.08.27 12:41:45 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:41:45 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:41:45 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:41:45 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:41:46 CEST -
+2021.08.29 11:05:02 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1efd2cfe, org.springframework.security.web.context.SecurityContextPersistenceFilter@150b2c7f, org.springframework.security.web.header.HeaderWriterFilter@2d889ce0, org.springframework.security.web.authentication.logout.LogoutFilter@53dfde3e, com.example.demo.security.JWTAuthorizationFilter@4bc8b131, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b3de5ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52bb11e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b82e5f3, org.springframework.security.web.session.SessionManagementFilter@4d3007ae, org.springframework.security.web.access.ExceptionTranslationFilter@140743f2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d9d2c9a]
+2021.08.29 11:05:03 CEST -LiveReload server is running on port 35729
+2021.08.29 11:05:03 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:05:03 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:05:03 CEST -Started DemoApplication in 1.962 seconds (JVM running for 2497.323)
+2021.08.29 11:05:03 CEST -Condition evaluation unchanged
+2021.08.29 11:05:08 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:05:08 CEST -HikariPool-6 - Shutdown initiated...
+2021.08.29 11:05:08 CEST -HikariPool-6 - Shutdown completed.
+2021.08.29 11:05:08 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:05:08 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:05:09 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:05:09 CEST -Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:05:09 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:05:09 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:05:09 CEST -Starting service [Tomcat]
+2021.08.29 11:05:09 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:05:09 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:05:09 CEST -Root WebApplicationContext: initialization completed in 674 ms
+2021.08.29 11:05:09 CEST -HikariPool-7 - Starting...
+2021.08.29 11:05:09 CEST -HikariPool-7 - Start completed.
+2021.08.29 11:05:09 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:05:09 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:05:09 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:05:09 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:05:09 CEST -
 
-Using generated security password: 94bf63fb-2e1d-4cae-8fe7-19c1d04095f9
+Using generated security password: 2429186d-99c5-498d-8203-30b9db5d9fac
 
-2021.08.27 12:41:46 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dbd19c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@76245db3, org.springframework.security.web.header.HeaderWriterFilter@2a1cd862, org.springframework.security.web.authentication.logout.LogoutFilter@2e3cf0ad, com.example.demo.security.JWTAuthorizationFilter@2df945a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fb6feaf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53a5faf3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21960ad2, org.springframework.security.web.session.SessionManagementFilter@69d80eb6, org.springframework.security.web.access.ExceptionTranslationFilter@344ba60e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ae1eafe]
-2021.08.27 12:41:46 CEST -LiveReload server is running on port 35729
-2021.08.27 12:41:46 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:41:46 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:41:46 CEST -Started DemoApplication in 2.328 seconds (JVM running for 2162.123)
-2021.08.27 12:41:46 CEST -Condition evaluation unchanged
-2021.08.27 12:41:53 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:41:53 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:41:53 CEST -Completed initialization in 4 ms
-2021.08.27 12:42:30 CEST -User Updated: Carlos4
-2021.08.27 12:44:38 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:44:38 CEST -HikariPool-5 - Shutdown initiated...
-2021.08.27 12:44:38 CEST -HikariPool-5 - Shutdown completed.
-2021.08.27 12:44:38 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:44:38 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:44:38 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:44:38 CEST -Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:44:38 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:44:38 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:44:38 CEST -Starting service [Tomcat]
-2021.08.27 12:44:38 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:44:39 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:44:39 CEST -Root WebApplicationContext: initialization completed in 768 ms
-2021.08.27 12:44:39 CEST -HikariPool-6 - Starting...
-2021.08.27 12:44:39 CEST -HikariPool-6 - Start completed.
-2021.08.27 12:44:39 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:44:39 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:44:39 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:44:39 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:44:39 CEST -
+2021.08.29 11:05:09 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55c6187, org.springframework.security.web.context.SecurityContextPersistenceFilter@4248adf, org.springframework.security.web.header.HeaderWriterFilter@43e933f1, org.springframework.security.web.authentication.logout.LogoutFilter@7b8cc8b8, com.example.demo.security.JWTAuthorizationFilter@7417ef60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d4e086, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@da83d36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e044293, org.springframework.security.web.session.SessionManagementFilter@3c5d5fa2, org.springframework.security.web.access.ExceptionTranslationFilter@6abd39c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ab0d9c2]
+2021.08.29 11:05:10 CEST -LiveReload server is running on port 35729
+2021.08.29 11:05:10 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:05:10 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:05:10 CEST -Started DemoApplication in 1.598 seconds (JVM running for 2504.274)
+2021.08.29 11:05:10 CEST -Condition evaluation unchanged
+2021.08.29 11:05:21 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:05:21 CEST -HikariPool-7 - Shutdown initiated...
+2021.08.29 11:05:21 CEST -HikariPool-7 - Shutdown completed.
+2021.08.29 11:05:21 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:05:21 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:05:22 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:05:22 CEST -Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:05:22 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:05:22 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:05:22 CEST -Starting service [Tomcat]
+2021.08.29 11:05:22 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:05:22 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:05:22 CEST -Root WebApplicationContext: initialization completed in 713 ms
+2021.08.29 11:05:22 CEST -HikariPool-8 - Starting...
+2021.08.29 11:05:22 CEST -HikariPool-8 - Start completed.
+2021.08.29 11:05:22 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:05:22 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:05:22 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:05:22 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:05:23 CEST -
 
-Using generated security password: f1daaaec-cefb-43ce-ad10-84dbee1c8361
+Using generated security password: 907469f6-8d6b-4620-877a-f24aa4a04156
 
-2021.08.27 12:44:39 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cb41b95, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e692854, org.springframework.security.web.header.HeaderWriterFilter@1376011b, org.springframework.security.web.authentication.logout.LogoutFilter@6ff9bd0d, com.example.demo.security.JWTAuthorizationFilter@32a09ccc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e0a08e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@523d0970, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b06c14, org.springframework.security.web.session.SessionManagementFilter@33d3203e, org.springframework.security.web.access.ExceptionTranslationFilter@720ba5a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ef8dac8]
-2021.08.27 12:44:40 CEST -LiveReload server is running on port 35729
-2021.08.27 12:44:40 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:44:40 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:44:40 CEST -Started DemoApplication in 2.02 seconds (JVM running for 2335.843)
-2021.08.27 12:44:40 CEST -Condition evaluation unchanged
-2021.08.27 12:44:46 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:44:46 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:44:46 CEST -Completed initialization in 5 ms
-2021.08.27 12:46:11 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:46:11 CEST -HikariPool-6 - Shutdown initiated...
-2021.08.27 12:46:11 CEST -HikariPool-6 - Shutdown completed.
-2021.08.27 12:46:11 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:46:11 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:46:12 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:46:12 CEST -Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:46:12 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:46:12 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:46:12 CEST -Starting service [Tomcat]
-2021.08.27 12:46:12 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:46:12 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:46:12 CEST -Root WebApplicationContext: initialization completed in 713 ms
-2021.08.27 12:46:12 CEST -HikariPool-7 - Starting...
-2021.08.27 12:46:12 CEST -HikariPool-7 - Start completed.
-2021.08.27 12:46:12 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:46:12 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:46:12 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:46:12 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:46:13 CEST -
+2021.08.29 11:05:23 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c7207b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@42cf2e40, org.springframework.security.web.header.HeaderWriterFilter@3a9e05ed, org.springframework.security.web.authentication.logout.LogoutFilter@41cf643d, com.example.demo.security.JWTAuthorizationFilter@6169c5bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@218815f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b73dd44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@554a8d85, org.springframework.security.web.session.SessionManagementFilter@25769ba3, org.springframework.security.web.access.ExceptionTranslationFilter@39db5feb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3559e5cb]
+2021.08.29 11:05:23 CEST -LiveReload server is running on port 35729
+2021.08.29 11:05:23 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:05:23 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:05:23 CEST -Started DemoApplication in 1.71 seconds (JVM running for 2517.461)
+2021.08.29 11:05:23 CEST -Condition evaluation unchanged
+2021.08.29 11:11:21 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:11:21 CEST -HikariPool-8 - Shutdown initiated...
+2021.08.29 11:11:21 CEST -HikariPool-8 - Shutdown completed.
+2021.08.29 11:11:21 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:11:21 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:11:22 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:11:22 CEST -Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:11:22 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:11:22 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:11:22 CEST -Starting service [Tomcat]
+2021.08.29 11:11:22 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:11:22 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:11:22 CEST -Root WebApplicationContext: initialization completed in 533 ms
+2021.08.29 11:11:22 CEST -HikariPool-9 - Starting...
+2021.08.29 11:11:22 CEST -HikariPool-9 - Start completed.
+2021.08.29 11:11:22 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:11:22 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:11:22 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:11:22 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:11:23 CEST -
 
-Using generated security password: ee043c7a-810f-4ee5-a376-5e1acebba4b7
+Using generated security password: 97057fc8-c0bc-4742-81e7-c6f14a822923
 
-2021.08.27 12:46:13 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12d1984e, org.springframework.security.web.context.SecurityContextPersistenceFilter@47e6353c, org.springframework.security.web.header.HeaderWriterFilter@7ee1619f, org.springframework.security.web.authentication.logout.LogoutFilter@61adc61d, com.example.demo.security.JWTAuthorizationFilter@5f4ab6a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@243b4263, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51a332e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@189602ba, org.springframework.security.web.session.SessionManagementFilter@1f8b2f57, org.springframework.security.web.access.ExceptionTranslationFilter@6d31c1f2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4539b242]
-2021.08.27 12:46:13 CEST -LiveReload server is running on port 35729
-2021.08.27 12:46:13 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:46:13 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:46:13 CEST -Started DemoApplication in 1.894 seconds (JVM running for 2429.11)
-2021.08.27 12:46:13 CEST -Condition evaluation unchanged
-2021.08.27 12:46:37 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:46:37 CEST -HikariPool-7 - Shutdown initiated...
-2021.08.27 12:46:37 CEST -HikariPool-7 - Shutdown completed.
-2021.08.27 12:46:37 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:46:37 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:46:37 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:46:37 CEST -Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:46:38 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:46:38 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:46:38 CEST -Starting service [Tomcat]
-2021.08.27 12:46:38 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:46:38 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:46:38 CEST -Root WebApplicationContext: initialization completed in 887 ms
-2021.08.27 12:46:38 CEST -HikariPool-8 - Starting...
-2021.08.27 12:46:38 CEST -HikariPool-8 - Start completed.
-2021.08.27 12:46:38 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:46:38 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:46:38 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:46:38 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:46:39 CEST -
+2021.08.29 11:11:23 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ced7e15, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a6c5026, org.springframework.security.web.header.HeaderWriterFilter@1d8218b, org.springframework.security.web.authentication.logout.LogoutFilter@23e832f1, com.example.demo.security.JWTAuthorizationFilter@154fcb40, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a628684, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a76263a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10d6d577, org.springframework.security.web.session.SessionManagementFilter@26a4ebd1, org.springframework.security.web.access.ExceptionTranslationFilter@182315aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3932bf45]
+2021.08.29 11:11:23 CEST -LiveReload server is running on port 35729
+2021.08.29 11:11:23 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:11:23 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:11:23 CEST -Started DemoApplication in 1.776 seconds (JVM running for 2877.744)
+2021.08.29 11:11:23 CEST -Condition evaluation unchanged
+2021.08.29 11:11:36 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.29 11:11:36 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.29 11:11:36 CEST -Completed initialization in 3 ms
+2021.08.29 11:14:23 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:14:23 CEST -HikariPool-9 - Shutdown initiated...
+2021.08.29 11:14:23 CEST -HikariPool-9 - Shutdown completed.
+2021.08.29 11:14:23 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:14:23 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:14:23 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:14:23 CEST -Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:14:24 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:14:24 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:14:24 CEST -Starting service [Tomcat]
+2021.08.29 11:14:24 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:14:24 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:14:24 CEST -Root WebApplicationContext: initialization completed in 793 ms
+2021.08.29 11:14:24 CEST -HikariPool-10 - Starting...
+2021.08.29 11:14:24 CEST -HikariPool-10 - Start completed.
+2021.08.29 11:14:24 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:14:24 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:14:24 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:14:24 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:14:24 CEST -
 
-Using generated security password: cd9b6f55-b768-42c9-8687-cc14546628da
+Using generated security password: d7390271-2ab8-40e3-9fc1-9225e2ae5f9d
 
-2021.08.27 12:46:39 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51255c30, org.springframework.security.web.context.SecurityContextPersistenceFilter@c0cd186, org.springframework.security.web.header.HeaderWriterFilter@7802f787, org.springframework.security.web.authentication.logout.LogoutFilter@26db070e, com.example.demo.security.JWTAuthorizationFilter@6a854de6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684035f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79159b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@503b01e3, org.springframework.security.web.session.SessionManagementFilter@6b040de8, org.springframework.security.web.access.ExceptionTranslationFilter@4a45ddb2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@782caf42]
-2021.08.27 12:46:39 CEST -LiveReload server is running on port 35729
-2021.08.27 12:46:39 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:46:39 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:46:39 CEST -Started DemoApplication in 2.356 seconds (JVM running for 2455.18)
-2021.08.27 12:46:39 CEST -Condition evaluation unchanged
-2021.08.27 12:48:17 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:48:17 CEST -HikariPool-8 - Shutdown initiated...
-2021.08.27 12:48:17 CEST -HikariPool-8 - Shutdown completed.
-2021.08.27 12:48:17 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:48:17 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:48:17 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:48:17 CEST -Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:48:18 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:48:18 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:48:18 CEST -Starting service [Tomcat]
-2021.08.27 12:48:18 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:48:18 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:48:18 CEST -Root WebApplicationContext: initialization completed in 790 ms
-2021.08.27 12:48:18 CEST -HikariPool-9 - Starting...
-2021.08.27 12:48:18 CEST -HikariPool-9 - Start completed.
-2021.08.27 12:48:18 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:48:18 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:48:18 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:48:18 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:48:18 CEST -
+2021.08.29 11:14:24 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506dca02, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c11e8c3, org.springframework.security.web.header.HeaderWriterFilter@4fade294, org.springframework.security.web.authentication.logout.LogoutFilter@13330ebc, com.example.demo.security.JWTAuthorizationFilter@14d58437, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@410ae8b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61931b47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@362578e4, org.springframework.security.web.session.SessionManagementFilter@5bfb4fcf, org.springframework.security.web.access.ExceptionTranslationFilter@5a6cf948, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e971802]
+2021.08.29 11:14:25 CEST -LiveReload server is running on port 35729
+2021.08.29 11:14:25 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:14:25 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:14:25 CEST -Started DemoApplication in 2.121 seconds (JVM running for 3059.469)
+2021.08.29 11:14:25 CEST -Condition evaluation unchanged
+2021.08.29 11:15:03 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:15:03 CEST -HikariPool-10 - Shutdown initiated...
+2021.08.29 11:15:03 CEST -HikariPool-10 - Shutdown completed.
+2021.08.29 11:15:03 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 11:15:03 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 11:15:03 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 11:15:03 CEST -Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021.08.29 11:15:04 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 11:15:04 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:15:04 CEST -Starting service [Tomcat]
+2021.08.29 11:15:04 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 11:15:04 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 11:15:04 CEST -Root WebApplicationContext: initialization completed in 532 ms
+2021.08.29 11:15:04 CEST -HikariPool-11 - Starting...
+2021.08.29 11:15:04 CEST -HikariPool-11 - Start completed.
+2021.08.29 11:15:04 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 11:15:04 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 11:15:04 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 11:15:04 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 11:15:04 CEST -
 
-Using generated security password: 0e5592e9-cfe1-46f5-9cf5-49ba41cc44f7
+Using generated security password: 62ca2ce6-7350-48b4-8aa5-41abea969995
 
-2021.08.27 12:48:18 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69b9aaf5, org.springframework.security.web.context.SecurityContextPersistenceFilter@782238cb, org.springframework.security.web.header.HeaderWriterFilter@206ea62a, org.springframework.security.web.authentication.logout.LogoutFilter@38fab808, com.example.demo.security.JWTAuthorizationFilter@4b296710, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61ec6ff3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34e6ca12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@368e0184, org.springframework.security.web.session.SessionManagementFilter@66c0769d, org.springframework.security.web.access.ExceptionTranslationFilter@496a17b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@186a516c]
-2021.08.27 12:48:19 CEST -LiveReload server is running on port 35729
-2021.08.27 12:48:19 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:48:19 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:48:19 CEST -Started DemoApplication in 1.961 seconds (JVM running for 2554.797)
-2021.08.27 12:48:19 CEST -Condition evaluation unchanged
-2021.08.27 12:49:48 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:49:48 CEST -HikariPool-9 - Shutdown initiated...
-2021.08.27 12:49:48 CEST -HikariPool-9 - Shutdown completed.
-2021.08.27 12:49:48 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:49:48 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:49:49 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:49:49 CEST -Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:49:49 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:49:49 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:49:49 CEST -Starting service [Tomcat]
-2021.08.27 12:49:49 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:49:49 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:49:49 CEST -Root WebApplicationContext: initialization completed in 738 ms
-2021.08.27 12:49:49 CEST -HikariPool-10 - Starting...
-2021.08.27 12:49:49 CEST -HikariPool-10 - Start completed.
-2021.08.27 12:49:49 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:49:49 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:49:50 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:49:50 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:49:50 CEST -
+2021.08.29 11:15:04 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@142a8ba8, org.springframework.security.web.context.SecurityContextPersistenceFilter@39e12271, org.springframework.security.web.header.HeaderWriterFilter@7a6cc662, org.springframework.security.web.authentication.logout.LogoutFilter@67d6db0c, com.example.demo.security.JWTAuthorizationFilter@27fe08ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62909396, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e530670, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3860e468, org.springframework.security.web.session.SessionManagementFilter@6659f6f1, org.springframework.security.web.access.ExceptionTranslationFilter@3a8c24c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23534f4e]
+2021.08.29 11:15:04 CEST -LiveReload server is running on port 35729
+2021.08.29 11:15:05 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 11:15:05 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 11:15:05 CEST -Started DemoApplication in 1.461 seconds (JVM running for 3099.067)
+2021.08.29 11:15:05 CEST -Condition evaluation unchanged
+2021.08.29 11:15:08 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.29 11:15:08 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.29 11:15:08 CEST -Completed initialization in 2 ms
+2021.08.29 11:16:05 CEST -User {id: 19b3b9e9-c077-4a50-910c-bf3bca444af2, name: Carlos25, lastName: Castillo13, email: 4mail0@mail} User Searched:  succesfully.
+2021.08.29 11:17:17 CEST -User {id: 19b3b9e9-c077-4a50-910c-bf3bca444af2, name: Carlos25, lastName: Castillo13, email: 4mail0@mail} User Searched:  succesfully.
+2021.08.29 12:32:29 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 12:32:29 CEST -HikariPool-11 - Shutdown initiated...
+2021.08.29 12:32:29 CEST -HikariPool-11 - Shutdown completed.
+2021.08.29 12:32:29 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 12:32:29 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 12:32:30 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 12:32:30 CEST -Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021.08.29 12:32:30 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 12:32:30 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 12:32:30 CEST -Starting service [Tomcat]
+2021.08.29 12:32:30 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 12:32:30 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 12:32:30 CEST -Root WebApplicationContext: initialization completed in 732 ms
+2021.08.29 12:32:30 CEST -HikariPool-12 - Starting...
+2021.08.29 12:32:30 CEST -HikariPool-12 - Start completed.
+2021.08.29 12:32:30 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 12:32:30 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 12:32:30 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 12:32:30 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 12:32:30 CEST -
 
-Using generated security password: 384ef961-50d2-478f-bb9d-faff9e99c895
+Using generated security password: e3eb1314-46e4-4957-a2b7-39f4e0449bad
 
-2021.08.27 12:49:50 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@466df143, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c7051a2, org.springframework.security.web.header.HeaderWriterFilter@7130a1e0, org.springframework.security.web.authentication.logout.LogoutFilter@4cc55229, com.example.demo.security.JWTAuthorizationFilter@51f42696, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15658d17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@612e11fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@209c7420, org.springframework.security.web.session.SessionManagementFilter@193f4093, org.springframework.security.web.access.ExceptionTranslationFilter@550189a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25128448]
-2021.08.27 12:49:51 CEST -LiveReload server is running on port 35729
-2021.08.27 12:49:51 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:49:51 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:49:51 CEST -Started DemoApplication in 2.406 seconds (JVM running for 2646.772)
-2021.08.27 12:49:51 CEST -Condition evaluation unchanged
-2021.08.27 12:49:52 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:49:52 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:49:52 CEST -Completed initialization in 3 ms
-2021.08.27 12:50:33 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:50:33 CEST -HikariPool-10 - Shutdown initiated...
-2021.08.27 12:50:33 CEST -HikariPool-10 - Shutdown completed.
-2021.08.27 12:50:33 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:50:33 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:50:33 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:50:33 CEST -Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:50:34 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:50:34 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:50:34 CEST -Starting service [Tomcat]
-2021.08.27 12:50:34 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:50:34 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:50:34 CEST -Root WebApplicationContext: initialization completed in 593 ms
-2021.08.27 12:50:34 CEST -HikariPool-11 - Starting...
-2021.08.27 12:50:34 CEST -HikariPool-11 - Start completed.
-2021.08.27 12:50:34 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:50:34 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:50:34 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:50:34 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:50:34 CEST -
+2021.08.29 12:32:30 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@438ed417, org.springframework.security.web.context.SecurityContextPersistenceFilter@28c1589a, org.springframework.security.web.header.HeaderWriterFilter@222b6174, org.springframework.security.web.authentication.logout.LogoutFilter@2c73480b, com.example.demo.security.JWTAuthorizationFilter@43af334b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7b21c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2422dbd2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c3e06b7, org.springframework.security.web.session.SessionManagementFilter@18665752, org.springframework.security.web.access.ExceptionTranslationFilter@7290ebe9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e62812d]
+2021.08.29 12:32:31 CEST -LiveReload server is running on port 35729
+2021.08.29 12:32:31 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 12:32:31 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 12:32:31 CEST -Started DemoApplication in 1.867 seconds (JVM running for 7745.216)
+2021.08.29 12:32:31 CEST -Condition evaluation unchanged
+2021.08.29 12:42:49 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 12:42:49 CEST -HikariPool-12 - Shutdown initiated...
+2021.08.29 12:42:49 CEST -HikariPool-12 - Shutdown completed.
+2021.08.29 12:42:49 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 3708 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
+2021.08.29 12:42:49 CEST -No active profile set, falling back to default profiles: default
+2021.08.29 12:42:49 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.29 12:42:49 CEST -Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021.08.29 12:42:49 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.29 12:42:49 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.29 12:42:49 CEST -Starting service [Tomcat]
+2021.08.29 12:42:49 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.29 12:42:49 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.29 12:42:49 CEST -Root WebApplicationContext: initialization completed in 467 ms
+2021.08.29 12:42:49 CEST -HikariPool-13 - Starting...
+2021.08.29 12:42:49 CEST -HikariPool-13 - Start completed.
+2021.08.29 12:42:49 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
+2021.08.29 12:42:49 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.29 12:42:50 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.29 12:42:50 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.29 12:42:50 CEST -
 
-Using generated security password: 5368d0b6-8074-497d-b394-5a151cbf5d35
+Using generated security password: e75882ad-43a2-4125-a1aa-ca438f7e51f8
 
-2021.08.27 12:50:34 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44a3b55, org.springframework.security.web.context.SecurityContextPersistenceFilter@24a0653, org.springframework.security.web.header.HeaderWriterFilter@68e435c9, org.springframework.security.web.authentication.logout.LogoutFilter@7690474, com.example.demo.security.JWTAuthorizationFilter@17dd1e7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3132d31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a101ae7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44cfbc90, org.springframework.security.web.session.SessionManagementFilter@1a30bf93, org.springframework.security.web.access.ExceptionTranslationFilter@14c2b358, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77d35bc3]
-2021.08.27 12:50:35 CEST -LiveReload server is running on port 35729
-2021.08.27 12:50:35 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:50:35 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:50:35 CEST -Started DemoApplication in 1.664 seconds (JVM running for 2690.812)
-2021.08.27 12:50:35 CEST -Condition evaluation unchanged
-2021.08.27 12:50:40 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:50:40 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:50:40 CEST -Completed initialization in 6 ms
-2021.08.27 12:51:54 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:51:54 CEST -HikariPool-11 - Shutdown initiated...
-2021.08.27 12:51:54 CEST -HikariPool-11 - Shutdown completed.
-2021.08.27 12:51:54 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:51:54 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:51:54 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:51:54 CEST -Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:51:54 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:51:54 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:51:54 CEST -Starting service [Tomcat]
-2021.08.27 12:51:54 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:51:54 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:51:54 CEST -Root WebApplicationContext: initialization completed in 591 ms
-2021.08.27 12:51:54 CEST -HikariPool-12 - Starting...
-2021.08.27 12:51:55 CEST -HikariPool-12 - Start completed.
-2021.08.27 12:51:55 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:51:55 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:51:55 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:51:55 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:51:55 CEST -
-
-Using generated security password: 8b6d4332-0092-43db-8407-51282788e8db
-
-2021.08.27 12:51:55 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68a09718, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ec50bbc, org.springframework.security.web.header.HeaderWriterFilter@28438fd8, org.springframework.security.web.authentication.logout.LogoutFilter@3cba7cd7, com.example.demo.security.JWTAuthorizationFilter@36ebeef3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ee54103, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a6c2248, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d5a5b5, org.springframework.security.web.session.SessionManagementFilter@ae14534, org.springframework.security.web.access.ExceptionTranslationFilter@6cf99f38, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45b26244]
-2021.08.27 12:51:55 CEST -LiveReload server is running on port 35729
-2021.08.27 12:51:55 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:51:55 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:51:55 CEST -Started DemoApplication in 1.646 seconds (JVM running for 2771.559)
-2021.08.27 12:51:55 CEST -Condition evaluation unchanged
-2021.08.27 12:52:00 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021.08.27 12:52:00 CEST -Initializing Servlet 'dispatcherServlet'
-2021.08.27 12:52:00 CEST -Completed initialization in 4 ms
-2021.08.27 12:52:00 CEST -User Updated: Carlos14
-2021.08.27 12:53:05 CEST -User Updated: Carlos24
-2021.08.27 12:53:33 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:53:33 CEST -HikariPool-12 - Shutdown initiated...
-2021.08.27 12:53:33 CEST -HikariPool-12 - Shutdown completed.
-2021.08.27 12:53:33 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 12:53:33 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 12:53:33 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 12:53:34 CEST -Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
-2021.08.27 12:53:34 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 12:53:34 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:53:34 CEST -Starting service [Tomcat]
-2021.08.27 12:53:34 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 12:53:34 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 12:53:34 CEST -Root WebApplicationContext: initialization completed in 579 ms
-2021.08.27 12:53:34 CEST -HikariPool-13 - Starting...
-2021.08.27 12:53:34 CEST -HikariPool-13 - Start completed.
-2021.08.27 12:53:34 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 12:53:34 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 12:53:34 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 12:53:34 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 12:53:34 CEST -
-
-Using generated security password: 1684fca7-fbd0-4ce0-b666-a7b4fdbb02dd
-
-2021.08.27 12:53:34 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d57f5f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@54d26746, org.springframework.security.web.header.HeaderWriterFilter@57308c7d, org.springframework.security.web.authentication.logout.LogoutFilter@386b573c, com.example.demo.security.JWTAuthorizationFilter@12d252df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28957349, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b955142, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34a2cbc9, org.springframework.security.web.session.SessionManagementFilter@971b499, org.springframework.security.web.access.ExceptionTranslationFilter@4d9635a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@739d426f]
-2021.08.27 12:53:35 CEST -LiveReload server is running on port 35729
-2021.08.27 12:53:35 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 12:53:35 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 12:53:35 CEST -Started DemoApplication in 1.658 seconds (JVM running for 2870.862)
-2021.08.27 12:53:35 CEST -Condition evaluation unchanged
-2021.08.27 13:40:17 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:40:17 CEST -HikariPool-13 - Shutdown initiated...
-2021.08.27 13:40:17 CEST -HikariPool-13 - Shutdown completed.
-2021.08.27 13:40:17 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:40:17 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:40:17 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:40:17 CEST -Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:40:17 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:40:17 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:40:17 CEST -Starting service [Tomcat]
-2021.08.27 13:40:17 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:40:17 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:40:17 CEST -Root WebApplicationContext: initialization completed in 471 ms
-2021.08.27 13:40:17 CEST -HikariPool-14 - Starting...
-2021.08.27 13:40:17 CEST -HikariPool-14 - Start completed.
-2021.08.27 13:40:17 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:40:17 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:40:18 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:40:18 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:40:18 CEST -
-
-Using generated security password: 8a9b6286-05b6-4abc-8fe0-8d8bd87b56d4
-
-2021.08.27 13:40:18 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a3267f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@69c5b71e, org.springframework.security.web.header.HeaderWriterFilter@374b845f, org.springframework.security.web.authentication.logout.LogoutFilter@477bbc5, com.example.demo.security.JWTAuthorizationFilter@481c63e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61e4e29b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a66eb84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@484b2b6c, org.springframework.security.web.session.SessionManagementFilter@2d6cf1cc, org.springframework.security.web.access.ExceptionTranslationFilter@1423914c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@702d007f]
-2021.08.27 13:40:19 CEST -LiveReload server is running on port 35729
-2021.08.27 13:40:19 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:40:19 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 13:40:19 CEST -Started DemoApplication in 2.154 seconds (JVM running for 5675.089)
-2021.08.27 13:40:19 CEST -Condition evaluation unchanged
-2021.08.27 13:43:37 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:43:37 CEST -HikariPool-14 - Shutdown initiated...
-2021.08.27 13:43:37 CEST -HikariPool-14 - Shutdown completed.
-2021.08.27 13:43:37 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:43:37 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:43:37 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:43:37 CEST -Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:43:37 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:43:37 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:43:37 CEST -Starting service [Tomcat]
-2021.08.27 13:43:37 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:43:37 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:43:37 CEST -Root WebApplicationContext: initialization completed in 363 ms
-2021.08.27 13:43:37 CEST -HikariPool-15 - Starting...
-2021.08.27 13:43:37 CEST -HikariPool-15 - Start completed.
-2021.08.27 13:43:37 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:43:38 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:43:38 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:43:38 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:43:38 CEST -
-
-Using generated security password: 118c7a2d-c69d-46c9-a7d3-a381f664ad93
-
-2021.08.27 13:43:38 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fd8e467, org.springframework.security.web.context.SecurityContextPersistenceFilter@625260dc, org.springframework.security.web.header.HeaderWriterFilter@5559ebe8, org.springframework.security.web.authentication.logout.LogoutFilter@5d385621, com.example.demo.security.JWTAuthorizationFilter@11f228e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79973b12, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@630b9963, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ad54783, org.springframework.security.web.session.SessionManagementFilter@6844e3b7, org.springframework.security.web.access.ExceptionTranslationFilter@2cd6e10d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3814eabc]
-2021.08.27 13:43:38 CEST -LiveReload server is running on port 35729
-2021.08.27 13:43:38 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:43:38 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 13:43:38 CEST -Started DemoApplication in 1.02 seconds (JVM running for 5874.187)
-2021.08.27 13:43:38 CEST -Condition evaluation unchanged
-2021.08.27 13:43:51 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:43:51 CEST -HikariPool-15 - Shutdown initiated...
-2021.08.27 13:43:51 CEST -HikariPool-15 - Shutdown completed.
-2021.08.27 13:43:51 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:43:51 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:43:52 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:43:52 CEST -Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:43:52 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:43:52 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:43:52 CEST -Starting service [Tomcat]
-2021.08.27 13:43:52 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:43:52 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:43:52 CEST -Root WebApplicationContext: initialization completed in 547 ms
-2021.08.27 13:43:52 CEST -HikariPool-16 - Starting...
-2021.08.27 13:43:52 CEST -HikariPool-16 - Start completed.
-2021.08.27 13:43:52 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:43:52 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:43:52 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:43:52 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:43:53 CEST -
-
-Using generated security password: f97bc10c-11b1-4cd1-a1b3-351f674b0856
-
-2021.08.27 13:43:53 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e5ebd6e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1686fbbe, org.springframework.security.web.header.HeaderWriterFilter@34e2b9a8, org.springframework.security.web.authentication.logout.LogoutFilter@77cc066b, com.example.demo.security.JWTAuthorizationFilter@6008cfd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1822df0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@392c1a5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d48f0d4, org.springframework.security.web.session.SessionManagementFilter@73139cc7, org.springframework.security.web.access.ExceptionTranslationFilter@640d54f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32ff666b]
-2021.08.27 13:43:53 CEST -LiveReload server is running on port 35729
-2021.08.27 13:43:53 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:43:53 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 13:43:53 CEST -Started DemoApplication in 1.603 seconds (JVM running for 5889.154)
-2021.08.27 13:43:53 CEST -Condition evaluation unchanged
-2021.08.27 13:43:56 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:43:56 CEST -HikariPool-16 - Shutdown initiated...
-2021.08.27 13:43:56 CEST -HikariPool-16 - Shutdown completed.
-2021.08.27 13:43:56 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:43:56 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:43:57 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:43:57 CEST -Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:43:57 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:43:57 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:43:57 CEST -Starting service [Tomcat]
-2021.08.27 13:43:57 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:43:57 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:43:57 CEST -Root WebApplicationContext: initialization completed in 518 ms
-2021.08.27 13:43:57 CEST -HikariPool-17 - Starting...
-2021.08.27 13:43:57 CEST -HikariPool-17 - Start completed.
-2021.08.27 13:43:57 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:43:57 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:43:57 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:43:57 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:43:57 CEST -
-
-Using generated security password: 40b0b57b-b561-4a3e-aa26-9b5aac34af54
-
-2021.08.27 13:43:57 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d6401a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@56b8b1f6, org.springframework.security.web.header.HeaderWriterFilter@31ec3ad0, org.springframework.security.web.authentication.logout.LogoutFilter@54af676b, com.example.demo.security.JWTAuthorizationFilter@1297bcf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9a4e972, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59ce782c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7745adda, org.springframework.security.web.session.SessionManagementFilter@7933909, org.springframework.security.web.access.ExceptionTranslationFilter@13c99152, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60c99da1]
-2021.08.27 13:43:58 CEST -LiveReload server is running on port 35729
-2021.08.27 13:43:58 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:43:58 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 13:43:58 CEST -Started DemoApplication in 1.444 seconds (JVM running for 5893.855)
-2021.08.27 13:43:58 CEST -Condition evaluation unchanged
-2021.08.27 13:44:01 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:44:01 CEST -HikariPool-17 - Shutdown initiated...
-2021.08.27 13:44:01 CEST -HikariPool-17 - Shutdown completed.
-2021.08.27 13:44:01 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:44:01 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:44:01 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:44:01 CEST -Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:44:01 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:44:01 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:44:01 CEST -Starting service [Tomcat]
-2021.08.27 13:44:01 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:44:01 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:44:01 CEST -Root WebApplicationContext: initialization completed in 295 ms
-2021.08.27 13:44:01 CEST -HikariPool-18 - Starting...
-2021.08.27 13:44:01 CEST -HikariPool-18 - Start completed.
-2021.08.27 13:44:01 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:44:01 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:44:01 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:44:01 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:44:02 CEST -
-
-Using generated security password: a81b2bbe-517a-4ee1-ae11-f17b12ff4c53
-
-2021.08.27 13:44:02 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@147409c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@157a60a8, org.springframework.security.web.header.HeaderWriterFilter@a7772b8, org.springframework.security.web.authentication.logout.LogoutFilter@a071ed1, com.example.demo.security.JWTAuthorizationFilter@660a7958, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@112d0ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@304180c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1932f9b4, org.springframework.security.web.session.SessionManagementFilter@142d05d9, org.springframework.security.web.access.ExceptionTranslationFilter@5ac9c6b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f45e0ea]
-2021.08.27 13:44:02 CEST -LiveReload server is running on port 35729
-2021.08.27 13:44:02 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:44:02 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 13:44:02 CEST -Started DemoApplication in 0.904 seconds (JVM running for 5897.939)
-2021.08.27 13:44:02 CEST -Condition evaluation unchanged
-2021.08.27 13:47:22 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:47:22 CEST -HikariPool-18 - Shutdown initiated...
-2021.08.27 13:47:22 CEST -HikariPool-18 - Shutdown completed.
-2021.08.27 13:47:22 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:47:22 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:47:23 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:47:23 CEST -Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:47:23 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:47:23 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:47:23 CEST -Starting service [Tomcat]
-2021.08.27 13:47:23 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:47:23 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:47:23 CEST -Root WebApplicationContext: initialization completed in 494 ms
-2021.08.27 13:47:23 CEST -HikariPool-19 - Starting...
-2021.08.27 13:47:23 CEST -HikariPool-19 - Start completed.
-2021.08.27 13:47:23 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:47:23 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:47:23 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:47:23 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:47:24 CEST -
-
-Using generated security password: 9ab1b3b6-f0c8-49cb-a9f5-daf382ba5e47
-
-2021.08.27 13:47:24 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f84034c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b773e03, org.springframework.security.web.header.HeaderWriterFilter@ca072c, org.springframework.security.web.authentication.logout.LogoutFilter@37da2bb1, com.example.demo.security.JWTAuthorizationFilter@4a24eca0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fc1fb45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fe270f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f21628e, org.springframework.security.web.session.SessionManagementFilter@3a94066b, org.springframework.security.web.access.ExceptionTranslationFilter@57f26008, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25b8ac8c]
-2021.08.27 13:47:24 CEST -LiveReload server is running on port 35729
-2021.08.27 13:47:24 CEST -Starting ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:47:24 CEST -Tomcat started on port(s): 9999 (http) with context path ''
-2021.08.27 13:47:24 CEST -Started DemoApplication in 1.367 seconds (JVM running for 6100.257)
-2021.08.27 13:47:24 CEST -Condition evaluation unchanged
-2021.08.27 13:49:23 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:49:23 CEST -HikariPool-19 - Shutdown initiated...
-2021.08.27 13:49:23 CEST -HikariPool-19 - Shutdown completed.
-2021.08.27 13:49:24 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:49:24 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:49:24 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:49:24 CEST -Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:49:24 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:49:24 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:49:24 CEST -Starting service [Tomcat]
-2021.08.27 13:49:24 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:49:24 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:49:24 CEST -Root WebApplicationContext: initialization completed in 670 ms
-2021.08.27 13:49:24 CEST -HikariPool-20 - Starting...
-2021.08.27 13:49:24 CEST -HikariPool-20 - Start completed.
-2021.08.27 13:49:24 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:49:24 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:49:25 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:49:25 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:49:25 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:49:25 CEST -HikariPool-20 - Shutdown initiated...
-2021.08.27 13:49:25 CEST -HikariPool-20 - Shutdown completed.
-2021.08.27 13:49:25 CEST -Stopping service [Tomcat]
-2021.08.27 13:50:04 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:50:04 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:50:04 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:50:04 CEST -Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:50:05 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:50:05 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:50:05 CEST -Starting service [Tomcat]
-2021.08.27 13:50:05 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:50:05 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:50:05 CEST -Root WebApplicationContext: initialization completed in 640 ms
-2021.08.27 13:50:05 CEST -HikariPool-21 - Starting...
-2021.08.27 13:50:05 CEST -HikariPool-21 - Start completed.
-2021.08.27 13:50:05 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:50:05 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:50:05 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:50:05 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:50:05 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:50:05 CEST -HikariPool-21 - Shutdown initiated...
-2021.08.27 13:50:05 CEST -HikariPool-21 - Shutdown completed.
-2021.08.27 13:50:05 CEST -Stopping service [Tomcat]
-2021.08.27 13:50:15 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:50:15 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:50:15 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:50:15 CEST -Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:50:15 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:50:15 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:50:15 CEST -Starting service [Tomcat]
-2021.08.27 13:50:15 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:50:15 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:50:15 CEST -Root WebApplicationContext: initialization completed in 891 ms
-2021.08.27 13:50:15 CEST -HikariPool-22 - Starting...
-2021.08.27 13:50:15 CEST -HikariPool-22 - Start completed.
-2021.08.27 13:50:15 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:50:16 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:50:16 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:50:16 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:50:16 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:50:16 CEST -HikariPool-22 - Shutdown initiated...
-2021.08.27 13:50:16 CEST -HikariPool-22 - Shutdown completed.
-2021.08.27 13:50:16 CEST -Stopping service [Tomcat]
-2021.08.27 13:50:21 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:50:21 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:50:21 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:50:22 CEST -Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:50:22 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:50:22 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:50:22 CEST -Starting service [Tomcat]
-2021.08.27 13:50:22 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:50:22 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:50:22 CEST -Root WebApplicationContext: initialization completed in 660 ms
-2021.08.27 13:50:22 CEST -HikariPool-23 - Starting...
-2021.08.27 13:50:22 CEST -HikariPool-23 - Start completed.
-2021.08.27 13:50:22 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:50:22 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:50:22 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021.08.27 13:50:22 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:50:22 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021.08.27 13:50:22 CEST -HikariPool-23 - Shutdown initiated...
-2021.08.27 13:50:22 CEST -HikariPool-23 - Shutdown completed.
-2021.08.27 13:50:22 CEST -Stopping service [Tomcat]
-2021.08.27 13:51:55 CEST -Starting DemoApplication using Java 16.0.2 on LES010281 with PID 9568 (C:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo\target\classes started by ccastill in c:\Users\ccastill\Desktop\Bootcamp\Proyectos\Pizzeria-Back-end\demo)
-2021.08.27 13:51:55 CEST -No active profile set, falling back to default profiles: default
-2021.08.27 13:51:56 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021.08.27 13:51:56 CEST -Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
-2021.08.27 13:51:56 CEST -Tomcat initialized with port(s): 9999 (http)
-2021.08.27 13:51:56 CEST -Initializing ProtocolHandler ["http-nio-9999"]
-2021.08.27 13:51:56 CEST -Starting service [Tomcat]
-2021.08.27 13:51:56 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021.08.27 13:51:56 CEST -Initializing Spring embedded WebApplicationContext
-2021.08.27 13:51:56 CEST -Root WebApplicationContext: initialization completed in 728 ms
-2021.08.27 13:51:56 CEST -HikariPool-24 - Starting...
-2021.08.27 13:51:56 CEST -HikariPool-24 - Start completed.
-2021.08.27 13:51:56 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/pizzeria'
-2021.08.27 13:51:56 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021.08.27 13:51:56 CEST -HikariPool-24 - Shutdown initiated...
-2021.08.27 13:51:56 CEST -HikariPool-24 - Shutdown completed.
-2021.08.27 13:51:56 CEST -Stopping service [Tomcat]
+2021.08.29 12:42:50 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c5c0353, org.springframework.security.web.context.SecurityContextPersistenceFilter@72397e6f, org.springframework.security.web.header.HeaderWriterFilter@43f61e7, org.springframework.security.web.authentication.logout.LogoutFilter@367ed6cc, com.example.demo.security.JWTAuthorizationFilter@5dec55c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58e9865a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27a6f4f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f718399, org.springframework.security.web.session.SessionManagementFilter@3b027021, org.springframework.security.web.access.ExceptionTranslationFilter@61996c6e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d690466]
+2021.08.29 12:42:50 CEST -LiveReload server is running on port 35729
+2021.08.29 12:42:50 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.29 12:42:50 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.29 12:42:50 CEST -Started DemoApplication in 1.573 seconds (JVM running for 8364.704)
+2021.08.29 12:42:50 CEST -Condition evaluation unchanged

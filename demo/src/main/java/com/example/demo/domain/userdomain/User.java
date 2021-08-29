@@ -41,4 +41,9 @@ public @NoArgsConstructor @Getter @Setter class User extends EntityBase{
     private Rol rol = Rol.ROL_USER;
     
 
+    @Override
+    public String toString() {
+        return String.format("User {id: %s, name: %s, lastName: %s, email: %s}", 
+        this.getId(), this.getName(), this.getLastName(), this.getEmail());
+    }
 }
