@@ -34,3 +34,7 @@ build/
 
 ### pom ###
 *.xml
+
+### logs and properties ###
+*.log
+application.properties
