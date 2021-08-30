@@ -1,0 +1,1318 @@
+2021.08.30 08:37:16 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 08:37:16 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 23132 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 08:37:16 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 08:37:16 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 08:37:16 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 08:37:20 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 08:37:20 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 08:37:21 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 08:37:21 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 21704 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 08:37:21 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 08:37:21 CEST -Finished Spring Data repository scanning in 351 ms. Found 1 JPA repository interfaces.
+2021.08.30 08:37:21 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 08:37:21 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 08:37:21 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 08:37:21 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 08:37:21 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 08:37:21 CEST -Finished Spring Data repository scanning in 82 ms. Found 0 Redis repository interfaces.
+2021.08.30 08:37:25 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 08:37:25 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 08:37:26 CEST -Finished Spring Data repository scanning in 407 ms. Found 1 JPA repository interfaces.
+2021.08.30 08:37:26 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 08:37:26 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 08:37:26 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 08:37:26 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:37:26 CEST -Starting service [Tomcat]
+2021.08.30 08:37:26 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 08:37:26 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 08:37:26 CEST -Finished Spring Data repository scanning in 81 ms. Found 0 Redis repository interfaces.
+2021.08.30 08:37:27 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 08:37:27 CEST -Root WebApplicationContext: initialization completed in 10543 ms
+2021.08.30 08:37:27 CEST -HikariPool-1 - Starting...
+2021.08.30 08:37:30 CEST -HikariPool-1 - Start completed.
+2021.08.30 08:37:30 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 08:37:31 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 08:37:31 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:37:31 CEST -Starting service [Tomcat]
+2021.08.30 08:37:31 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 08:37:32 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 08:37:32 CEST -Root WebApplicationContext: initialization completed in 11327 ms
+2021.08.30 08:37:33 CEST -HikariPool-1 - Starting...
+2021.08.30 08:37:34 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 08:37:35 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 08:37:36 CEST -HikariPool-1 - Start completed.
+2021.08.30 08:37:36 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 08:37:36 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 08:37:37 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 08:37:38 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 08:37:39 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 08:37:39 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 08:37:39 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 08:37:41 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 08:37:41 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 08:37:58 CEST -LiveReload server is running on port 35729
+2021.08.30 08:37:58 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:37:58 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 08:37:59 CEST -Started DemoApplication in 45.28 seconds (JVM running for 51.133)
+2021.08.30 08:38:01 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:38:01 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 08:38:01 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 08:38:01 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 08:38:01 CEST -Pausing ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:38:01 CEST -Stopping service [Tomcat]
+2021.08.30 08:38:01 CEST -Stopping ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:38:01 CEST -Destroying ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:38:26 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 08:38:26 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 08:38:26 CEST -Completed initialization in 7 ms
+2021.08.30 08:55:10 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 08:55:10 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 24376 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 08:55:10 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 08:55:11 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 08:55:11 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 08:55:13 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 08:55:13 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 08:55:14 CEST -Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interfaces.
+2021.08.30 08:55:14 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 08:55:14 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 08:55:14 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 08:55:14 CEST -Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+2021.08.30 08:55:16 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 08:55:16 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:55:16 CEST -Starting service [Tomcat]
+2021.08.30 08:55:16 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 08:55:16 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 08:55:16 CEST -Root WebApplicationContext: initialization completed in 5531 ms
+2021.08.30 08:55:17 CEST -HikariPool-1 - Starting...
+2021.08.30 08:55:18 CEST -HikariPool-1 - Start completed.
+2021.08.30 08:55:18 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 08:55:19 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 08:55:20 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 08:55:20 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 08:55:23 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 08:55:23 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 08:55:32 CEST -LiveReload server is running on port 35729
+2021.08.30 08:55:32 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 08:55:32 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 08:55:32 CEST -Started DemoApplication in 22.781 seconds (JVM running for 25.724)
+2021.08.30 08:55:50 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 08:55:50 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 08:55:50 CEST -Completed initialization in 7 ms
+2021.08.30 09:10:33 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 09:10:33 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 3488 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:10:33 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:10:33 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 09:10:33 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 09:10:36 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:10:36 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:10:37 CEST -Finished Spring Data repository scanning in 316 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:10:37 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:10:37 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:10:37 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:10:37 CEST -Finished Spring Data repository scanning in 60 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:10:40 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:10:40 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:10:40 CEST -Starting service [Tomcat]
+2021.08.30 09:10:40 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:10:41 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:10:41 CEST -Root WebApplicationContext: initialization completed in 7089 ms
+2021.08.30 09:10:41 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 09:10:41 CEST -HikariPool-1 - Starting...
+2021.08.30 09:10:41 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 7336 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:10:41 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:10:41 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 09:10:41 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 09:10:42 CEST -HikariPool-1 - Start completed.
+2021.08.30 09:10:42 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:10:44 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 09:10:45 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 09:10:46 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:10:47 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:10:47 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:10:47 CEST -Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:10:47 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:10:47 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:10:47 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:10:47 CEST -Finished Spring Data repository scanning in 48 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:10:48 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:10:48 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:10:52 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:10:52 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:10:52 CEST -Starting service [Tomcat]
+2021.08.30 09:10:52 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:10:53 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:10:53 CEST -Root WebApplicationContext: initialization completed in 11315 ms
+2021.08.30 09:10:54 CEST -HikariPool-1 - Starting...
+2021.08.30 09:10:55 CEST -HikariPool-1 - Start completed.
+2021.08.30 09:10:55 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:10:58 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 09:10:59 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 09:10:59 CEST -LiveReload server is running on port 35729
+2021.08.30 09:10:59 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:10:59 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:11:00 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 09:11:00 CEST -Started DemoApplication in 27.476 seconds (JVM running for 30.856)
+2021.08.30 09:11:01 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:11:01 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:11:08 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:11:08 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:11:08 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 09:11:08 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 09:11:08 CEST -Pausing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:11:08 CEST -Stopping service [Tomcat]
+2021.08.30 09:11:08 CEST -Stopping ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:11:08 CEST -Destroying ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:11:09 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 09:11:09 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 09:11:09 CEST -Completed initialization in 5 ms
+2021.08.30 09:12:32 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:12:32 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 09:12:32 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 09:12:33 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 3488 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:12:33 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:12:34 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:12:34 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:12:34 CEST -Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:12:34 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:12:34 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:12:34 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:12:34 CEST -Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:12:34 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:12:34 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:12:34 CEST -Starting service [Tomcat]
+2021.08.30 09:12:34 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:12:34 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:12:34 CEST -Root WebApplicationContext: initialization completed in 1719 ms
+2021.08.30 09:12:35 CEST -HikariPool-2 - Starting...
+2021.08.30 09:12:35 CEST -HikariPool-2 - Start completed.
+2021.08.30 09:12:35 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:12:35 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:12:35 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:12:35 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:12:37 CEST -LiveReload server is running on port 35729
+2021.08.30 09:12:37 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:12:37 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 09:12:37 CEST -Started DemoApplication in 4.403 seconds (JVM running for 128.007)
+2021.08.30 09:12:37 CEST -Condition evaluation unchanged
+2021.08.30 09:22:59 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:22:59 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.30 09:22:59 CEST -HikariPool-2 - Shutdown completed.
+2021.08.30 09:23:00 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 3488 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:23:00 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:23:01 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:23:01 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:23:01 CEST -Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:23:01 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:23:01 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:23:01 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:23:01 CEST -Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:23:01 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:23:01 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:23:01 CEST -Starting service [Tomcat]
+2021.08.30 09:23:01 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:23:01 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:23:01 CEST -Root WebApplicationContext: initialization completed in 1259 ms
+2021.08.30 09:23:01 CEST -HikariPool-3 - Starting...
+2021.08.30 09:23:01 CEST -HikariPool-3 - Start completed.
+2021.08.30 09:23:01 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:23:01 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:23:01 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:23:01 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:23:02 CEST -LiveReload server is running on port 35729
+2021.08.30 09:23:02 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:23:02 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 09:23:02 CEST -Started DemoApplication in 2.865 seconds (JVM running for 753.582)
+2021.08.30 09:23:02 CEST -Condition evaluation unchanged
+2021.08.30 09:23:30 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 09:23:30 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 09:23:30 CEST -Completed initialization in 3 ms
+2021.08.30 09:24:38 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:24:38 CEST -HikariPool-3 - Shutdown initiated...
+2021.08.30 09:24:38 CEST -HikariPool-3 - Shutdown completed.
+2021.08.30 09:24:38 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 3488 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:24:38 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:24:39 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:24:39 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:24:39 CEST -Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:24:39 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:24:39 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:24:39 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:24:39 CEST -Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:24:39 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:24:39 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:24:39 CEST -Starting service [Tomcat]
+2021.08.30 09:24:39 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:24:39 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:24:39 CEST -Root WebApplicationContext: initialization completed in 975 ms
+2021.08.30 09:24:39 CEST -HikariPool-4 - Starting...
+2021.08.30 09:24:39 CEST -HikariPool-4 - Start completed.
+2021.08.30 09:24:39 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:24:39 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:24:40 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:24:40 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:24:41 CEST -LiveReload server is running on port 35729
+2021.08.30 09:24:41 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:24:41 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 09:24:41 CEST -Started DemoApplication in 2.591 seconds (JVM running for 851.921)
+2021.08.30 09:24:41 CEST -Condition evaluation unchanged
+2021.08.30 09:24:41 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 09:24:41 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 09:24:41 CEST -Completed initialization in 2 ms
+2021.08.30 09:40:14 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 09:40:14 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 18120 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:40:14 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:40:14 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 09:40:14 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 09:40:16 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:40:16 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:40:16 CEST -Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:40:16 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:40:16 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:40:16 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:40:16 CEST -Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:40:17 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:40:17 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:40:17 CEST -Starting service [Tomcat]
+2021.08.30 09:40:17 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:40:18 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:40:18 CEST -Root WebApplicationContext: initialization completed in 3379 ms
+2021.08.30 09:40:18 CEST -HikariPool-1 - Starting...
+2021.08.30 09:40:18 CEST -HikariPool-1 - Start completed.
+2021.08.30 09:40:18 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:40:20 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 09:40:20 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 09:40:20 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:40:21 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:40:21 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:40:26 CEST -LiveReload server is running on port 35729
+2021.08.30 09:40:26 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:40:27 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 09:40:27 CEST -Started DemoApplication in 13.014 seconds (JVM running for 14.687)
+2021.08.30 09:40:37 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 09:40:37 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 09:40:37 CEST -Completed initialization in 3 ms
+2021.08.30 09:57:11 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 09:57:11 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 8652 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 09:57:11 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 09:57:11 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 09:57:11 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 09:57:13 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:57:13 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 09:57:13 CEST -Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
+2021.08.30 09:57:13 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 09:57:13 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 09:57:13 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 09:57:13 CEST -Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2021.08.30 09:57:15 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 09:57:15 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:57:15 CEST -Starting service [Tomcat]
+2021.08.30 09:57:15 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 09:57:15 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 09:57:15 CEST -Root WebApplicationContext: initialization completed in 3902 ms
+2021.08.30 09:57:15 CEST -HikariPool-1 - Starting...
+2021.08.30 09:57:16 CEST -HikariPool-1 - Start completed.
+2021.08.30 09:57:16 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 09:57:17 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 09:57:17 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 09:57:18 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 09:57:18 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 09:57:18 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 09:57:24 CEST -LiveReload server is running on port 35729
+2021.08.30 09:57:24 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 09:57:24 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 09:57:24 CEST -Started DemoApplication in 13.228 seconds (JVM running for 14.714)
+2021.08.30 09:57:29 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 09:57:29 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 09:57:29 CEST -Completed initialization in 2 ms
+2021.08.30 10:03:09 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 10:03:09 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 4820 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:03:09 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:03:09 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 10:03:09 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 10:03:11 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:03:11 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:03:12 CEST -Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:03:12 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:03:12 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:03:12 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:03:12 CEST -Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:03:14 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:03:14 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:03:14 CEST -Starting service [Tomcat]
+2021.08.30 10:03:14 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:03:14 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:03:14 CEST -Root WebApplicationContext: initialization completed in 4298 ms
+2021.08.30 10:03:14 CEST -HikariPool-1 - Starting...
+2021.08.30 10:03:14 CEST -HikariPool-1 - Start completed.
+2021.08.30 10:03:14 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:03:15 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 10:03:15 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 10:03:16 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:03:17 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:03:17 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:03:23 CEST -LiveReload server is running on port 35729
+2021.08.30 10:03:23 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:03:23 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:03:23 CEST -Started DemoApplication in 14.728 seconds (JVM running for 16.088)
+2021.08.30 10:03:27 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:03:27 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:03:27 CEST -Completed initialization in 4 ms
+2021.08.30 10:07:14 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:07:14 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 10:07:14 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 10:07:15 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 4820 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:07:15 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:07:15 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:07:15 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:07:16 CEST -Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:07:16 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:07:16 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:07:16 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:07:16 CEST -Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:07:16 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:07:16 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:07:16 CEST -Starting service [Tomcat]
+2021.08.30 10:07:16 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:07:16 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:07:16 CEST -Root WebApplicationContext: initialization completed in 1576 ms
+2021.08.30 10:07:16 CEST -HikariPool-2 - Starting...
+2021.08.30 10:07:16 CEST -HikariPool-2 - Start completed.
+2021.08.30 10:07:16 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:07:16 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:07:17 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:07:17 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:07:18 CEST -LiveReload server is running on port 35729
+2021.08.30 10:07:18 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:07:18 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:07:18 CEST -Started DemoApplication in 3.575 seconds (JVM running for 250.582)
+2021.08.30 10:07:18 CEST -Condition evaluation unchanged
+2021.08.30 10:07:35 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:07:35 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.30 10:07:35 CEST -HikariPool-2 - Shutdown completed.
+2021.08.30 10:07:35 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 4820 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:07:35 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:07:36 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:07:36 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:07:36 CEST -Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:07:36 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:07:36 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:07:36 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:07:36 CEST -Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:07:36 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:07:36 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:07:36 CEST -Starting service [Tomcat]
+2021.08.30 10:07:36 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:07:36 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:07:36 CEST -Root WebApplicationContext: initialization completed in 1072 ms
+2021.08.30 10:07:36 CEST -HikariPool-3 - Starting...
+2021.08.30 10:07:36 CEST -HikariPool-3 - Start completed.
+2021.08.30 10:07:36 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:07:36 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:07:37 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:07:37 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:07:38 CEST -LiveReload server is running on port 35729
+2021.08.30 10:07:38 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:07:38 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:07:38 CEST -Started DemoApplication in 2.8 seconds (JVM running for 270.441)
+2021.08.30 10:07:38 CEST -Condition evaluation unchanged
+2021.08.30 10:08:07 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:08:07 CEST -HikariPool-3 - Shutdown initiated...
+2021.08.30 10:08:07 CEST -HikariPool-3 - Shutdown completed.
+2021.08.30 10:08:07 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 4820 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:08:07 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:08:08 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:08:08 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:08:08 CEST -Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:08:08 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:08:08 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:08:08 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:08:08 CEST -Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:08:08 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:08:08 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:08:08 CEST -Starting service [Tomcat]
+2021.08.30 10:08:08 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:08:09 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:08:09 CEST -Root WebApplicationContext: initialization completed in 1120 ms
+2021.08.30 10:08:09 CEST -HikariPool-4 - Starting...
+2021.08.30 10:08:09 CEST -HikariPool-4 - Start completed.
+2021.08.30 10:08:09 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:08:09 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:08:09 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:08:09 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:08:10 CEST -LiveReload server is running on port 35729
+2021.08.30 10:08:10 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:08:10 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:08:10 CEST -Started DemoApplication in 2.591 seconds (JVM running for 302.521)
+2021.08.30 10:08:10 CEST -Condition evaluation unchanged
+2021.08.30 10:08:22 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:08:22 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:08:22 CEST -Completed initialization in 3 ms
+2021.08.30 10:10:15 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 10:10:16 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 18944 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:10:16 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:10:16 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 10:10:16 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 10:10:17 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:10:17 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:10:18 CEST -Finished Spring Data repository scanning in 274 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:10:18 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:10:18 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:10:18 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:10:18 CEST -Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:10:19 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:10:19 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:10:19 CEST -Starting service [Tomcat]
+2021.08.30 10:10:19 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:10:19 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:10:19 CEST -Root WebApplicationContext: initialization completed in 3721 ms
+2021.08.30 10:10:20 CEST -HikariPool-1 - Starting...
+2021.08.30 10:10:20 CEST -HikariPool-1 - Start completed.
+2021.08.30 10:10:20 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:10:21 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 10:10:22 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 10:10:22 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:10:23 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:10:23 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:10:29 CEST -LiveReload server is running on port 35729
+2021.08.30 10:10:29 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:10:29 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:10:29 CEST -Started DemoApplication in 14.126 seconds (JVM running for 15.62)
+2021.08.30 10:10:38 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:10:38 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:10:38 CEST -Completed initialization in 5 ms
+2021.08.30 10:11:31 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:11:31 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 10:11:31 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 10:11:31 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 18944 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:11:31 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:11:32 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:11:32 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:11:32 CEST -Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:11:32 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:11:32 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:11:32 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:11:32 CEST -Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:11:33 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:11:33 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:11:33 CEST -Starting service [Tomcat]
+2021.08.30 10:11:33 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:11:33 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:11:33 CEST -Root WebApplicationContext: initialization completed in 1438 ms
+2021.08.30 10:11:33 CEST -HikariPool-2 - Starting...
+2021.08.30 10:11:33 CEST -HikariPool-2 - Start completed.
+2021.08.30 10:11:33 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:11:33 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:11:34 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:11:34 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:11:35 CEST -LiveReload server is running on port 35729
+2021.08.30 10:11:35 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:11:35 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:11:35 CEST -Started DemoApplication in 3.63 seconds (JVM running for 81.38)
+2021.08.30 10:11:35 CEST -Condition evaluation unchanged
+2021.08.30 10:11:52 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:11:52 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:11:52 CEST -Completed initialization in 3 ms
+2021.08.30 10:16:24 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:16:24 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.30 10:16:24 CEST -HikariPool-2 - Shutdown completed.
+2021.08.30 10:16:24 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 18944 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:16:24 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:16:25 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:16:25 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:16:25 CEST -Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:16:25 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:16:25 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:16:25 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:16:25 CEST -Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:16:25 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:16:25 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:16:25 CEST -Starting service [Tomcat]
+2021.08.30 10:16:25 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:16:25 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:16:25 CEST -Root WebApplicationContext: initialization completed in 991 ms
+2021.08.30 10:16:25 CEST -HikariPool-3 - Starting...
+2021.08.30 10:16:25 CEST -HikariPool-3 - Start completed.
+2021.08.30 10:16:25 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:16:25 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:16:25 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:16:25 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:16:27 CEST -LiveReload server is running on port 35729
+2021.08.30 10:16:27 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:16:27 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:16:27 CEST -Started DemoApplication in 3.759 seconds (JVM running for 373.901)
+2021.08.30 10:16:27 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:16:27 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:16:27 CEST -Condition evaluation unchanged
+2021.08.30 10:16:27 CEST -Completed initialization in 5 ms
+2021.08.30 10:17:45 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 10:17:45 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:17:45 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:17:45 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 10:17:45 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 10:17:47 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:17:47 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:17:47 CEST -Finished Spring Data repository scanning in 222 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:17:47 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:17:47 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:17:47 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:17:47 CEST -Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:17:50 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:17:50 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:17:50 CEST -Starting service [Tomcat]
+2021.08.30 10:17:50 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:17:50 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:17:50 CEST -Root WebApplicationContext: initialization completed in 4999 ms
+2021.08.30 10:17:50 CEST -HikariPool-1 - Starting...
+2021.08.30 10:17:51 CEST -HikariPool-1 - Start completed.
+2021.08.30 10:17:51 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:17:52 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 10:17:52 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 10:17:53 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:17:54 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:17:54 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:18:00 CEST -LiveReload server is running on port 35729
+2021.08.30 10:18:00 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:18:00 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:18:00 CEST -Started DemoApplication in 15.677 seconds (JVM running for 17.285)
+2021.08.30 10:18:18 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:18:18 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 10:18:18 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 10:18:18 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:18:18 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:18:19 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:18:19 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:18:19 CEST -Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:18:19 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:18:19 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:18:19 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:18:19 CEST -Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:18:19 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:18:19 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:18:19 CEST -Starting service [Tomcat]
+2021.08.30 10:18:19 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:18:20 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:18:20 CEST -Root WebApplicationContext: initialization completed in 1247 ms
+2021.08.30 10:18:20 CEST -HikariPool-2 - Starting...
+2021.08.30 10:18:20 CEST -HikariPool-2 - Start completed.
+2021.08.30 10:18:20 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:18:20 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:18:20 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:18:20 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:18:22 CEST -LiveReload server is running on port 35729
+2021.08.30 10:18:22 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:18:22 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:18:22 CEST -Started DemoApplication in 3.85 seconds (JVM running for 39.092)
+2021.08.30 10:18:22 CEST -Condition evaluation unchanged
+2021.08.30 10:18:25 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:18:25 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:18:25 CEST -Completed initialization in 3 ms
+2021.08.30 10:22:07 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:22:07 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.30 10:22:07 CEST -HikariPool-2 - Shutdown completed.
+2021.08.30 10:22:08 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:22:08 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:22:08 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:22:08 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:22:08 CEST -Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:22:08 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:22:08 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:22:08 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:22:08 CEST -Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:22:09 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:22:09 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:22:09 CEST -Starting service [Tomcat]
+2021.08.30 10:22:09 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:22:09 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:22:09 CEST -Root WebApplicationContext: initialization completed in 987 ms
+2021.08.30 10:22:09 CEST -HikariPool-3 - Starting...
+2021.08.30 10:22:09 CEST -HikariPool-3 - Start completed.
+2021.08.30 10:22:09 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:22:09 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:22:09 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:22:09 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:22:10 CEST -LiveReload server is running on port 35729
+2021.08.30 10:22:10 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:22:10 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:22:10 CEST -Started DemoApplication in 2.637 seconds (JVM running for 267.196)
+2021.08.30 10:22:10 CEST -Condition evaluation unchanged
+2021.08.30 10:22:12 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:22:12 CEST -HikariPool-3 - Shutdown initiated...
+2021.08.30 10:22:12 CEST -HikariPool-3 - Shutdown completed.
+2021.08.30 10:22:12 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:22:12 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:22:12 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:22:12 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:22:12 CEST -Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:22:12 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:22:12 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:22:12 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:22:12 CEST -Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:22:13 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:22:13 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:22:13 CEST -Starting service [Tomcat]
+2021.08.30 10:22:13 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:22:13 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:22:13 CEST -Root WebApplicationContext: initialization completed in 859 ms
+2021.08.30 10:22:13 CEST -HikariPool-4 - Starting...
+2021.08.30 10:22:13 CEST -HikariPool-4 - Start completed.
+2021.08.30 10:22:13 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:22:13 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:22:13 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:22:13 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:22:14 CEST -LiveReload server is running on port 35729
+2021.08.30 10:22:14 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:22:14 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:22:14 CEST -Started DemoApplication in 2.234 seconds (JVM running for 270.985)
+2021.08.30 10:22:14 CEST -Condition evaluation unchanged
+2021.08.30 10:22:19 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:22:19 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:22:19 CEST -Completed initialization in 1 ms
+2021.08.30 10:28:10 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:28:10 CEST -HikariPool-4 - Shutdown initiated...
+2021.08.30 10:28:10 CEST -HikariPool-4 - Shutdown completed.
+2021.08.30 10:28:11 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:28:11 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:28:11 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:28:11 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:28:11 CEST -Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:28:11 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:28:11 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:28:11 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:28:11 CEST -Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:28:12 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:28:12 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:28:12 CEST -Starting service [Tomcat]
+2021.08.30 10:28:12 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:28:12 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:28:12 CEST -Root WebApplicationContext: initialization completed in 1239 ms
+2021.08.30 10:28:12 CEST -HikariPool-5 - Starting...
+2021.08.30 10:28:12 CEST -HikariPool-5 - Start completed.
+2021.08.30 10:28:12 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:28:12 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:28:12 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:28:12 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:28:13 CEST -LiveReload server is running on port 35729
+2021.08.30 10:28:13 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:28:13 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:28:13 CEST -Started DemoApplication in 2.828 seconds (JVM running for 630.469)
+2021.08.30 10:28:13 CEST -Condition evaluation unchanged
+2021.08.30 10:28:15 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:28:15 CEST -HikariPool-5 - Shutdown initiated...
+2021.08.30 10:28:15 CEST -HikariPool-5 - Shutdown completed.
+2021.08.30 10:28:15 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:28:15 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:28:15 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:28:15 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:28:16 CEST -Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:28:16 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:28:16 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:28:16 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:28:16 CEST -Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:28:16 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:28:16 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:28:16 CEST -Starting service [Tomcat]
+2021.08.30 10:28:16 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:28:16 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:28:16 CEST -Root WebApplicationContext: initialization completed in 905 ms
+2021.08.30 10:28:16 CEST -HikariPool-6 - Starting...
+2021.08.30 10:28:16 CEST -HikariPool-6 - Start completed.
+2021.08.30 10:28:16 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:28:16 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:28:16 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:28:16 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:28:17 CEST -LiveReload server is running on port 35729
+2021.08.30 10:28:17 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:28:17 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:28:17 CEST -Started DemoApplication in 2.321 seconds (JVM running for 634.326)
+2021.08.30 10:28:17 CEST -Condition evaluation unchanged
+2021.08.30 10:29:37 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:29:37 CEST -HikariPool-6 - Shutdown initiated...
+2021.08.30 10:29:37 CEST -HikariPool-6 - Shutdown completed.
+2021.08.30 10:29:38 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:29:38 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:29:38 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:29:38 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:29:39 CEST -Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:29:39 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:29:39 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:29:39 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:29:39 CEST -Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:29:39 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:29:39 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:29:39 CEST -Starting service [Tomcat]
+2021.08.30 10:29:39 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:29:39 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:29:39 CEST -Root WebApplicationContext: initialization completed in 1127 ms
+2021.08.30 10:29:39 CEST -HikariPool-7 - Starting...
+2021.08.30 10:29:39 CEST -HikariPool-7 - Start completed.
+2021.08.30 10:29:39 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:29:39 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:29:39 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:29:39 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:29:40 CEST -LiveReload server is running on port 35729
+2021.08.30 10:29:40 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:29:40 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:29:41 CEST -Started DemoApplication in 2.937 seconds (JVM running for 717.603)
+2021.08.30 10:29:41 CEST -Condition evaluation unchanged
+2021.08.30 10:29:51 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:29:51 CEST -HikariPool-7 - Shutdown initiated...
+2021.08.30 10:29:51 CEST -HikariPool-7 - Shutdown completed.
+2021.08.30 10:29:51 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:29:51 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:29:52 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:29:52 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:29:52 CEST -Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:29:52 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:29:52 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:29:52 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:29:52 CEST -Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:29:52 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:29:52 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:29:52 CEST -Starting service [Tomcat]
+2021.08.30 10:29:52 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:29:52 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:29:52 CEST -Root WebApplicationContext: initialization completed in 743 ms
+2021.08.30 10:29:52 CEST -HikariPool-8 - Starting...
+2021.08.30 10:29:52 CEST -HikariPool-8 - Start completed.
+2021.08.30 10:29:52 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:29:52 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:29:52 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:29:52 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:29:53 CEST -LiveReload server is running on port 35729
+2021.08.30 10:29:53 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:29:53 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:29:53 CEST -Started DemoApplication in 1.877 seconds (JVM running for 730.357)
+2021.08.30 10:29:53 CEST -Condition evaluation unchanged
+2021.08.30 10:29:55 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:29:55 CEST -HikariPool-8 - Shutdown initiated...
+2021.08.30 10:29:55 CEST -HikariPool-8 - Shutdown completed.
+2021.08.30 10:29:55 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:29:55 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:29:55 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:29:55 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:29:55 CEST -Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:29:55 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:29:55 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:29:55 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:29:55 CEST -Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:29:56 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:29:56 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:29:56 CEST -Starting service [Tomcat]
+2021.08.30 10:29:56 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:29:56 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:29:56 CEST -Root WebApplicationContext: initialization completed in 772 ms
+2021.08.30 10:29:56 CEST -HikariPool-9 - Starting...
+2021.08.30 10:29:56 CEST -HikariPool-9 - Start completed.
+2021.08.30 10:29:56 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:29:56 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:29:56 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:29:56 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:29:57 CEST -LiveReload server is running on port 35729
+2021.08.30 10:29:57 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:29:57 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:29:57 CEST -Started DemoApplication in 1.892 seconds (JVM running for 733.802)
+2021.08.30 10:29:57 CEST -Condition evaluation unchanged
+2021.08.30 10:30:09 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:30:09 CEST -HikariPool-9 - Shutdown initiated...
+2021.08.30 10:30:10 CEST -HikariPool-9 - Shutdown completed.
+2021.08.30 10:30:10 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:30:10 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:30:10 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:30:10 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:30:10 CEST -Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:30:10 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:30:10 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:30:10 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:30:10 CEST -Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:30:10 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:30:10 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:30:10 CEST -Starting service [Tomcat]
+2021.08.30 10:30:10 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:30:10 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:30:10 CEST -Root WebApplicationContext: initialization completed in 662 ms
+2021.08.30 10:30:10 CEST -HikariPool-10 - Starting...
+2021.08.30 10:30:10 CEST -HikariPool-10 - Start completed.
+2021.08.30 10:30:10 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:30:10 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:30:11 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:30:11 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:30:11 CEST -LiveReload server is running on port 35729
+2021.08.30 10:30:11 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:30:11 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:30:12 CEST -Started DemoApplication in 1.883 seconds (JVM running for 748.606)
+2021.08.30 10:30:12 CEST -Condition evaluation unchanged
+2021.08.30 10:30:24 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:30:24 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:30:24 CEST -Completed initialization in 2 ms
+2021.08.30 10:32:53 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:32:53 CEST -HikariPool-10 - Shutdown initiated...
+2021.08.30 10:32:53 CEST -HikariPool-10 - Shutdown completed.
+2021.08.30 10:32:53 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19768 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:32:53 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:32:53 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:32:53 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:32:53 CEST -Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:32:53 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:32:53 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:32:53 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:32:53 CEST -Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:32:54 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:32:54 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:32:54 CEST -Starting service [Tomcat]
+2021.08.30 10:32:54 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:32:54 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:32:54 CEST -Root WebApplicationContext: initialization completed in 745 ms
+2021.08.30 10:32:54 CEST -HikariPool-11 - Starting...
+2021.08.30 10:32:54 CEST -HikariPool-11 - Start completed.
+2021.08.30 10:32:54 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:32:54 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:32:54 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:32:54 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:32:55 CEST -LiveReload server is running on port 35729
+2021.08.30 10:32:55 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:32:55 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:32:55 CEST -Started DemoApplication in 1.866 seconds (JVM running for 911.809)
+2021.08.30 10:32:55 CEST -Condition evaluation unchanged
+2021.08.30 10:32:59 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:32:59 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:32:59 CEST -Completed initialization in 2 ms
+2021.08.30 10:42:27 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 10:42:27 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 276 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:42:27 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:42:28 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 10:42:28 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 10:42:29 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:42:29 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:42:29 CEST -Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:42:29 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:42:29 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:42:29 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:42:29 CEST -Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:42:31 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:42:31 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:42:31 CEST -Starting service [Tomcat]
+2021.08.30 10:42:31 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:42:31 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:42:31 CEST -Root WebApplicationContext: initialization completed in 3916 ms
+2021.08.30 10:42:32 CEST -HikariPool-1 - Starting...
+2021.08.30 10:42:32 CEST -HikariPool-1 - Start completed.
+2021.08.30 10:42:32 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:42:33 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 10:42:33 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 10:42:34 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:42:35 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:42:35 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:42:41 CEST -LiveReload server is running on port 35729
+2021.08.30 10:42:41 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:42:41 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:42:41 CEST -Started DemoApplication in 14.287 seconds (JVM running for 15.81)
+2021.08.30 10:42:46 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:42:46 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:42:46 CEST -Completed initialization in 5 ms
+2021.08.30 10:53:02 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:53:02 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 10:53:02 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 10:53:02 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 276 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:53:02 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:53:03 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:53:03 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:53:03 CEST -Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:53:03 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:53:03 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:53:03 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:53:03 CEST -Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:53:04 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:53:04 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:53:04 CEST -Starting service [Tomcat]
+2021.08.30 10:53:04 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:53:04 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:53:04 CEST -Root WebApplicationContext: initialization completed in 1693 ms
+2021.08.30 10:53:04 CEST -HikariPool-2 - Starting...
+2021.08.30 10:53:04 CEST -HikariPool-2 - Start completed.
+2021.08.30 10:53:04 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:53:05 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:53:05 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:53:05 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:53:06 CEST -LiveReload server is running on port 35729
+2021.08.30 10:53:07 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:53:07 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:53:07 CEST -Started DemoApplication in 4.266 seconds (JVM running for 641.178)
+2021.08.30 10:53:07 CEST -Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   JedisConnectionConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'org.springframework.data.redis.connection.jedis.JedisConnection', 'redis.clients.jedis.Jedis' (OnClassCondition)
+      - @ConditionalOnProperty (spring.redis.client-type=jedis) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021.08.30 10:53:28 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:53:28 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.30 10:53:28 CEST -HikariPool-2 - Shutdown completed.
+2021.08.30 10:53:28 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 276 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:53:28 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:53:29 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:53:29 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:53:29 CEST -Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:53:29 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:53:29 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:53:29 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:53:29 CEST -Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:53:29 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:53:29 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:53:29 CEST -Starting service [Tomcat]
+2021.08.30 10:53:29 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:53:29 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:53:29 CEST -Root WebApplicationContext: initialization completed in 1090 ms
+2021.08.30 10:53:29 CEST -HikariPool-3 - Starting...
+2021.08.30 10:53:29 CEST -HikariPool-3 - Start completed.
+2021.08.30 10:53:29 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:53:29 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:53:30 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:53:30 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:53:31 CEST -LiveReload server is running on port 35729
+2021.08.30 10:53:31 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:53:31 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:53:31 CEST -Started DemoApplication in 2.961 seconds (JVM running for 665.413)
+2021.08.30 10:53:31 CEST -Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   JedisConnectionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found beans of type 'org.springframework.data.redis.connection.RedisConnectionFactory' jedisConnectionFactory (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'org.springframework.data.redis.connection.jedis.JedisConnection', 'redis.clients.jedis.Jedis' (OnClassCondition)
+         - @ConditionalOnProperty (spring.redis.client-type=jedis) matched (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021.08.30 10:55:59 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 10:55:59 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 21916 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 10:55:59 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 10:55:59 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 10:55:59 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 10:56:01 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:56:01 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 10:56:01 CEST -Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interfaces.
+2021.08.30 10:56:01 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 10:56:01 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 10:56:01 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 10:56:01 CEST -Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2021.08.30 10:56:02 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 10:56:02 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:56:02 CEST -Starting service [Tomcat]
+2021.08.30 10:56:02 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 10:56:02 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 10:56:02 CEST -Root WebApplicationContext: initialization completed in 3409 ms
+2021.08.30 10:56:03 CEST -HikariPool-1 - Starting...
+2021.08.30 10:56:03 CEST -HikariPool-1 - Start completed.
+2021.08.30 10:56:03 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 10:56:04 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 10:56:04 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 10:56:05 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 10:56:06 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 10:56:06 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 10:56:15 CEST -LiveReload server is running on port 35729
+2021.08.30 10:56:15 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 10:56:15 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 10:56:15 CEST -Started DemoApplication in 16.602 seconds (JVM running for 18.146)
+2021.08.30 10:56:21 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 10:56:21 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 10:56:21 CEST -Completed initialization in 3 ms
+2021.08.30 12:43:43 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 12:43:43 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 19564 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 12:43:43 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 12:43:43 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 12:43:43 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 12:43:44 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:43:44 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 12:43:45 CEST -Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interfaces.
+2021.08.30 12:43:45 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:43:45 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 12:43:45 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 12:43:45 CEST -Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2021.08.30 12:43:47 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 12:43:47 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:43:47 CEST -Starting service [Tomcat]
+2021.08.30 12:43:47 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 12:43:47 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 12:43:47 CEST -Root WebApplicationContext: initialization completed in 3838 ms
+2021.08.30 12:43:47 CEST -HikariPool-1 - Starting...
+2021.08.30 12:43:48 CEST -HikariPool-1 - Start completed.
+2021.08.30 12:43:48 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 12:43:48 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 12:43:49 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 12:43:49 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 12:43:50 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 12:43:50 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:43:51 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:43:51 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 12:43:51 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 12:43:51 CEST -Stopping service [Tomcat]
+2021.08.30 12:47:50 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 12:47:50 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 6148 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 12:47:50 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 12:47:50 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 12:47:50 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 12:47:52 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:47:52 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 12:47:52 CEST -Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interfaces.
+2021.08.30 12:47:52 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:47:52 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 12:47:52 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 12:47:52 CEST -Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021.08.30 12:47:54 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 12:47:54 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:47:54 CEST -Starting service [Tomcat]
+2021.08.30 12:47:54 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 12:47:54 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 12:47:54 CEST -Root WebApplicationContext: initialization completed in 3679 ms
+2021.08.30 12:47:54 CEST -HikariPool-1 - Starting...
+2021.08.30 12:47:55 CEST -HikariPool-1 - Start completed.
+2021.08.30 12:47:55 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 12:47:56 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 12:47:56 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 12:47:56 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 12:47:58 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 12:47:58 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:48:44 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 12:48:44 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 17804 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 12:48:44 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 12:48:44 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 12:48:44 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 12:48:45 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:48:45 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 12:48:45 CEST -Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2021.08.30 12:48:45 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:48:45 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 12:48:45 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 12:48:45 CEST -Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2021.08.30 12:48:47 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 12:48:47 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:48:47 CEST -Starting service [Tomcat]
+2021.08.30 12:48:47 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 12:48:47 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 12:48:47 CEST -Root WebApplicationContext: initialization completed in 3222 ms
+2021.08.30 12:48:47 CEST -HikariPool-1 - Starting...
+2021.08.30 12:48:48 CEST -HikariPool-1 - Start completed.
+2021.08.30 12:48:48 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 12:48:49 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 12:48:49 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 12:48:49 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 12:48:50 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 12:48:50 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:48:51 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:48:51 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 12:48:51 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 12:48:51 CEST -Stopping service [Tomcat]
+2021.08.30 12:52:26 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 12:52:26 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 22320 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 12:52:26 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 12:52:26 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 12:52:26 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 12:52:27 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:52:27 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 12:52:27 CEST -Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interfaces.
+2021.08.30 12:52:27 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:52:27 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 12:52:27 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 12:52:27 CEST -Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021.08.30 12:52:29 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 12:52:29 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:52:29 CEST -Starting service [Tomcat]
+2021.08.30 12:52:29 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 12:52:29 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 12:52:29 CEST -Root WebApplicationContext: initialization completed in 3148 ms
+2021.08.30 12:52:29 CEST -HikariPool-1 - Starting...
+2021.08.30 12:52:29 CEST -HikariPool-1 - Start completed.
+2021.08.30 12:52:29 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 12:52:30 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 12:52:30 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 12:52:31 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 12:52:32 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 12:52:32 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:52:33 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:52:33 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 12:52:33 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 12:52:33 CEST -Stopping service [Tomcat]
+2021.08.30 12:54:18 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 12:54:18 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 2124 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 12:54:18 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 12:54:19 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 12:54:19 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 12:54:21 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:54:21 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 12:54:21 CEST -Finished Spring Data repository scanning in 222 ms. Found 1 JPA repository interfaces.
+2021.08.30 12:54:21 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:54:21 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 12:54:21 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 12:54:21 CEST -Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2021.08.30 12:54:24 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 12:54:24 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 15020 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 12:54:24 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 12:54:24 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 12:54:24 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:54:24 CEST -Starting service [Tomcat]
+2021.08.30 12:54:24 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 12:54:24 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 12:54:24 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 12:54:24 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 12:54:24 CEST -Root WebApplicationContext: initialization completed in 5894 ms
+2021.08.30 12:54:25 CEST -HikariPool-1 - Starting...
+2021.08.30 12:54:26 CEST -HikariPool-1 - Start completed.
+2021.08.30 12:54:26 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 12:54:27 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 12:54:28 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:54:28 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 12:54:28 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 12:54:28 CEST -Finished Spring Data repository scanning in 217 ms. Found 1 JPA repository interfaces.
+2021.08.30 12:54:28 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 12:54:28 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 12:54:28 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 12:54:28 CEST -Finished Spring Data repository scanning in 67 ms. Found 0 Redis repository interfaces.
+2021.08.30 12:54:29 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 12:54:30 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 12:54:30 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 12:54:30 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:54:30 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:54:30 CEST -Starting service [Tomcat]
+2021.08.30 12:54:30 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 12:54:31 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 12:54:31 CEST -Root WebApplicationContext: initialization completed in 6502 ms
+2021.08.30 12:54:31 CEST -HikariPool-1 - Starting...
+2021.08.30 12:54:32 CEST -HikariPool-1 - Start completed.
+2021.08.30 12:54:32 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 12:54:33 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 12:54:34 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 12:54:34 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 12:54:35 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 12:54:35 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:57:43 CEST -LiveReload server is running on port 35729
+2021.08.30 12:57:43 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:57:43 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 12:57:44 CEST -Started DemoApplication in 206.481 seconds (JVM running for 208.219)
+2021.08.30 12:57:47 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:57:47 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 12:57:47 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 12:57:47 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 12:57:47 CEST -Pausing ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:57:47 CEST -Stopping service [Tomcat]
+2021.08.30 12:57:47 CEST -Stopping ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:57:47 CEST -Destroying ProtocolHandler ["http-nio-8080"]
+2021.08.30 12:58:01 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 12:58:01 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 12:58:01 CEST -Completed initialization in 7 ms
+2021.08.30 13:09:18 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 13:09:18 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 13:09:18 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 13:09:18 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 2124 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 13:09:18 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 13:09:19 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 13:09:19 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 13:09:19 CEST -Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021.08.30 13:09:19 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 13:09:19 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 13:09:19 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 13:09:19 CEST -Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021.08.30 13:09:20 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 13:09:20 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 13:09:20 CEST -Starting service [Tomcat]
+2021.08.30 13:09:20 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 13:09:20 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 13:09:20 CEST -Root WebApplicationContext: initialization completed in 1295 ms
+2021.08.30 13:09:20 CEST -HikariPool-2 - Starting...
+2021.08.30 13:09:20 CEST -HikariPool-2 - Start completed.
+2021.08.30 13:09:20 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 13:09:20 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 13:09:20 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 13:09:20 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 13:09:21 CEST -LiveReload server is running on port 35729
+2021.08.30 13:09:21 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 13:09:21 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 13:09:21 CEST -Started DemoApplication in 3.254 seconds (JVM running for 905.396)
+2021.08.30 13:09:21 CEST -Condition evaluation unchanged
+2021.08.30 13:09:32 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 13:09:32 CEST -HikariPool-2 - Shutdown initiated...
+2021.08.30 13:09:32 CEST -HikariPool-2 - Shutdown completed.
+2021.08.30 13:09:32 CEST -Starting DemoApplication using Java 16.0.2 on LES009351 with PID 2124 (C:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo\target\classes started by jvillarj in c:\Users\jvillarj\Documents\Pizzeria-Backend\Pizzeria-Back-end\demo)
+2021.08.30 13:09:32 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 13:09:33 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 13:09:33 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 13:09:34 CEST -Finished Spring Data repository scanning in 295 ms. Found 1 JPA repository interfaces.
+2021.08.30 13:09:34 CEST -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021.08.30 13:09:34 CEST -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021.08.30 13:09:34 CEST -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.infraestructure.ingredientinfraestructure.IngredientRepositoryJPA. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021.08.30 13:09:34 CEST -Finished Spring Data repository scanning in 71 ms. Found 0 Redis repository interfaces.
+2021.08.30 13:09:34 CEST -Tomcat initialized with port(s): 8080 (http)
+2021.08.30 13:09:34 CEST -Initializing ProtocolHandler ["http-nio-8080"]
+2021.08.30 13:09:34 CEST -Starting service [Tomcat]
+2021.08.30 13:09:34 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 13:09:34 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 13:09:34 CEST -Root WebApplicationContext: initialization completed in 1847 ms
+2021.08.30 13:09:34 CEST -HikariPool-3 - Starting...
+2021.08.30 13:09:34 CEST -HikariPool-3 - Start completed.
+2021.08.30 13:09:34 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 13:09:35 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 13:09:35 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 13:09:35 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 13:09:36 CEST -LiveReload server is running on port 35729
+2021.08.30 13:09:36 CEST -Starting ProtocolHandler ["http-nio-8080"]
+2021.08.30 13:09:36 CEST -Tomcat started on port(s): 8080 (http) with context path ''
+2021.08.30 13:09:36 CEST -Started DemoApplication in 3.54 seconds (JVM running for 919.809)
+2021.08.30 13:09:36 CEST -Condition evaluation unchanged
+2021.08.30 13:09:36 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 13:09:36 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 13:09:36 CEST -Completed initialization in 3 ms
