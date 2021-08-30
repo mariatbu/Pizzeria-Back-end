@@ -19,10 +19,10 @@ public @Getter @Setter @NoArgsConstructor class ImageEntity extends EntityBase {
     
     @Size(min = 1) 
     private byte[] data;
+
     
-    // @Override
-    // public void validate() {
-    //     // TODO Auto-generated method stub
-    //     super.validate();
-    // }
+    private String cloudId;    
+    private String cloudUrl;
+
+    
 }

@@ -1,5 +1,8 @@
 package com.example.demo.application.imageapplication;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.UUID;
 
 import com.example.demo.core.applicationbase.ApplicationBase;
@@ -12,6 +15,7 @@ import com.example.demo.dto.imageDTO.ImageDTOId;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 
 // import org.slf4j.Logger;
@@ -51,5 +55,13 @@ public class ImageApplicationImp extends ApplicationBase<ImageEntity, UUID> impl
     public ImageDTOBytes get(UUID id) {
         
         return modelMaper.map(this.findById(id), ImageDTOBytes.class);
+    }
+
+    public File convert(MultipartFile multipartFile) throws IOException {
+        File file = new File(multipartFile.getOriginalFilename());
+        FileOutputStream fo = new FileOutputStream(file);
+        fo.write(multipartFile.getBytes());
+        fo.close();
+        return file;
     }
 }

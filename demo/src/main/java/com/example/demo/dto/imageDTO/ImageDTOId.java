@@ -10,4 +10,7 @@ public @Getter @Setter @NoArgsConstructor class ImageDTOId {
     
     public UUID id;
 
+    private String cloudId; 
+    
+    private String cloudUrl;
 }

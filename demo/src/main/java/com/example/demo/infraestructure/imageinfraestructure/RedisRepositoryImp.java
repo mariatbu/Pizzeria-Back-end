@@ -38,19 +38,6 @@ public class RedisRepositoryImp implements RedisRepository {
             }
 
         }
-        // TODO: Cerrar conexion try catch
-
-        // this.redisTemplate.expire(image.getId(), 5, TimeUnit.MINUTES);
-        // this.redisTemplate.opsForValue().set("1", "2");
-
-        // String image2 = Base64.getEncoder().encodeToString(image.getData());
-        // JedisPool pool = new JedisPool("localhost", 6379);
-        // Jedis jedis = pool.getResource();
-        // jedis.set("1", "2");
-        // String key = image.getId().toString();
-        // BoundValueOperations<String, String> boundValueOperations =
-        // this.redisTemplate.boundValueOps(key);
-        // boundValueOperations.set(image2);
 
     }
 
