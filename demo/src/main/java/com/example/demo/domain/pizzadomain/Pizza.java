@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 
 import com.example.demo.core.EntityBase;
@@ -36,6 +37,7 @@ public @Getter @Setter @NoArgsConstructor class Pizza extends EntityBase {
     @Embedded
     private Image image;
 
+    @DecimalMin(value = "0.0", inclusive = false)
     private BigDecimal price;
 
     @ManyToMany @JoinTable(name="pizzas_ingredients",

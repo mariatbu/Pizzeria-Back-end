@@ -33,4 +33,9 @@ public class PizzaRepositoryJPAImp implements PizzaRepository{
     public boolean exists(String name) {
         return this.pizzaRepositoryJPA.exists(name);
     }
+
+    @Override
+    public void update(Pizza pizza){
+        this.pizzaRepositoryJPA.save(pizza);
+    }
 }

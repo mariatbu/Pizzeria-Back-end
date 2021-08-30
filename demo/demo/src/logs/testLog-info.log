@@ -2033,3 +2033,40 @@ Using generated security password: 50e3feeb-35ec-4911-b535-db00893debf2
 2021.08.30 13:35:57 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2021.08.30 13:35:57 CEST -HikariPool-1 - Starting...
 2021.08.30 13:35:57 CEST -Stopping service [Tomcat]
+2021.08.30 20:28:52 CEST -HV000001: Hibernate Validator 6.2.0.Final
+2021.08.30 20:28:52 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 22176 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in c:\Users\mturpinb\Desktop\Backend-Pizzeria\demo)
+2021.08.30 20:28:52 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 20:28:52 CEST -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021.08.30 20:28:52 CEST -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021.08.30 20:28:55 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 20:28:55 CEST -Finished Spring Data repository scanning in 321 ms. Found 4 JPA repository interfaces.
+2021.08.30 20:28:57 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.30 20:28:57 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.30 20:28:57 CEST -Starting service [Tomcat]
+2021.08.30 20:28:57 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 20:28:58 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 20:28:58 CEST -Root WebApplicationContext: initialization completed in 5675 ms
+2021.08.30 20:28:58 CEST -HikariPool-1 - Starting...
+2021.08.30 20:28:59 CEST -HikariPool-1 - Start completed.
+2021.08.30 20:28:59 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 20:29:00 CEST -HHH000412: Hibernate ORM core version 5.5.6.Final
+2021.08.30 20:29:01 CEST -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021.08.30 20:29:01 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 20:29:04 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 20:29:04 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 20:29:07 CEST -
+
+Using generated security password: e6ea5f1d-a61f-432e-a1ad-2a0b3aea5d87
+
+2021.08.30 20:29:08 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4da6bb82, org.springframework.security.web.context.SecurityContextPersistenceFilter@f84e434, org.springframework.security.web.header.HeaderWriterFilter@4842e299, org.springframework.security.web.authentication.logout.LogoutFilter@240ae07d, com.example.demo.security.JWTAuthorizationFilter@2fdffc25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fa618ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@477a3ea0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@394a748e, org.springframework.security.web.session.SessionManagementFilter@2465199a, org.springframework.security.web.access.ExceptionTranslationFilter@b6f08cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3184abcd]
+2021.08.30 20:29:12 CEST -LiveReload server is running on port 35729
+2021.08.30 20:29:12 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.30 20:29:12 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.30 20:29:12 CEST -Started DemoApplication in 21.788 seconds (JVM running for 26.818)
+2021.08.30 20:29:20 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 20:29:20 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 20:29:20 CEST -Completed initialization in 19 ms
+2021.08.30 20:29:22 CEST -User {id: b955a629-cc84-4c61-80a0-8f7a27d743e3, name: Pepe, lastName: Lopez, email: pepe@mail} User Created:  succesfully.
+2021.08.30 20:31:35 CEST -Ingredient {id: b2ad63fc-8eb9-4947-b5ea-8a0d2c363303, name: tomate, price: 1} added. succesfully.
+2021.08.30 20:31:50 CEST -Pizza {id: 0f853907-f41c-40b2-9ac7-fe834da48e86, name: margarita, price: 2.40, with ingredients:[[Ingredient {id: f0e4733c-d0c5-45a5-aa4a-bb191cfbdd3b, name: queso, price: 1.00}, Ingredient {id: b2ad63fc-8eb9-4947-b5ea-8a0d2c363303, name: tomate, price: 1.00}]]} updated. succesfully.
+2021.08.30 20:32:06 CEST -Pizza {id: 0f853907-f41c-40b2-9ac7-fe834da48e86, name: margarita, price: 2.40, with ingredients:[[Ingredient {id: f0e4733c-d0c5-45a5-aa4a-bb191cfbdd3b, name: queso, price: 1.00}, Ingredient {id: b2ad63fc-8eb9-4947-b5ea-8a0d2c363303, name: tomate, price: 1.00}]]} updated. succesfully.

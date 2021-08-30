@@ -64,4 +64,28 @@ public class PizzaApplicationImp extends ApplicationBase<Pizza, UUID> implements
         Pizza pizza = this.findById(id);
         return this.modelMapper.map(pizza, PizzaDTO.class);
     }
+
+    @Override
+    public PizzaDTO update(UUID id, CreateUpdatePizzaDTO dto) {
+        Pizza pizza = this.findById(id);
+        pizza.setId(id);
+        if (this.pizzaRepository.exists(pizza.getName())) {
+            pizza.validate();
+        } else {
+            pizza.validate("name", pizza.getName(), (name) -> this.pizzaRepository.exists(name));
+        }
+        for (UUID ingredientId : dto.getIngredients()) {
+            Ingredient ingredient = this.modelMapper.map(this.ingredientApplicationImp.get(ingredientId), Ingredient.class);
+            // if (pizza.getIngredients().contains(ingredient)) {
+            //     pizza.removeIngredient(ingredient);
+            // } else {
+                pizza.addIngredient(ingredient);
+            //}
+        }
+        pizza.setPrice(pizza.calculatePrice());
+        this.pizzaRepository.update(pizza);
+        this.log.info(serializeObject(pizza, "updated."));
+
+        return this.modelMapper.map(pizza, PizzaDTO.class);
+    }
 }
