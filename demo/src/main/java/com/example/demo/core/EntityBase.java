@@ -6,12 +6,12 @@ import java.util.UUID;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
-import com.example.demo.core.Exceptions.BadRequestException;
+import com.example.demo.core.exceptions.BadRequestException;
+import com.example.demo.core.functionalinterfaces.ExistsByField;
 
 import org.hibernate.annotations.Type;
 
@@ -29,7 +29,7 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
     public void validate(){
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator= factory.getValidator();
-        Set<ConstraintViolation<EntityBase>> violations = validator.validate(this); //Map de la excepción
+        Set<ConstraintViolation<EntityBase>> violations = validator.validate(this);
         if (!violations.isEmpty()) {
             BadRequestException badRequestException = new BadRequestException();
             for(ConstraintViolation<EntityBase> violation: violations){
@@ -40,6 +40,7 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
     }
 
     public void validate(String key, String value, ExistsByField existsByField){
+        
         this.validate();
         if(existsByField.exists(value)){
             BadRequestException badRequestException = new BadRequestException();
@@ -59,7 +60,7 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
    
     @Override
     public int hashCode() {
-        return this.id.toString().hashCode();
+        return this.id.hashCode();
     }
 
 }

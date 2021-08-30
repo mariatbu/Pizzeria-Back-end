@@ -1,5 +1,5 @@
-package com.example.demo.core.Exceptions;
+package com.example.demo.core.exceptions;
 
 public enum InternalServerErrorEnum {
-    RETRY, REDIRECT 
+    RETRY, REDIRECT
 }

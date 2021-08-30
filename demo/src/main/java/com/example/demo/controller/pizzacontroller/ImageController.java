@@ -2,9 +2,9 @@ package com.example.demo.controller.pizzacontroller;
 
 import java.io.IOException;
 
-import com.example.demo.application.pizzapplication.ImageApplicationImp;
-import com.example.demo.DTO.pizzaDTOs.CreateOrUpdateImageDTO;
-import com.example.demo.DTO.pizzaDTOs.ImageDTO;
+import com.example.demo.application.imageapplication.ImageApplicationImp;
+import com.example.demo.dto.imageDTO.CreateOrUpdateImageDTO;
+import com.example.demo.dto.imageDTO.ImageDTOId;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -38,7 +38,7 @@ public class ImageController {
 
         dto.setData(file.getBytes());
 
-        ImageDTO imageDto = imageApplicationImp.save(dto);
+        ImageDTOId imageDto = imageApplicationImp.save(dto);
 
         return ResponseEntity.status(201).body(imageDto);
 
