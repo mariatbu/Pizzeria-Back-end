@@ -6,11 +6,9 @@ import java.util.UUID;
 import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.userdomain.User;
 import com.example.demo.domain.userdomain.UserProjection;
-import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
-import com.example.demo.dto.userDTO.UpdateUserDTO;
-import com.example.demo.dto.userDTO.UserDTO;
 import com.example.demo.domain.userdomain.UserRepository;
-import com.example.demo.infrastructure.userinfrastructure.UserJPARepository;
+import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
+import com.example.demo.dto.userDTO.UserDTO;
 
 import org.mindrot.jbcrypt.BCrypt;
 import org.modelmapper.ModelMapper;

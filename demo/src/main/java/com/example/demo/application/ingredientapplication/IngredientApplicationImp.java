@@ -23,7 +23,8 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
     private final Logger log;
 
     @Autowired
-    public IngredientApplicationImp(final IngredientRepository ingredientRepository, final ModelMapper modelMapper, final Logger log) {
+    public IngredientApplicationImp(final IngredientRepository ingredientRepository, final ModelMapper modelMapper,
+            final Logger log) {
         super((id) -> ingredientRepository.findById(id));
         this.ingredientRepository = ingredientRepository;
         this.modelMapper = modelMapper;
@@ -36,7 +37,7 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
         ingredient.setId(UUID.randomUUID());
         ingredient.validate("name", ingredient.getName(), (name) -> this.ingredientRepository.exists(name));
         this.ingredientRepository.add(ingredient);
-        this.log.info(this.serializeObject(ingredient, "added.")); 
+        this.log.info(this.serializeObject(ingredient, "added."));
         return this.modelMapper.map(ingredient, IngredientDTO.class);
     }
 
@@ -48,13 +49,13 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
     }
 
     @Override
-    public IngredientDTO update(UUID id, CreateUpdateIngredientDTO dto){
+    public IngredientDTO update(UUID id, CreateUpdateIngredientDTO dto) {
         Ingredient ingredient = this.findById(id);
         ingredient = this.modelMapper.map(dto, Ingredient.class);
         ingredient.setId(id);
-        if(this.ingredientRepository.exists(ingredient.getName())){
+        if (this.ingredientRepository.exists(ingredient.getName())) {
             ingredient.validate();
-        }else{
+        } else {
             ingredient.validate("name", ingredient.getName(), (name) -> this.ingredientRepository.exists(name));
         }
         this.ingredientRepository.update(ingredient);
@@ -64,14 +65,14 @@ public class IngredientApplicationImp extends ApplicationBase<Ingredient, UUID> 
     }
 
     @Override
-    public void delete(UUID id){
+    public void delete(UUID id) {
         Ingredient ingredient = this.findById(id);
         this.ingredientRepository.delete(ingredient);
         this.log.info(this.serializeObject(ingredient, "deleted."));
     }
 
     @Override
-    public List<IngredientProjection> getAll(String name, int page, int size){
+    public List<IngredientProjection> getAll(String name, int page, int size) {
         return this.ingredientRepository.getAll(name, page, size);
     }
 
