@@ -1,6 +1,5 @@
 package com.example.demo.domain.userdomain;
 
-
 import java.util.UUID;
 
 import com.example.demo.core.functionalinterfaces.ExistsByField;

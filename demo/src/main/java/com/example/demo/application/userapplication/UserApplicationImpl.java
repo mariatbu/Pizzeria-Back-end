@@ -6,11 +6,9 @@ import java.util.UUID;
 import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.userdomain.User;
 import com.example.demo.domain.userdomain.UserProjection;
-import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
-import com.example.demo.dto.userDTO.UpdateUserDTO;
-import com.example.demo.dto.userDTO.UserDTO;
 import com.example.demo.domain.userdomain.UserRepository;
-import com.example.demo.infrastructure.userinfrastructure.UserJPARepository;
+import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
+import com.example.demo.dto.userDTO.UserDTO;
 
 import org.mindrot.jbcrypt.BCrypt;
 import org.modelmapper.ModelMapper;
@@ -81,13 +79,12 @@ public class UserApplicationImpl extends ApplicationBase<User,UUID> implements U
         
     }
 
-    // public void update(UUID id, UpdateUserDTO dto){
-    //     this.userRepository.fi
-    //     User user = this.findById(id);
-    //     if(dto.getEmail().equals(user.getEmail())){
+     /*public void update(UpdateUserDTO dto){
+         UserDTO userDTO = this.findByCriteria(dto.getEmail());
+         if(dto.getEmail().equals(userDTO.getEmail())){
 
-    //     }
-    // }
+         }
+     }*/
 
     @Override
     public void delete(UUID id) {
@@ -102,7 +99,4 @@ public class UserApplicationImpl extends ApplicationBase<User,UUID> implements U
         return this.userRepository.getAll(email, page, size);
     }
 
-    
-    
-    
 }
