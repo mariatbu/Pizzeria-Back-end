@@ -60,7 +60,7 @@ public @Getter  @Setter @NoArgsConstructor abstract class EntityBase {
    
     @Override
     public int hashCode() {
-        return this.id.toString().hashCode();
+        return this.id.hashCode();
     }
 
 }
