@@ -17,4 +17,6 @@ public interface UserApplication {
     public void delete(UUID id);
 
     public List<UserProjection> getAll(String email, int page, int size);
+
+    //public UserDTO findByCriteria(String email);
 }

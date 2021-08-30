@@ -34,7 +34,6 @@ build/
 
 ### pom ###
 *.xml
-
-### logs and properties ###
 *.log
+*.log.gz
 application.properties

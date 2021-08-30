@@ -46,7 +46,7 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public List<UserProjection> getAll(String email, int page, int size) {       
+    public List<UserProjection> getAll(String email, int page, int size) {   
         return this.userJPARepository.findByCriteria(
            email,
            PageRequest.of(page, size, Sort.by("email").descending())
