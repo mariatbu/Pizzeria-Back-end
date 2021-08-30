@@ -2408,3 +2408,42 @@ Using generated security password: 7523ba0f-37d6-4ce1-8234-4763b53dbe66
 2021.08.30 13:21:10 CEST -User {id: 1096ecad-1226-4f05-99ee-e14bf47fe572, name: María, lastName: Buendía, email: maria_turpin_buendia@mail} User Created:  succesfully.
 2021.08.30 13:21:33 CEST -Ingredient {id: f0e4733c-d0c5-45a5-aa4a-bb191cfbdd3b, name: queso, price: 1} added. succesfully.
 2021.08.30 13:22:17 CEST -Pizza {id: b1213ae5-7189-4d1b-b128-f11c1986ba9f, name: carbonara, price: 1.20, with ingredients:[[Ingredient {id: f0e4733c-d0c5-45a5-aa4a-bb191cfbdd3b, name: queso, price: 1.00}]]} added. succesfully.
+2021.08.30 13:34:18 CEST -Closing JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 13:34:18 CEST -HikariPool-1 - Shutdown initiated...
+2021.08.30 13:34:18 CEST -HikariPool-1 - Shutdown completed.
+2021.08.30 13:34:19 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 7228 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.30 13:34:19 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 13:34:19 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 13:34:20 CEST -Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+2021.08.30 13:35:29 CEST -Starting DemoApplication using Java 16.0.2 on LES010178 with PID 7228 (C:\Users\mturpinb\Desktop\Backend-Pizzeria\demo\target\classes started by mturpinb in C:\Users\mturpinb\Desktop\Backend-Pizzeria)
+2021.08.30 13:35:29 CEST -No active profile set, falling back to default profiles: default
+2021.08.30 13:35:30 CEST -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021.08.30 13:35:30 CEST -Finished Spring Data repository scanning in 115 ms. Found 3 JPA repository interfaces.
+2021.08.30 13:35:31 CEST -Tomcat initialized with port(s): 9999 (http)
+2021.08.30 13:35:31 CEST -Initializing ProtocolHandler ["http-nio-9999"]
+2021.08.30 13:35:31 CEST -Starting service [Tomcat]
+2021.08.30 13:35:31 CEST -Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021.08.30 13:35:31 CEST -Initializing Spring embedded WebApplicationContext
+2021.08.30 13:35:31 CEST -Root WebApplicationContext: initialization completed in 1531 ms
+2021.08.30 13:35:31 CEST -HikariPool-2 - Starting...
+2021.08.30 13:35:31 CEST -HikariPool-2 - Start completed.
+2021.08.30 13:35:31 CEST -H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/PIZZERIA'
+2021.08.30 13:35:31 CEST -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021.08.30 13:35:32 CEST -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021.08.30 13:35:32 CEST -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021.08.30 13:35:33 CEST -
+
+Using generated security password: 154ebf9e-f31c-414a-b6ba-49dc6c95d9b3
+
+2021.08.30 13:35:33 CEST -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22d44fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@22a20087, org.springframework.security.web.header.HeaderWriterFilter@2fb7d532, org.springframework.security.web.authentication.logout.LogoutFilter@3bf839fa, com.example.demo.security.JWTAuthorizationFilter@98ebbab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2278498d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@337706b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16b84590, org.springframework.security.web.session.SessionManagementFilter@7b182734, org.springframework.security.web.access.ExceptionTranslationFilter@2a05f49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c5428c5]
+2021.08.30 13:35:33 CEST -LiveReload server is running on port 35729
+2021.08.30 13:35:33 CEST -Starting ProtocolHandler ["http-nio-9999"]
+2021.08.30 13:35:33 CEST -Tomcat started on port(s): 9999 (http) with context path ''
+2021.08.30 13:35:33 CEST -Started DemoApplication in 3.943 seconds (JVM running for 906.967)
+2021.08.30 13:35:33 CEST -Condition evaluation unchanged
+2021.08.30 13:35:45 CEST -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021.08.30 13:35:45 CEST -Initializing Servlet 'dispatcherServlet'
+2021.08.30 13:35:45 CEST -Completed initialization in 2 ms
+2021.08.30 13:35:45 CEST -Pizza {id: 3be63286-3554-4067-9eb6-1ea56b0cb3c7, name: barbacoa, price: 1.20, with ingredients:[[Ingredient {id: f0e4733c-d0c5-45a5-aa4a-bb191cfbdd3b, name: queso, price: 1.00}]]} added. succesfully.
+2021.08.30 13:55:44 CEST -Pizza {id: 0f853907-f41c-40b2-9ac7-fe834da48e86, name: margarita, price: 1.20, with ingredients:[[Ingredient {id: f0e4733c-d0c5-45a5-aa4a-bb191cfbdd3b, name: queso, price: 1.00}]]} added. succesfully.
+2021.08.30 13:56:30 CEST -User {id: cff38d97-9164-48cc-8498-9aaa22b0342a, name: Joaquín, lastName: Martínez, email: joak@mail} User Created:  succesfully.

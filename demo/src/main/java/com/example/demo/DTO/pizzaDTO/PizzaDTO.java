@@ -8,10 +8,14 @@ import java.util.UUID;
 import com.example.demo.domain.imagedomain.Image;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 
-public class PizzaDTO {
-    public UUID id;
-    public String name;
-    public Image image;
-    public BigDecimal price;
-    public Set<Ingredient> ingredients = new HashSet<Ingredient>();
+import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+public @Getter @Setter @NoArgsConstructor class PizzaDTO {
+    private UUID id;
+    private String name;
+    private Image image;
+    private BigDecimal price;
+    private Set<Ingredient> ingredients = new HashSet<Ingredient>();
 }
