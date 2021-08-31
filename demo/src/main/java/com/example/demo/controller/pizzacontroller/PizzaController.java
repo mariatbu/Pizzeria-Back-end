@@ -5,8 +5,9 @@ import java.util.UUID;
 import javax.validation.Valid;
 
 import com.example.demo.application.pizzaapplication.PizzaApplication;
-import com.example.demo.dto.pizzaDTO.CreateUpdatePizzaDTO;
+import com.example.demo.dto.pizzaDTO.CreatePizzaDTO;
 import com.example.demo.dto.pizzaDTO.PizzaDTO;
+import com.example.demo.dto.pizzaDTO.UpdatePizzaDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -31,7 +32,7 @@ public class PizzaController {
     }
     
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> add(@RequestBody @Valid final CreateUpdatePizzaDTO dto){
+    public ResponseEntity<?> add(@RequestBody @Valid final CreatePizzaDTO dto){
         PizzaDTO pizzaDTO = this.pizzaApplication.add(dto);
         return ResponseEntity.status(201).body(pizzaDTO);
     }
@@ -43,7 +44,7 @@ public class PizzaController {
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
-    public ResponseEntity<?> update(@PathVariable UUID id, @Valid @RequestBody CreateUpdatePizzaDTO dto) {
+    public ResponseEntity<?> update(@PathVariable UUID id, @Valid @RequestBody UpdatePizzaDTO dto) {
         PizzaDTO pizzaDTO = this.pizzaApplication.update(id, dto);
         return ResponseEntity.ok(pizzaDTO);
     }

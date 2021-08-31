@@ -8,8 +8,9 @@ import com.example.demo.domain.imagedomain.Image;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.pizzadomain.Pizza;
 import com.example.demo.domain.pizzadomain.PizzaRepository;
-import com.example.demo.dto.pizzaDTO.CreateUpdatePizzaDTO;
+import com.example.demo.dto.pizzaDTO.CreatePizzaDTO;
 import com.example.demo.dto.pizzaDTO.PizzaDTO;
+import com.example.demo.dto.pizzaDTO.UpdatePizzaDTO;
 
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -38,7 +39,7 @@ public class PizzaApplicationImp extends ApplicationBase<Pizza, UUID> implements
     }
 
     @Override
-    public PizzaDTO add(CreateUpdatePizzaDTO dto){
+    public PizzaDTO add(CreatePizzaDTO dto){
         Pizza pizza = this.modelMapper.map(dto, Pizza.class);
         byte[] image = new byte[2];
         image[0]=0;
@@ -66,7 +67,7 @@ public class PizzaApplicationImp extends ApplicationBase<Pizza, UUID> implements
     }
 
     @Override
-    public PizzaDTO update(UUID id, CreateUpdatePizzaDTO dto) {
+    public PizzaDTO update(UUID id, UpdatePizzaDTO dto) {
         Pizza pizza = this.findById(id);
         pizza.setId(id);
         if (this.pizzaRepository.exists(pizza.getName())) {
@@ -74,15 +75,7 @@ public class PizzaApplicationImp extends ApplicationBase<Pizza, UUID> implements
         } else {
             pizza.validate("name", pizza.getName(), (name) -> this.pizzaRepository.exists(name));
         }
-        for (UUID ingredientId : dto.getIngredients()) {
-            Ingredient ingredient = this.modelMapper.map(this.ingredientApplicationImp.get(ingredientId), Ingredient.class);
-            // if (pizza.getIngredients().contains(ingredient)) {
-            //     pizza.removeIngredient(ingredient);
-            // } else {
-                pizza.addIngredient(ingredient);
-            //}
-        }
-        pizza.setPrice(pizza.calculatePrice());
+        pizza.setName(dto.getName());
         this.pizzaRepository.update(pizza);
         this.log.info(serializeObject(pizza, "updated."));
 
