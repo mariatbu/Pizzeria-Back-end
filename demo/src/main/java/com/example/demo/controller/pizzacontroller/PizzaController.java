@@ -51,7 +51,7 @@ public class PizzaController {
         return ResponseEntity.ok(pizzaDTO);
     }
 
-    @DeleteMapping(path="{/id}")
+    @DeleteMapping(path="/{id}")
     public ResponseEntity<?> delete(@PathVariable UUID id){
         this.pizzaApplication.delete(id);
         return ResponseEntity.status(204).body("");

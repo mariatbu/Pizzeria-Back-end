@@ -8,6 +8,7 @@ import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
@@ -40,7 +41,7 @@ public @Getter @Setter @NoArgsConstructor class Pizza extends EntityBase {
     @DecimalMin(value = "0.0", inclusive = false)
     private BigDecimal price;
 
-    @ManyToMany @JoinTable(name="pizzas_ingredients",
+    @ManyToMany(fetch = FetchType.EAGER) @JoinTable(name="pizzas_ingredients",
     joinColumns = @JoinColumn(name="pizza_id"),
     inverseJoinColumns = @JoinColumn(name="ingredient_id"))
     final private Set<Ingredient> ingredients = new HashSet<Ingredient>();
