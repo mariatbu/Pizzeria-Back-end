@@ -8,9 +8,4 @@ public interface PizzaProjection {
 
     public BigDecimal getPrice();
 
-    public Image getImage();
-    
-    public interface Image{
-        public String getPublic_id();
-    };
 }

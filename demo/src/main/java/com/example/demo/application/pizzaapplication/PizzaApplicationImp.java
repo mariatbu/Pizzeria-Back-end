@@ -1,5 +1,6 @@
 package com.example.demo.application.pizzaapplication;
 
+import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.application.ingredientapplication.IngredientApplicationImp;
@@ -7,6 +8,7 @@ import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.imagedomain.Image;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.pizzadomain.Pizza;
+import com.example.demo.domain.pizzadomain.PizzaProjection;
 import com.example.demo.domain.pizzadomain.PizzaRepository;
 import com.example.demo.dto.pizzaDTO.CreatePizzaDTO;
 import com.example.demo.dto.pizzaDTO.PizzaDTO;
@@ -80,5 +82,17 @@ public class PizzaApplicationImp extends ApplicationBase<Pizza, UUID> implements
         this.log.info(serializeObject(pizza, "updated."));
 
         return this.modelMapper.map(pizza, PizzaDTO.class);
+    }
+
+    @Override
+    public void delete(UUID id){
+        Pizza pizza = this.findById(id);
+        this.pizzaRepository.delete(pizza);
+        this.log.info(this.serializeObject(pizza, "deleted."));
+    }
+
+    @Override
+    public List<PizzaProjection> getAll(String name, int page, int size) {
+        return this.pizzaRepository.getAll(name, page, size);
     }
 }
