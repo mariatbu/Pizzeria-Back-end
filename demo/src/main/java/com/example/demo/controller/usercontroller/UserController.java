@@ -63,11 +63,6 @@ public class UserController {
         UserDTO userDTO = this.userApplication.update(id, dto);
         return ResponseEntity.ok(userDTO);
     }
-    /*@PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, path = "/{id}")
-    public ResponseEntity<?> update(@Valid @PathVariable UUID id, @RequestBody UpdateUserDTO dto) {
-        this.userApplication.update(id, dto);
-        return ResponseEntity.ok(dto);
-    }*/
 
     @DeleteMapping(path = "/{id}")
     void delete(@PathVariable UUID id) {
