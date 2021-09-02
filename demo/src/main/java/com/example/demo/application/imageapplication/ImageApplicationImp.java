@@ -1,8 +1,5 @@
 package com.example.demo.application.imageapplication;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.UUID;
 
 import com.example.demo.core.applicationbase.ApplicationBase;
@@ -15,7 +12,6 @@ import com.example.demo.dto.imageDTO.ImageDTOId;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 
 // import org.slf4j.Logger;
@@ -24,44 +20,36 @@ import org.springframework.web.multipart.MultipartFile;
 public class ImageApplicationImp extends ApplicationBase<ImageEntity, UUID> implements ImageApplication{
 
     private final RedisRepository redisRepository;
-    private final ModelMapper modelMaper;
+    private final ModelMapper modelMapper;
     
     // private final Logger logger;
 
     @Autowired
-    public ImageApplicationImp(final ModelMapper modelMaper,
+    public ImageApplicationImp(final ModelMapper modelMapper,
                                 final RedisRepository redisRepository){
             super((id) -> redisRepository.get(id));
             this.redisRepository = redisRepository;
-            this.modelMaper = modelMaper;
+            this.modelMapper = modelMapper;
             // this.logger = logger;
     }
     
     @Override
     public ImageDTOId save(CreateOrUpdateImageDTO dto) {
-        ImageEntity image = new ImageEntity();
+        ImageEntity image =  modelMapper.map(dto, ImageEntity.class);
         image.setId(UUID.randomUUID());
-        image.setData(dto.getData());
-
-        
-        this.redisRepository.add(image);
-        // logger.info("Sañadío");
-        ImageDTOId imageDTO = new ImageDTOId();
-        imageDTO.setId(image.getId());
-        return imageDTO;
+        image.validate();
+        ImageDTOId imageDTOId=this.redisRepository.add(image);
+        // this.logger.info(serializeObject(image, "added"));
+        return imageDTOId;
     }
 
     @Override
     public ImageDTOBytes get(UUID id) {
-        
-        return modelMaper.map(this.findById(id), ImageDTOBytes.class);
+
+        ImageEntity image = this.findById(id);
+        ImageDTOBytes imageDTOBytes= this.modelMapper.map(image, ImageDTOBytes.class);
+        return imageDTOBytes; 
     }
 
-    public File convert(MultipartFile multipartFile) throws IOException {
-        File file = new File(multipartFile.getOriginalFilename());
-        FileOutputStream fo = new FileOutputStream(file);
-        fo.write(multipartFile.getBytes());
-        fo.close();
-        return file;
-    }
+    
 }

@@ -1,14 +1,19 @@
 package com.example.demo.infraestructure.imageinfraestructure;
 
+
 import java.time.Duration;
 import java.util.Optional;
 import java.util.UUID;
 
+import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 import com.example.demo.core.exceptions.InternalServerErrorEnum;
 import com.example.demo.core.exceptions.InternalServerErrorException;
 import com.example.demo.domain.imagedomain.ImageEntity;
 import com.example.demo.domain.imagedomain.RedisRepository;
+import com.example.demo.dto.imageDTO.ImageDTOId;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
@@ -16,18 +21,23 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class RedisRepositoryImp implements RedisRepository {
 
+    ImageEntity image;
     private final RedisTemplate<String, byte[]> redisTemplate;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public RedisRepositoryImp(final RedisTemplate<String, byte[]> redisTemplate) {
+    public RedisRepositoryImp(final RedisTemplate<String, byte[]> redisTemplate, final ModelMapper modelMapper) {
         this.redisTemplate = redisTemplate;
+        this.modelMapper = modelMapper;
     }
 
     @Override
-    public void add(ImageEntity image) {
+    public ImageDTOId add(ImageEntity image) {
 
         try { // String image2 = Base64.getEncoder().encodeToString(image.getData());
-            this.redisTemplate.opsForValue().set(image.getId().toString(), image.getData(), Duration.ofDays(1));
+            this.redisTemplate.opsForValue().set(image.getId().toString(), image.getData(), Duration.ofDays(1));            
+            Cloudinary cloudinary=new Cloudinary();
+            cloudinary.uploader().upload(image.getData(), ObjectUtils.asMap("public_id", image.getId().toString()));
 
         } catch (Exception e) {
             throw new InternalServerErrorException(InternalServerErrorEnum.REDIRECT);
@@ -38,7 +48,7 @@ public class RedisRepositoryImp implements RedisRepository {
             }
 
         }
-
+        return this.modelMapper.map(image, ImageDTOId.class);
     }
 
     @Override
@@ -66,6 +76,7 @@ public class RedisRepositoryImp implements RedisRepository {
 
         }
 
-        // TODO try catch exception not found devolver oOtional<ImageEntity>
+        
     }
+
 }

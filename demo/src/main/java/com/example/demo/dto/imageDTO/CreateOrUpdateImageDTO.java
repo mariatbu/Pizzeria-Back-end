@@ -14,10 +14,5 @@ public @Getter @Setter @NoArgsConstructor class CreateOrUpdateImageDTO {
     @NotBlank
     private byte[] data;
 
-    @NotBlank
-    private String cloudId;
-
-    @NotBlank
-    private String cloudUrl;
 }
 

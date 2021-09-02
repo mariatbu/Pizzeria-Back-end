@@ -15,7 +15,6 @@ public class RedisConfiguration {
         return new JedisConnectionFactory();
     }
 
-    //Scope por conexion/request
 
     @Bean
     
@@ -27,10 +26,6 @@ public class RedisConfiguration {
         
         return template;
     }
-
-    //ToDO Abrir conexion con try catch
-
-    //Cerrar conexion, Scope
 
 
 }
