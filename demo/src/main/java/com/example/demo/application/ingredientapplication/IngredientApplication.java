@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.domain.ingredientdomain.IngredientProjection;
-import com.example.demo.dto.ingredientDTO.CreateUpdateIngredientDTO;
-import com.example.demo.dto.ingredientDTO.IngredientDTO;
+import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
+import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 
 
 public interface IngredientApplication {

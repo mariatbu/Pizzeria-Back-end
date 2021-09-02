@@ -5,8 +5,8 @@ import java.util.UUID;
 import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.commentdomain.Comment;
 import com.example.demo.domain.commentdomain.CommentRepositoryWriter;
-import com.example.demo.dto.commentDTO.CommentDTO;
-import com.example.demo.dto.commentDTO.CreateCommentDTO;
+import com.example.demo.DTO.commentDTO.CommentDTO;
+import com.example.demo.DTO.commentDTO.CreateCommentDTO;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

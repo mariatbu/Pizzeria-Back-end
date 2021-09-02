@@ -5,8 +5,8 @@ import java.util.UUID;
 import javax.validation.Valid;
 
 import com.example.demo.application.ingredientapplication.IngredientApplication;
-import com.example.demo.dto.ingredientDTO.CreateUpdateIngredientDTO;
-import com.example.demo.dto.ingredientDTO.IngredientDTO;
+import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
+import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

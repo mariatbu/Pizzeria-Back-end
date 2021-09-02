@@ -7,8 +7,8 @@ import com.example.demo.core.applicationbase.ApplicationBase;
 import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.ingredientdomain.IngredientProjection;
 import com.example.demo.domain.ingredientdomain.IngredientRepository;
-import com.example.demo.dto.ingredientDTO.CreateUpdateIngredientDTO;
-import com.example.demo.dto.ingredientDTO.IngredientDTO;
+import com.example.demo.DTO.ingredientDTO.CreateUpdateIngredientDTO;
+import com.example.demo.DTO.ingredientDTO.IngredientDTO;
 
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;

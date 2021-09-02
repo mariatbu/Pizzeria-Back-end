@@ -10,9 +10,9 @@ import com.example.demo.domain.ingredientdomain.Ingredient;
 import com.example.demo.domain.pizzadomain.Pizza;
 import com.example.demo.domain.pizzadomain.PizzaProjection;
 import com.example.demo.domain.pizzadomain.PizzaRepository;
-import com.example.demo.dto.pizzaDTO.CreatePizzaDTO;
-import com.example.demo.dto.pizzaDTO.PizzaDTO;
-import com.example.demo.dto.pizzaDTO.UpdatePizzaDTO;
+import com.example.demo.DTO.pizzaDTO.CreatePizzaDTO;
+import com.example.demo.DTO.pizzaDTO.PizzaDTO;
+import com.example.demo.DTO.pizzaDTO.UpdatePizzaDTO;
 
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;

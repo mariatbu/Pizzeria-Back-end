@@ -1,4 +1,4 @@
-package com.example.demo.dto.commentDTO;
+package com.example.demo.DTO.commentDTO;
 
 import java.math.BigDecimal;
 import java.util.UUID;

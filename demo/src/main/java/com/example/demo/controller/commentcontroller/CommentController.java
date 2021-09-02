@@ -5,8 +5,8 @@ import java.util.UUID;
 import javax.validation.Valid;
 
 import com.example.demo.application.commentapplication.CommentApplication;
-import com.example.demo.dto.commentDTO.CommentDTO;
-import com.example.demo.dto.commentDTO.CreateCommentDTO;
+import com.example.demo.DTO.commentDTO.CommentDTO;
+import com.example.demo.DTO.commentDTO.CreateCommentDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

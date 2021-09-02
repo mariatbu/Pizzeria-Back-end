@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.domain.userdomain.UserProjection;
-import com.example.demo.dto.userDTO.UserDTO;
-import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
+import com.example.demo.DTO.userDTO.UserDTO;
+import com.example.demo.DTO.userDTO.CreateOrUpdateUserDTO;
 
 public interface UserApplication {
     public UserDTO add(CreateOrUpdateUserDTO dto);

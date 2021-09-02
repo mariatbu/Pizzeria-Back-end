@@ -3,8 +3,8 @@ package com.example.demo.controller.usercontroller;
 import java.util.UUID;
 
 import com.example.demo.application.userapplication.UserApplication;
-import com.example.demo.dto.userDTO.CreateOrUpdateUserDTO;
-import com.example.demo.dto.userDTO.UserDTO;
+import com.example.demo.DTO.userDTO.CreateOrUpdateUserDTO;
+import com.example.demo.DTO.userDTO.UserDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

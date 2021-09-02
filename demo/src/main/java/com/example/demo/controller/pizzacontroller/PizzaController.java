@@ -5,9 +5,9 @@ import java.util.UUID;
 import javax.validation.Valid;
 
 import com.example.demo.application.pizzaapplication.PizzaApplication;
-import com.example.demo.dto.pizzaDTO.CreatePizzaDTO;
-import com.example.demo.dto.pizzaDTO.PizzaDTO;
-import com.example.demo.dto.pizzaDTO.UpdatePizzaDTO;
+import com.example.demo.DTO.pizzaDTO.CreatePizzaDTO;
+import com.example.demo.DTO.pizzaDTO.PizzaDTO;
+import com.example.demo.DTO.pizzaDTO.UpdatePizzaDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

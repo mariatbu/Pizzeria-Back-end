@@ -1,4 +1,4 @@
-package com.example.demo.dto.pizzaDTO;
+package com.example.demo.DTO.pizzaDTO;
 
 import java.util.Set;
 import java.util.UUID;

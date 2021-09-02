@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.UUID;
 
 import com.example.demo.domain.pizzadomain.PizzaProjection;
-import com.example.demo.dto.pizzaDTO.CreatePizzaDTO;
-import com.example.demo.dto.pizzaDTO.PizzaDTO;
-import com.example.demo.dto.pizzaDTO.UpdatePizzaDTO;
+import com.example.demo.DTO.pizzaDTO.CreatePizzaDTO;
+import com.example.demo.DTO.pizzaDTO.PizzaDTO;
+import com.example.demo.DTO.pizzaDTO.UpdatePizzaDTO;
 
 public interface PizzaApplication {
     public PizzaDTO add(CreatePizzaDTO dto);
