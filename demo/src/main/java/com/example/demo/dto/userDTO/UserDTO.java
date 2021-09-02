@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-public @Getter @Setter @NoArgsConstructor class UserDTO {
+public @Getter @Setter @NoArgsConstructor class  UserDTO {
     private UUID id;
     private String name;
     private String lastName;
